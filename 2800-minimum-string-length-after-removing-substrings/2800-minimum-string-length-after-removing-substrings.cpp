@@ -1,35 +1,42 @@
-//methode 1    
+//methode 1 [optimized]  O(N)   
 class Solution {
 public:
     int minLength(string s) {
-        bool foundAB = false, foundCD = false;
-         unsigned int indx;
-        while (true)
+        string stack = "";
+            stack+=s[0];
+        for (int i=1 ; i<s.size();i++)
         {
-
-            if ( s.find ( "AB") != string ::npos )
+            if (s[i] == 'B')
             {
-                indx = s.find("AB");
-                //cout << indx << " ";
-                foundAB = true;
-                s.erase(s.begin() + indx);
-                s.erase(s.begin() + indx);
+                if (!stack.empty())
+                {
+                    if (stack[stack.size() - 1] != 'A')
+                    {
+                        stack += s[i];
+                    }
+                    else
+                        stack.pop_back();       
+                }else 
+                stack += s[i];
             }
-            if (s.find("CD") != string::npos)
+            else if (s[i] == 'D')
+                {
+                    if (!stack.empty() )
+                    {
+                        if (stack[stack.size() - 1] != 'C')
+                        {
+                            stack += s[i];
+                        }
+                        else
+                            stack.pop_back();       
+                    }else 
+                        stack += s[i];
+                }
+            else
             {
-                indx = s.find("CD");
-             //   cout << indx << " ";
-                foundCD = true;
-                s.erase(s.begin() + indx);
-                s.erase(s.begin() + indx );
-            }
-
-            if (!(foundAB || foundCD)) return s.size();
-            foundAB = false;
-            foundCD = false;
-            
-
+                stack += s[i];
+            }    
         }
-        return 0;
+        return stack.size();
     }
-};
+}; 
