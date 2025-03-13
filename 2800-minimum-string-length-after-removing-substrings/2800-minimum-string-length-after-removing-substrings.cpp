@@ -7,9 +7,10 @@ public:
         while (true)
         {
 
-            if ( s.find ( "AB") != string ::npos ) 
+            if ( s.find ( "AB") != string ::npos )
             {
                 indx = s.find("AB");
+                //cout << indx << " ";
                 foundAB = true;
                 s.erase(s.begin() + indx);
                 s.erase(s.begin() + indx);
@@ -17,15 +18,18 @@ public:
             if (s.find("CD") != string::npos)
             {
                 indx = s.find("CD");
+             //   cout << indx << " ";
                 foundCD = true;
                 s.erase(s.begin() + indx);
                 s.erase(s.begin() + indx );
             }
-            if (!(foundAB || foundCD)) 
-                break;
+
+            if (!(foundAB || foundCD)) return s.size();
             foundAB = false;
             foundCD = false;
+            
+
         }
-        return s.size();
+        return 0;
     }
 };
