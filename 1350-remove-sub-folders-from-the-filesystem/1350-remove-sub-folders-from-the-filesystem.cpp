@@ -6,7 +6,7 @@ public:
         unordered_set <string >visited;
         sort(folder.begin(), folder.end());
         //vector<string> V= { "/a","/a/b","/c/d","/c/d/e","/c/f" };
-        //{"/a/b/c", "/a/b/ca", "/a/b/d"}
+        
         for (int i = 0; i < folder.size() ;i++ )
         {
             string str = "";
@@ -14,7 +14,7 @@ public:
             bool found = true;
             while (indx < folder[i].size())
             {
-                
+       //   because of this case {"/a/b/c", "/a/b/ca", "/a/b/d"} i checked each folder 
                 if (folder[i][indx] == '/' && visited.count(str))
                 {
                     found = false;
