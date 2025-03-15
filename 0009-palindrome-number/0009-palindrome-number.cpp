@@ -5,7 +5,7 @@ public:
     bool isPalindrome(int x) {
         if (x < 0) return false;
         int copyOfX = x;
-        string str;
+        string str="";
         int digit;
         while (x > 0)
         {
