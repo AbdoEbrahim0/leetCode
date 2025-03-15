@@ -53,7 +53,7 @@ using namespace std;
          int hundreds= pow(10, how_many_digits -1);
          int f_digit = x / hundreds;
          int numAfterRemoveF_d=x;
-         while ( how_many_digits !=0) //
+         while (true) 
          {
              //hundreds = pow(10, --how_many_digits);//100
              if (x % 10 != (int)(f_digit))
