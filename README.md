@@ -26,4 +26,8 @@
 |  |
 | ------- |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0009-palindrome-number) |
 <!---LeetCode Topics End-->
