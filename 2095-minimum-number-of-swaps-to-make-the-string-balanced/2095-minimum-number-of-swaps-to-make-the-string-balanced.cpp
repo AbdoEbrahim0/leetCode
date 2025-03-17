@@ -9,9 +9,9 @@ for (int i = 0; i < s.size(); i++) {
     else {
         if (open)
             open--;
-        else problem++;
+       // else problem++;
     }
 }
-return ceil((double)problem/2);
+return ceil((double)open/2);
     }
 };
