@@ -23,10 +23,9 @@ for (int i = 0; i < s.size(); i++)
  {
     if (s[i] == '[')
         open++;
-    else {
-        if (open)
-            open--;
-    }
+    else 
+    if (open)
+        open--;
         
 }
 return ceil((double)open/2);
