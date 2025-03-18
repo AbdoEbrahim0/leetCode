@@ -19,9 +19,9 @@ class Solution {
 public:
     int minSwaps(string s) {  
 int open = 0;
-for (int i = 0; i < s.size(); i++)
+for (auto &it : s)
  {
-    if (s[i] == '[')
+    if (it == '[')
         open++;
     else 
     if (open)
