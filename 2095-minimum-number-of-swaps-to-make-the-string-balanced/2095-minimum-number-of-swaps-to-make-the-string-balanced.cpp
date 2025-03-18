@@ -1,3 +1,4 @@
+//method 1 
 class Solution {
 public:
     int minSwaps(string s) {
@@ -20,6 +21,7 @@ public:
         return ceil(counter / 2.0);
     }
 };
+//method 1 [optimized]
 // class Solution {
 // public:
 //     int minSwaps(string s) {  
