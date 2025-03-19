@@ -35,3 +35,18 @@ public:
        return stk + cnt_closedWithoutOpen;
    }
 };
+
+// class Solution {
+// public:
+//    int minAddToMakeValid(string s) {//fail in last cases
+//        int counter = 0;
+//        for (char c : s)
+//        {
+//            if (c == '(')
+//                counter++;
+//            else
+//                counter--;
+//        }
+//        return abs(counter);
+//    }
+// };
