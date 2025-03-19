@@ -28,7 +28,7 @@ public:
    int minAddToMakeValid(string s) {
        int stk = 0; //cntOpenWithClosed
        int cnt_closedWithoutOpen = 0;
-       for (char& c : s)
+       for (char c : s)
        {
            (c == '(') ? stk++ : (stk)? stk--: cnt_closedWithoutOpen++;
        }
