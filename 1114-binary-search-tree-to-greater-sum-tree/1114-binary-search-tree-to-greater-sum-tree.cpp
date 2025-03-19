@@ -9,25 +9,45 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+ //method 1 using stack
+// class Solution {
+// public:
+//     TreeNode* bstToGst(TreeNode* root) {
+//         TreeNode* node =root;
+//         stack<TreeNode*>stk;
+//         int sum=0;
+//         while(node !=nullptr || stk.size())
+//         {
+//             while(node)
+//             {
+//                 stk.push(node);
+//                 node =node-> right;
+//             }
+//             node =stk.top();
+//             stk.pop();
+//             sum+=node->val;
+//             node->val =sum;
+//             node=node->left;
+//         }
+//         return root;
+//     }
+// };
+
 class Solution {
 public:
-    TreeNode* bstToGst(TreeNode* root) {
-        TreeNode* node =root;
-        stack<TreeNode*>stk;
-        int sum=0;
-        while(node !=nullptr || stk.size())
-        {
-            while(node)
+    int sum=0;
+    void solve(TreeNode* root)
             {
-                stk.push(node);
-                node =node-> right;
+                    if(root ==nullptr)
+                    return ;
+                    solve(root->right);
+                    sum+=root->val;
+                    root->val =sum;
+                    solve(root->left);
             }
-            node =stk.top();
-            stk.pop();
-            sum+=node->val;
-            node->val =sum;
-            node=node->left;
-        }
+
+    TreeNode* bstToGst(TreeNode* root) {
+        solve(root);
         return root;
     }
 };
