@@ -24,8 +24,8 @@ class Solution {
 public:
     int maxWidthRamp(vector<int>& nums) {
         int  maxWidth = 0;
-        int i;
-        stack<int>stk;
+        unsigned short i;
+        stack<unsigned short>stk;
         stk.push(0);
         for ( i = 1 ; i < nums.size() ; i++ )
         {
@@ -33,7 +33,7 @@ public:
                 stk.push(i);
         }
 
-        for (int j = nums.size() - 1; j >= 0; j--)
+        for (unsigned short j = nums.size() - 1; j >= 0; j--)
         {
             
             while (nums[j] >= nums[stk.top()])
