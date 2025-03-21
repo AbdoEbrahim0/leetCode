@@ -19,7 +19,7 @@
 //         return maxWidth;
 //     }
 // };
-//methode 2 O(N) 
+//methode 2 using stack O(N) 
 class Solution {
 public:
     int maxWidthRamp(vector<int>& nums) {
