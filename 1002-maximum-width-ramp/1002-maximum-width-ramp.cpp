@@ -25,7 +25,7 @@ public:
     int maxWidthRamp(vector<int>& nums) {
         int  maxWidth = 0;
         unsigned short i;
-        stack<int>stk;
+        stack<unsigned short>stk;
         stk.push(0);
         for ( i = 1 ; i < nums.size() ; i++ )
         {
