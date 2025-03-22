@@ -27,24 +27,22 @@ public:
         unsigned short i;
         stack<unsigned short>stk;
         stk.push(0);
+        //which i < j 
         for ( i = 1 ; i < nums.size() ; i++ )
         {
             if (nums[i] <= nums[stk.top()])
                 stk.push(i);
         }
-
+        
         for (unsigned short j = nums.size() - 1; j >= 0; j--)
         {
-            
             while (nums[j] >= nums[stk.top()])
             {
-                
                 maxWidth = max(maxWidth, j - stk.top());
                 stk.pop();
                 if (stk.empty())
                     return maxWidth;
             }
-
         }
         return maxWidth;
     }
