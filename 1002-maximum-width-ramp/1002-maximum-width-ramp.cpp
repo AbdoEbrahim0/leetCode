@@ -1,5 +1,4 @@
 //methode 1 naive N^2
-
 // class Solution {
 // public:
 //     int maxWidthRamp(vector<int>& nums) {
@@ -47,3 +46,4 @@ public:
         return maxWidth;
     }
 };
+
