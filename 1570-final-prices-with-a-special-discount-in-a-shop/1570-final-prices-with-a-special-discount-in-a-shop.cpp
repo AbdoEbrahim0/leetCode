@@ -15,6 +15,28 @@
 //    return prices;   
 //     }
 // };
+//wrong because not creating new vector
+// class Solution {
+// public:
+//     vector<int> finalPrices(vector<int>& prices) {
+  
+//         stack<int>stk;
+//         for (int j = prices.size() - 1; j >= 0; j--)
+//         {
+//             while ( stk.size() &&(prices[j] < stk.top()))
+//             {
+//                 stk.pop();
+//             }
+//             if (! stk.empty())
+//             {
+//                 prices[j] = prices[j] - stk.top();
+//             }
+//             stk.push(prices[j]);
+//         }
+//         return prices;
+//     }
+// };
+
 class Solution {
 public:
     vector<int> finalPrices(vector<int>& prices) {
