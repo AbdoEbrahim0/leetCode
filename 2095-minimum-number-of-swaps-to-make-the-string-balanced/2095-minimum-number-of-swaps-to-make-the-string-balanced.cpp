@@ -49,7 +49,7 @@ public:
             if (c == '[')
                 stk.push('[');
             else if
-                (c == ']' && ! stk.empty())
+                (c == ']' &&  stk.size())
                 stk.pop();
         }
         //return ceil(counter / 2.0);
