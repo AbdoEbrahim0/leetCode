@@ -47,7 +47,7 @@ public:
         for (auto & c : s)
         {
             if (c == '[')
-                stk.push('[');
+                stk.push(c);
             else if
                 (c == ']' )
                 if(stk.size())
