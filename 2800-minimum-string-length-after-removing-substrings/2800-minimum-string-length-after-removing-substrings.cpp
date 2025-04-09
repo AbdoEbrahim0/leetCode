@@ -92,71 +92,50 @@
 // };
 
 //methode 1 [optimized^3]  O(N)   
-// class Solution {
-// public:
-//     int minLength(string s) {
-//         if (s.size() == 0) return 0;
-//         int indx=0;
-//         //string stk;
-//         for (int i=0; i < s.size(); i++)
-//         {
-//             if (s[i]  == 'B' && indx >0 && s[indx-1] == 'A')
-//             {
-//                 indx--;
-//             }
-//             else if (s[i] == 'D' && indx > 0 && s[indx-1] == 'C')
-//             {
-//                 indx--;
-//             }
-//             else
-//             {
-//                 s[indx] = s[i];
-//                 indx++;
-//             }   
-//         }
-//         return indx;
-//     }
-// };
+class Solution {
+public:
+    int minLength(string s) {
+        if (s.size() == 0) return 0;
+        int indx=0;
+        //string stk;
+        for (int i=0; i < s.size(); i++)
+        {
+            if (s[i]  == 'B' && indx >0 && s[indx-1] == 'A')
+            {
+                indx--;
+            }
+            else if (s[i] == 'D' && indx > 0 && s[indx-1] == 'C')
+            {
+                indx--;
+            }
+            else
+            {
+                s[indx] = s[i];
+                indx++;
+            }   
+        }
+        return indx;
+    }
+};
+
 // class Solution {
 // public:
 //     int minLength(string s) {
 //         stack<char>stk;
-//         if (s.size() == 1) return 1;
+//         //if (s.size() == 1) return 1;
 //         for (char val : s)
-//         {
-//             if (val == 'D' && stk.top() == 'C')
-//                 stk.pop();
-//             else if (val == 'B' && stk.top() == 'A')
-//                 stk.pop();
+//         { 
+//             if (val == 'D' && !stk.empty() && stk.top() == 'C')
+//             {
+//                         stk.pop();
+//             }
+//             else if (val == 'B' && !stk.empty() && stk.top() == 'A')
+//                     {
+//                           stk.pop();
+//                     }
 //             else
 //                 stk.push(val);   
 //         }
 //         return stk.size();
 //     }
 // };
-
-class Solution {
-public:
-    int minLength(string s) {
-        stack<char>stk;
-        //if (s.size() == 1) return 1;
-        for (char val : s)
-        { 
-            if (val == 'D' && !stk.empty() && stk.top() == 'C')
-            {
-
-                        stk.pop();
-
-            }
-            else if (val == 'B' && !stk.empty() && stk.top() == 'A')
-                    {
-
-                          stk.pop();
-
-                    }
-            else
-                stk.push(val);   
-        }
-        return stk.size();
-    }
-};
