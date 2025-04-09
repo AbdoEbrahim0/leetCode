@@ -142,19 +142,17 @@ public:
         //if (s.size() == 1) return 1;
         for (char val : s)
         { 
-            if (val == 'D' && !stk.empty())
+            if (val == 'D' && !stk.empty() && stk.top() == 'C')
             {
-                    if (stk.top() == 'C')
+
                         stk.pop();
-                        else
-                        stk.push(val);
+
             }
-            else if (val == 'B' && !stk.empty())
+            else if (val == 'B' && !stk.empty() && stk.top() == 'A')
                     {
-                    if(stk.top() == 'A')         
+
                           stk.pop();
-                          else
-                            stk.push(val);
+
                     }
             else
                 stk.push(val);   
