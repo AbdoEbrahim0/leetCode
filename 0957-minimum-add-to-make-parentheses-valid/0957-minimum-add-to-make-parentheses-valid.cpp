@@ -23,18 +23,18 @@
 // };
 
 //methode  1  using stack optimized for memory & runtime
-class Solution {
-public:
-   int minAddToMakeValid(string s) {
-       int stk = 0; //cntOpenWithClosed
-       int cnt_closedWithoutOpen = 0;
-       for (char c : s)
-       {
-           (c == '(') ? stk++ : (stk)? stk--: cnt_closedWithoutOpen++;
-       }
-       return stk + cnt_closedWithoutOpen;
-   }
-};
+// class Solution {
+// public:
+//    int minAddToMakeValid(string s) {
+//        int stk = 0; //cntOpenWithClosed
+//        int cnt_closedWithoutOpen = 0;
+//        for (char& c : s)
+//        {
+//            (c == '(') ? stk++ : (stk)? stk--: cnt_closedWithoutOpen++;
+//        }
+//        return stk + cnt_closedWithoutOpen;
+//    }
+// };
 
 // class Solution {
 // public:
@@ -50,3 +50,23 @@ public:
 //        return abs(counter);
 //    }
 // };
+
+
+//////////////////
+class Solution {
+public:
+    int minAddToMakeValid(string s) {//fail in last cases
+        stack<char >stk;
+        int cc = 0;
+        for (char& c : s)
+        {
+            if (c == '(')
+                stk.push(c);
+            else if (c == ')' && stk.size())
+                stk.pop();
+            else
+                cc++;
+        }
+        return cc + stk.size();
+    }
+};
