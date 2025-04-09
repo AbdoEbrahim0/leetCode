@@ -44,7 +44,7 @@ public:
     int minSwaps(string s) {
         int counter = 0;
         stack<char>stk;
-        for (char & c : s)
+        for (auto & c : s)
         {
             if (c == '[')
                 stk.push('[');
