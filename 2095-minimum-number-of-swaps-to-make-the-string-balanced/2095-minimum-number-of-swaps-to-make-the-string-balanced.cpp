@@ -54,7 +54,7 @@ public:
                 stk.pop();
         }
         //return ceil(counter / 2.0);
-        counter=stk.size() ;
-        return ceil(counter/ 2.0);
+        
+        return ceil(stk.size() / 2.0);
     }
 };
