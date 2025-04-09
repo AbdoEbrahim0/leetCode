@@ -53,8 +53,6 @@ public:
                 if(stk.size())
                 stk.pop();
         }
-        //return ceil(counter / 2.0);
-        
         return ceil(stk.size() / 2.0);
     }
 };
