@@ -53,23 +53,42 @@
 
 
 //////////////////
+// class Solution {
+// public:
+//     int minAddToMakeValid(string s) {//fail in last cases
+//         //stack<char >stk; 
+//         int stk = 0;
+//         int cc = 0;
+//         for (char& c : s)
+//         {
+//             if (c == '(')
+//                 //stk.push(c);
+//                 stk++;
+//             else if (c == ')' && stk)
+//                 //stk.pop();
+//                 stk--;
+//             else
+//                 cc++;
+//         }
+//         return cc + stk;
+//     }
+// };
+
 class Solution {
 public:
     int minAddToMakeValid(string s) {//fail in last cases
-        //stack<char >stk; 
-        int stk = 0;
+        stack<char >stk; 
+        
         int cc = 0;
         for (char& c : s)
         {
             if (c == '(')
-                //stk.push(c);
-                stk++;
-            else if (c == ')' && stk)
-                //stk.pop();
-                stk--;
+                stk.push(c);
+            else if (c == ')' && stk.size() && stk.top() == '(')
+                stk.pop();
             else
                 cc++;
         }
-        return cc + stk;
+        return cc+ stk.size();
     }
 };
