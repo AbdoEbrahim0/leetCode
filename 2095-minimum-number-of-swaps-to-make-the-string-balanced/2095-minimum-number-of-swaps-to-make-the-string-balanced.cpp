@@ -42,7 +42,7 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        int counter = 0;
+        
         stack<char>stk;
         for (auto & c : s)
         {
