@@ -56,17 +56,20 @@
 class Solution {
 public:
     int minAddToMakeValid(string s) {//fail in last cases
-        stack<char >stk;
+        //stack<char >stk; 
+        int stk = 0;
         int cc = 0;
         for (char& c : s)
         {
             if (c == '(')
-                stk.push(c);
-            else if (c == ')' && stk.size())
-                stk.pop();
+                //stk.push(c);
+                stk++;
+            else if (c == ')' && stk)
+                //stk.pop();
+                stk--;
             else
                 cc++;
         }
-        return cc + stk.size();
+        return cc + stk;
     }
 };
