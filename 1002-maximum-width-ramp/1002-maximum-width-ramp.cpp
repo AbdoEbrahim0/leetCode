@@ -48,49 +48,31 @@
 // };
 
 ///////////////
-
-// class Solution {
-// public:
-//     int maxWidthRamp(vector<int>& nums) {
-//         short my_size = nums.size();
-//         int maxi = 0;
-//         for (int i = 0; i < my_size; i++)
-//         {
-//             for (int j = i + 1; j < my_size; j++)
-//             {
-//                 if (j > i && nums[j] >= nums[i])
-//                     maxi= max(maxi, j - i);
-//             }
-//         }
-//         return maxi;
-//     }
-// };
-
 class Solution {
 public:
     int maxWidthRamp(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> rightMax(n);
+        stack<int>stk;
+        int maxRamp = 0;
+        int i = 0;
 
-        // Fill rightMax array with the maximum values from the right
-        rightMax[n - 1] = nums[n - 1];
-        for (int i = n - 2; i >= 0; i--) {
-            rightMax[i] = max(rightMax[i + 1], nums[i]);
+        for (i = 0; i < nums.size(); i++)
+        {
+            if (stk.empty() || nums[i] <= nums[stk.top()])// is there a value small than exist in value of TOP
+                stk.push(i);
         }
-
-        int left = 0, right = 0;
-        int maxWidth = 0;
-
-        // Traverse the array using left and right pointers
-        while (right < n) {
-            // Move left pointer forward if current left exceeds rightMax
-            while (left < right && nums[left] > rightMax[right]) {
-                left++;
+        //{ 9, 8, 1, 0, 1, 9, 4, 0, 4, 1 };
+        //{ 6,0,8,2,1,5 };
+        for (int j = nums.size() - 1; j >= 0;j-- )
+        {
+            while (nums[j] >= nums[stk.top()])
+            {
+                maxRamp = max(maxRamp, j - stk.top());
+                stk.pop();
+                    if (stk.empty())
+                    return maxRamp;
             }
-            maxWidth = max(maxWidth, right - left);
-            right++;
-        }
 
-        return maxWidth;
+        }
+        return maxRamp;
     }
 };
