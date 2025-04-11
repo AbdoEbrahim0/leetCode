@@ -39,23 +39,42 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int minSwaps(string s) {
+        
+//         //stack<char>stk;
+//         int counter =0;
+//         for (auto & c : s)
+//         {
+//             if (c == '[')
+//                 //stk.push(c);
+//                 counter++;
+//             else if
+//                 (c == ']' && counter>0)
+//                 //if(stk.size())
+//                 //stk.pop();
+//                 counter--;
+//         }
+//         return ceil(counter / 2.0);
+//     }
+// };
+
+///////////////
 class Solution {
 public:
     int minSwaps(string s) {
-        
         stack<char>stk;
-        int counter =0;
-        for (auto & c : s)
+        int counter = 0;
+        for (char &c: s)
         {
             if (c == '[')
-                //stk.push(c);
+                stk.push(c);
+            else if (stk.size() && c == ']')
+                stk.pop();
+            else
                 counter++;
-            else if
-                (c == ']' && counter>0)
-                //if(stk.size())
-                //stk.pop();
-                counter--;
         }
-        return ceil(counter / 2.0);
+        return ceil( counter /2.0);
     }
 };
