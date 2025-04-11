@@ -64,17 +64,16 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        stack<char>stk;
+        //stack<char>stk;
         int counter = 0;
         for (char &c: s)
         {
             if (c == '[')
-                stk.push(c);
-            else if (stk.size() && c == ']')
-                stk.pop();
-            else
-                counter++;
+                counter ++;
+            else if (counter && c == ']')
+                counter --;
+            
         }
-        return ceil( counter /2.0);
+        return ceil( (counter) /2.0);
     }
 };
