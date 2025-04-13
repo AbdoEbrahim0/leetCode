@@ -78,20 +78,39 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     vector<int> finalPrices(vector<int>& prices) {
+//         /*stack<int>stk;*/
+//         vector<int> res = prices;
+//         for (int i = 0; i < prices.size(); i++)
+//         {
+//             int j = i + 1;
+//             while (j < prices.size() &&! (prices[j] <= prices[i])  )
+//             {
+//                 j++;
+//             }
+//             if(j < prices.size())
+//             res[i] = res[i] - prices[j];
+//         }
+//         return res;
+//     }
+// };
 class Solution {
 public:
     vector<int> finalPrices(vector<int>& prices) {
         /*stack<int>stk;*/
         vector<int> res = prices;
-        for (int i = 0; i < prices.size(); i++)
+        int j;
+        for (int i = prices.size() - 2; i >= 0; i--)
         {
-            int j = i + 1;
-            while (j < prices.size() &&! (prices[j] <= prices[i])  )
+            j = i + 1;
+            while ( j <prices.size() &&!(prices[j] <= prices[i])  )
             {
                 j++;
             }
-            if(j < prices.size())
-            res[i] = res[i] - prices[j];
+            if(j < prices.size() &&prices[j] <= prices[i])
+            res[i] = prices[i] - prices[j];
         }
         return res;
     }
