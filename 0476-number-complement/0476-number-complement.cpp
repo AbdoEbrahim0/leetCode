@@ -8,7 +8,9 @@ public:
             
             if (num % 2 ==0)
             {
-                x += pow(2, power);
+             //   x += pow(2, power); 
+             //Or 
+                x += 1<< power;
             }
             num = num / 2;
             power++;
