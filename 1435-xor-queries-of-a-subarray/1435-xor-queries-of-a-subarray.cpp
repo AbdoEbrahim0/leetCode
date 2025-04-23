@@ -74,7 +74,7 @@ public:
         vector<int> prefixXor(n, arr[0]); // prefixXor[0] = 0
 
         // Build prefix Sum XOR
-        for (int i = 1; i < n; i++) {
+        for (short i = 1; i < n; i++) {
             prefixXor[i] = prefixXor[i - 1] ^ arr[i];
         }
 
