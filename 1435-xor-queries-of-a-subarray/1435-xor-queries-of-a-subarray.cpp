@@ -80,7 +80,7 @@ public:
 
         for (vector<int> val : queries)
         {
-            int L = val[0], R = val[1];
+            short L = val[0], R = val[1];
             if ((L-1) < 0)
                 result.emplace_back(prefixXor[R]);
             else
