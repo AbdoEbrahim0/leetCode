@@ -25,6 +25,7 @@
 | ------- |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/AbdoEbrahim0/leetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Depth-First Search
 |  |
@@ -70,5 +71,10 @@
 |  |
 | ------- |
 | [0476-number-complement](https://github.com/AbdoEbrahim0/leetCode/tree/master/0476-number-complement) |
+| [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/2323-minimum-bit-flips-to-convert-number) |
+## Prefix Sum
+|  |
+| ------- |
+| [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 <!---LeetCode Topics End-->
