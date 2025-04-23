@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minBitFlips(int start, int goal) {
-        if (start ==goal)return 0;
+        if (start==0 && goal==0)return 0;
         int maxDigits = (start >= goal) ? ((int)log2(start)) + 1 : ((int)log2(goal)) + 1;
         int count = 0;
         char ch1, ch2;
