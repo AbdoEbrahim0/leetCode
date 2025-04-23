@@ -78,7 +78,7 @@ public:
             prefixXor[i] = prefixXor[i - 1] ^ arr[i];
         }
 
-        for (vector<int> val : queries)
+        for (vector<int>& val : queries)
         {
             short L = val[0], R = val[1];
             if ((L-1) < 0)
