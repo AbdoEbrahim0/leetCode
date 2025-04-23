@@ -37,18 +37,24 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int minBitFlips(int start, int goal) {
+//         int counter = 0;
+//         while (start || goal)
+//         {
+//             if ((start & 1) != (goal & 1))
+//                 counter++;
+//             start=start >> 1;
+//                 goal=goal >> 1;
+//         }
+//         return counter;
+//     }
+// };
+
 class Solution {
 public:
     int minBitFlips(int start, int goal) {
-        
-        int counter = 0;
-        while (start || goal)
-        {
-            if ((start & 1) != (goal & 1))
-                counter++;
-            start=start >> 1;
-                goal=goal >> 1;
-        }
-        return counter;
+return __builtin_popcount((start ^goal));
     }
 };
