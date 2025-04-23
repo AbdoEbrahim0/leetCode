@@ -27,7 +27,8 @@ public:
         {
             if (res % 2)
                 counter++;
-            res = res / 2;
+            //res = res / 2;
+            res = res >>1;;
         }
         return counter;
     }
