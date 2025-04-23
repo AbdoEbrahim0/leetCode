@@ -2,10 +2,10 @@ class Solution {
 public:
     int minBitFlips(int start, int goal) {
         if (start==0 && goal==0)return 0;
-        int maxDigits = (start >= goal) ? ((int)log2(start)) + 1 : ((int)log2(goal)) + 1;
+        int maxDigits = (start >= goal) ? ((int)log2(start)) : ((int)log2(goal));
         int count = 0;
         char ch1, ch2;
-        for (int i = maxDigits - 1; (start != 0) || (goal != 0); i--)
+        for (int i = maxDigits; (start != 0) || (goal != 0); i--)
         {
             (start % 2) ? ch1 = '1' : ch1 = '0';
             start = start / 2;
