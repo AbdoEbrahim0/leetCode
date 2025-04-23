@@ -25,10 +25,13 @@ public:
         int counter = 0;
         while (res!=0)
         {
-            if (res % 2)
-                counter++;
-            //res = res / 2;
-            res = res >>1;;
+            // if (res % 2)
+            //     counter++;
+            //res = res / 2; 
+            //OR shift right to divise by 2
+            if(res &1)
+            counter++;
+            res = res >>1;;  
         }
         return counter;
     }
