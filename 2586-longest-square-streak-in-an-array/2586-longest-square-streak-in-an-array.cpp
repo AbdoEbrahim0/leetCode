@@ -112,18 +112,18 @@ class Solution {
 public:
     int longestSquareStreak(vector<int>& nums) {
         unordered_set <int> mySet;
-        for (int &val : nums)
+        for (int val : nums)
         {
             mySet.insert(val);
         }
         long long temp;
         int maxi = 0;
         int cnt = 0;
-        for (int val :nums)
+        for (int &val :nums)
         {
             temp = val;
             temp = temp * temp;
-            for (int val_j : nums)
+            for (int& val_j : nums)
             {
                 if (temp > 100000)
                     break;
