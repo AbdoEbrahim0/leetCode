@@ -119,19 +119,20 @@ public:
         long long temp;
         int maxi = 0;
         int cnt = 0;
-        for (int val :mySet)
+        for (int &val :nums)
         {
             temp = val;
             temp = temp * temp;
-            for (int val_j : mySet)
+            for (int &val_j : nums)
             {
                 if (temp > 100000)
                     break;
-                if (mySet.find(temp ) != mySet.end() )
+                if (mySet.count(temp ))
                 {
                     temp = temp * temp;
                     cnt++;
-                }
+                }else
+                break;
             }
             maxi = max(maxi, cnt+1);
             cnt = 0;
