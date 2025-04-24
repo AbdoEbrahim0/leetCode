@@ -111,22 +111,56 @@
 class Solution {
 public:
     int longestSquareStreak(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        long long temp ;
-        int counter = 0;
-        int maxi = 0;
-        for (int& val : nums)
+        unordered_set <int> mySet;
+        for (int &val : nums)
         {
-            temp = 1LL* val * val;
-            counter = 0;
-            while (binary_search(nums.begin(), nums.end(), temp))
-            {
-                counter++;
-                temp = temp * temp;
-            }
-            maxi = max(maxi, counter +1);
+            mySet.insert(val);
         }
-        if (maxi <= 1) return -1;
+        long long temp;
+        int maxi = 0;
+        int cnt = 0;
+        for (int val :mySet)
+        {
+            temp = val;
+            temp = temp * temp;
+            for (int val_j : mySet)
+            {
+                if (temp > 100000)
+                    break;
+                if (mySet.find(temp ) != mySet.end() )
+                {
+                    temp = temp * temp;
+                    cnt++;
+                }
+            }
+            maxi = max(maxi, cnt+1);
+            cnt = 0;
+        }
+        if (maxi == 1) return -1;
         return maxi;
     }
 };
+
+    //TLE [optimized]^4 (binary search)
+// class Solution {
+// public:
+//     int longestSquareStreak(vector<int>& nums) {
+//         sort(nums.begin(), nums.end());
+//         long long temp ;
+//         int counter = 0;
+//         int maxi = 0;
+//         for (int& val : nums)
+//         {
+//             temp = 1LL* val * val;
+//             counter = 0;
+//             while (binary_search(nums.begin(), nums.end(), temp))
+//             {
+//                 counter++;
+//                 temp = temp * temp;
+//             }
+//             maxi = max(maxi, counter +1);
+//         }
+//         if (maxi <= 1) return -1;
+//         return maxi;
+//     }
+// };
