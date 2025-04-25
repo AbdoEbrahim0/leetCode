@@ -24,6 +24,7 @@
 |  |
 | ------- |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/AbdoEbrahim0/leetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -59,6 +60,7 @@
 |  |
 | ------- |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Binary Tree
 |  |
