@@ -26,7 +26,7 @@
 // };
 class Solution {
 public:
-    bool ok(int mid, vector<int>& candies, long long k)
+    inline bool ok(int mid, vector<int>& candies, long long k)
     {
         long long cnt=0;
         // long   sum=0;
