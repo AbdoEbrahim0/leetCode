@@ -8,7 +8,7 @@ public:
         return cnt >= k;
     }
     int maximumCandies(vector<int>& candies, long long k) {
-        int start = 1, end = *max_element(candies.begin(), candies.end());
+        int start = 1, end = 1e7;
         int cur = 0, mid;
         while (start<=end)
         {
