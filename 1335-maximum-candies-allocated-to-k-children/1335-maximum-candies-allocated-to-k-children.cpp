@@ -3,8 +3,14 @@ public:
     bool ok(int mid, vector<int>& candies, long long k)
     {
         long long cnt=0;
+        long long  sum=0;
         for (int& val : candies)
-            cnt += val/mid;
+            {cnt += val/mid;
+            sum+=val;
+            
+            }
+            if(k>sum)
+            return 0;
         return cnt >= k;
     }
     int maximumCandies(vector<int>& candies, long long k) {
