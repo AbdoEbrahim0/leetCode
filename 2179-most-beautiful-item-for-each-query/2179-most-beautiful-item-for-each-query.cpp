@@ -20,7 +20,7 @@ public:
             itemsBeauty[i] = maxi;    
         }
         int QuereySize = queries.size();
-        vector<int> ans(QuereySize);
+        vector<int> ans;
         
         for (int z=0;z<QuereySize ;z++)
         {
@@ -39,9 +39,9 @@ public:
 
             }
             if (cur == -1)
-                ans[z]=0;
+                ans.emplace_back(0);
             else 
-                ans[z]=itemsBeauty[cur];
+                ans.emplace_back(itemsBeauty[cur]);
         }
         return ans;
     }
