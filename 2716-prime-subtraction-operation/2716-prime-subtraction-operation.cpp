@@ -66,24 +66,72 @@
 //         return false;
 //     }
 // };
-bool checkPrime(int x)
-{
-    if (x < 2)
-        return false;
-    //12
-    //1 2 3 4 | 3 4 6 12
-    for (int i = 2; i * i <= x; i++)
-    {
-        if (x % i == 0)
-            return false;
-    }
-    return true;
-}
+
+//methode [1]//O(N) *O(M=diff) *O(sqrt(n))
+// bool checkPrime(int x)
+// {
+//     if (x < 2)
+//         return false;
+//     //12
+//     //1 2 3 4 | 3 4 6 12
+//     for (int i = 2; i * i <= x; i++)
+//     {
+//         if (x % i == 0)
+//             return false;
+//     }
+//     return true;
+// }
+// class Solution {
+// public:
+
+//     bool primeSubOperation(vector<int>& nums) {
+//         int diff = 0;
+//         for (int i = 0; i < nums.size(); i++) //O(N)
+//         {
+//             if (i == 0)
+//                 diff = nums[i];
+//             else
+//             {
+//                 diff = nums[i] - nums[i - 1];
+//             }
+//             if (diff <= 0)
+//                 return false;
+
+//             while (--diff && (!checkPrime(diff))); //O(M=diff) *O(sqrt(n))
+//             nums[i] = nums[i] - diff;
+//             if ( i && nums[i] <= nums[i - 1])
+//                 return false;
+//         }
+//         return true;
+//     }
+// };
+// methode [2] //O(N)* O( log (M=diff)) * O(log log(M))
 class Solution {
 public:
+    vector<int> findprimesbefore(int maxnumberinarray) {
+        vector<bool> isprime(maxnumberinarray +1, true);
 
+        isprime[0] = isprime[1] = false; // 0 and 1 are not primes
+
+        for (int i = 2; i * i <= maxnumberinarray; i++) {
+            if (isprime[i]) {
+                for (int j = i * i; j <= maxnumberinarray; j += i) {
+                    isprime[j] = false;
+                }
+            }
+        }
+        vector<int> primes;
+        for (int i = 0; i <= maxnumberinarray; i++)
+        {
+            if (isprime[i])
+                primes.emplace_back(i);
+        }
+        return primes;
+    }
     bool primeSubOperation(vector<int>& nums) {
         int diff = 0;
+        int maxi = *max_element(nums.begin(), nums.end());
+        vector<int >primes = findprimesbefore(maxi);
         for (int i = 0; i < nums.size(); i++)
         {
             if (i == 0)
@@ -93,10 +141,14 @@ public:
                 diff = nums[i] - nums[i - 1];
             }
             if (diff <= 0)
-                return false;
-
-            while (--diff && (!checkPrime(diff)));
-            nums[i] = nums[i] - diff;
+                return false; 
+            auto it = lower_bound(primes.begin(), primes.end(), diff); //binSearch on number greater or equal diff
+            if (it != primes.begin())
+         {
+                   it--;
+                nums[i] = nums[i] - *it;
+        }
+            
             if ( i && nums[i] <= nums[i - 1])
                 return false;
         }
