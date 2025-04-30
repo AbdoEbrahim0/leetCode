@@ -105,7 +105,7 @@
 //         return true;
 //     }
 // };
-// methode [2] //O(N)* O( log (M=diff)) * O(log log(M))
+// methode [2] //O(n) + O(m log n)
 class Solution {
 public:
     vector<int> findprimesbefore(int maxnumberinarray) {
@@ -155,3 +155,13 @@ public:
         return true;
     }
 };
+
+    //vector<int> v = { 4, 9, 6, 10 };
+    //vector<int> v = { 6,8,11,12 };
+    //vector<int> v = { 5,8,3};
+
+    //vector<int> v = { 2,2 };
+    //vector<int> v = { 11, 2, 10, 15, 19 };
+    //vector<int> v = { 4, 3, 7, 4 };
+    vector<int> v = { 15, 20, 17, 7, 16 };
+    //vector<int> v = { 18, 12, 14, 6 };
