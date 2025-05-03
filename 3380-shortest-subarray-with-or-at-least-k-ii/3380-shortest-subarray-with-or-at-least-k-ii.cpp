@@ -220,22 +220,85 @@
 //          return cur;
 //      }
 //  };
+//binary search O(n log n)
+// class Solution {
+// public:
+    
+//     void updat(int x, vector<int>& vis ,int val) //O(32) ~O(1)
+//     {//x=72  2^3 +2^6  8+64
+//         for (int i = 0; i < 32; i++)
+//         {
+//             if ((x >> i) & 1)
+//                 vis[i] += val;
+//         }
+//     }
+//     int getWindowVal(vector<int>& vis) //O(32)  ~O(1)
+//     {
+//         int sumOfOr = 0;
+//         for (int i = 0; i < 32; i++)
+//         {
+//             if(vis[i])
+//             sumOfOr = sumOfOr | (1<<i); //2^0  2^1  2^2
+//         }
+//         return sumOfOr;
+//     }
+
+//     bool ok(int mid, vector<int>& nums, int k)
+//     {
+//         vector<int> vis(32);
+//         for (int i = 0; i < mid; i++)  //O(mid)
+//         {
+//             updat(nums[i], vis, 1);
+//         }
+//         //if return true then length of Windows may be less than mid
+//         if (getWindowVal(vis) >= k)
+//             return true;
+//         //if false then continue on the array to find if there is any window Value >=k
+//         for (int i = mid; i < nums.size(); i++)  //O(n-mid)
+//         {
+//             updat(nums[i], vis, 1);//adding  new element 
+//             updat(nums[i-mid], vis, -1);// removing previous one 
+//             if (getWindowVal(vis) >= k)
+//                 return true;
+//         }
+//         return false;
+//     }
+
+//     int minimumSubarrayLength(vector<int>& nums, int k) { //Complexity O(n log n)
+//         int n = nums.size();
+//         int start = 1, end = n, cur = -1;
+//         int mid;
+//         while (start<=end)  // O(log n)
+//         {
+//             mid = (start + end) / 2;
+//             if (ok(mid,nums,k)) //O(n-mid) +O(mid) =O(n)
+//             {
+//                 cur = mid;
+//                 end =  mid- 1;
+//             }
+//             else
+//             {
+//                 start = mid + 1;
+//             }
+//         }
+//         return cur;
+//     }
+// };
 
 class Solution {
 public:
     
-    void updat(int x, vector<int>& vis ,int val)
-    {
+    void updat(int x, vector<int>& vis ,int val) //O(32) ~O(1)
+    {//x=72  2^3 +2^6  8+64
         for (int i = 0; i < 32; i++)
         {
             if ((x >> i) & 1)
                 vis[i] += val;
         }
     }
-    int getWindowVal(vector<int>& vis)
+    int getWindowVal(vector<int>& vis) //O(32)  ~O(1)
     {
         int sumOfOr = 0;
-        
         for (int i = 0; i < 32; i++)
         {
             if(vis[i])
@@ -243,10 +306,11 @@ public:
         }
         return sumOfOr;
     }
+
     bool ok(int mid, vector<int>& nums, int k)
     {
         vector<int> vis(32);
-        for (int i = 0; i < mid; i++)
+        for (int i = 0; i < mid; i++)  //O(mid)
         {
             updat(nums[i], vis, 1);
         }
@@ -254,7 +318,7 @@ public:
         if (getWindowVal(vis) >= k)
             return true;
         //if false then continue on the array to find if there is any window Value >=k
-        for (int i = mid; i < nums.size(); i++)
+        for (int i = mid; i < nums.size(); i++)  //O(n-mid)
         {
             updat(nums[i], vis, 1);//adding  new element 
             updat(nums[i-mid], vis, -1);// removing previous one 
@@ -263,24 +327,30 @@ public:
         }
         return false;
     }
-
-    int minimumSubarrayLength(vector<int>& nums, int k) {
+    int minimumSubarrayLength(vector<int>& nums, int k) { //Complexity O(n log n)
         int n = nums.size();
-        int start = 1, end = n, cur = -1;
-        int mid;
-        while (start<=end)
-        {
-            mid = (start + end) / 2;
-            if (ok(mid,nums,k))
+        vector<int> vis(32);
+        int indxElementToRemove = 0;
+        int start =0,end=0,cur=INT_MAX;
+        /*for (int i = 0; i < n; i++)
+        {*/
+            while (true)//removing
             {
-                cur = mid;
-                end =  mid- 1;
+                if (getWindowVal(vis) >= k && start < end)
+                {
+                    cur = min(cur, end - start);
+                    updat(nums[start++], vis, -1);
+                }
+                else
+                {
+                    if (end == n)
+                        break;
+                    updat(nums[end++], vis, 1);
+                    
+                }
             }
-            else
-            {
-                start = mid + 1;
-            }
-        }
-    return cur;
+            
+        //}
+        return (cur ==INT_MAX )? -1:cur;
     }
 };
