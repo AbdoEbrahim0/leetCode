@@ -306,34 +306,11 @@ public:
         }
         return sumOfOr;
     }
-
-    bool ok(int mid, vector<int>& nums, int k)
-    {
-        vector<int> vis(32);
-        for (int i = 0; i < mid; i++)  //O(mid)
-        {
-            updat(nums[i], vis, 1);
-        }
-        //if return true then length of Windows may be less than mid
-        if (getWindowVal(vis) >= k)
-            return true;
-        //if false then continue on the array to find if there is any window Value >=k
-        for (int i = mid; i < nums.size(); i++)  //O(n-mid)
-        {
-            updat(nums[i], vis, 1);//adding  new element 
-            updat(nums[i-mid], vis, -1);// removing previous one 
-            if (getWindowVal(vis) >= k)
-                return true;
-        }
-        return false;
-    }
     int minimumSubarrayLength(vector<int>& nums, int k) { //Complexity O(n log n)
         int n = nums.size();
         vector<int> vis(32);
         int indxElementToRemove = 0;
         int start =0,end=0,cur=INT_MAX;
-        /*for (int i = 0; i < n; i++)
-        {*/
             while (true)//removing
             {
                 if (getWindowVal(vis) >= k && start < end)
@@ -345,12 +322,9 @@ public:
                 {
                     if (end == n)
                         break;
-                    updat(nums[end++], vis, 1);
-                    
+                    updat(nums[end++], vis, 1);    
                 }
             }
-            
-        //}
         return (cur ==INT_MAX )? -1:cur;
     }
 };
