@@ -53,15 +53,16 @@
 //     }
 // };
 
+// total comp: O(m) + O(n) /and MEM comp for unordered_set : m
 // class Solution {
 // public:
 //     int maxCount(vector<int>& banned, int n, int maxSum) {
 //         int bannedSize = banned.size();
 //         int counter = 0;
-//         sort(banned.begin(), banned.end()); //O(m log m)
-//         for (int j = 1; j <= n; j++) //o(n)
+//         unordered_set<int> un_set(banned.begin(), banned.end());
+//         for (int j = 1; j <= n; j++) //O(n)
 //         {
-//             if (!(binary_search(banned.begin(),banned.end() ,j))) //O (log m)
+//             if (! un_set.count(j))//O(1)
 //             {
 //                 if (maxSum - j >= 0)
 //                 {
@@ -77,13 +78,15 @@
 class Solution {
 public:
     int maxCount(vector<int>& banned, int n, int maxSum) {
-        int bannedSize = banned.size();
+        bitset<10001> vis;
         int counter = 0;
-        unordered_set<int> un_set(banned.begin(), banned.end());
+        for (auto it : banned)
+        {
+            vis[it] = 1;
+        }
         for (int j = 1; j <= n; j++) //n
         {
-
-            if (! un_set.count(j))
+            if (!vis [j])
             {
                 if (maxSum - j >= 0)
                 {
