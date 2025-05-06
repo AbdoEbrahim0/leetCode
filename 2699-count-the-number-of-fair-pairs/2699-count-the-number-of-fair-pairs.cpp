@@ -19,30 +19,47 @@
 //
 //};
 // 2 pointers
+// class Solution {
+// public:
+//     long long solve(vector<int>& nums, int sum)
+//     {
+//         int i = 0, j = nums.size() - 1;
+//         long long cnt = 0;
+//         while (i<j)
+//         {
+//             if (nums[i] + nums[j] <= sum)
+//             {
+//                 cnt += (j - i);
+//                 i++;
+//             }
+//             else
+//                 j--;
+//         }
+//         return cnt;
+//     }
+//     long long countFairPairs(vector<int>& nums, int lower, int upper) {
+//         sort(nums.begin(), nums.end());
+//         return solve(nums, upper) - solve(nums, lower - 1);
+//     }
+
+// };
+//binary search 
 class Solution {
 public:
-    long long solve(vector<int>& nums, int sum)
-    {
-        int i = 0, j = nums.size() - 1;
-        long long cnt = 0;
-        while (i<j)
-        {
-            if (nums[i] + nums[j] <= sum)
-            {
-                cnt += (j - i);
-                i++;
-            }
-            else
-                j--;
-        }
-        return cnt;
-    }
-
     long long countFairPairs(vector<int>& nums, int lower, int upper) {
-        
+        long long counter = 0;
         sort(nums.begin(), nums.end());
+        int startRange, endRange;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            startRange = lower_bound(nums.begin() + i, nums.end(), lower - nums[i]) - nums.begin();
+            endRange= upper_bound(nums.begin() + i, nums.end(), upper- nums[i]) - nums.begin();
+            endRange--;
+            if(startRange<=endRange)
+            counter += ( endRange-startRange ) + 1 -(i>=startRange && i<=endRange);
+        }
         
-        return solve(nums, upper) - solve(nums, lower - 1);
+        return counter;
     }
 
 };
