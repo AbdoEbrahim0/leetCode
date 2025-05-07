@@ -51,10 +51,7 @@ public:
         sort(nums.begin(), nums.end());
         int startRange, endRange;
         for (int i = 0; i < nums.size(); i++)
-        {
-
-
-            
+        {            
             startRange = lower_bound(nums.begin() + i, nums.end(), lower - nums[i]) - nums.begin();
             endRange= upper_bound(nums.begin() + i, nums.end(), upper- nums[i]) - nums.begin();
             endRange--;
