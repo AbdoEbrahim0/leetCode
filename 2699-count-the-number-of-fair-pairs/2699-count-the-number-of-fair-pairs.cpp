@@ -43,7 +43,7 @@
 //     }
 
 // };
-//binary search 
+//binary search  O(n) * O(log n) *O(log n)
 class Solution {
 public:
     long long countFairPairs(vector<int>& nums, int lower, int upper) {
@@ -61,7 +61,6 @@ public:
                 //cout<<i<<"  "<<startRange<<"  "<<endRange<<"\n";
             if(startRange<=endRange)
             counter += ( endRange-startRange ) + 1 -(i>=startRange && i<=endRange);
-
             /*
               testcase [0,1,4,4,5,7] upper =6 lower =3
                 0  2  4     0>=2 Not  0>=54 Not  cnt=2 +1 =3
