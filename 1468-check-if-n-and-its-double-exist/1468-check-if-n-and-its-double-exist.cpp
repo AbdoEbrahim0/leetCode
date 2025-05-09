@@ -32,18 +32,36 @@
 //         return false;
 //     }
 // };
+
+
+// class Solution {
+// public:
+//     bool checkIfExist(vector<int>& arr) {
+//         unordered_map <int, bool> unMap;
+//         for (int i = 0; i < arr.size(); i++)
+//         {
+//             if (unMap.count(arr[i] * 2))
+//                 return true;
+//             if (arr[i]%2 ==0 && unMap.count(arr[i]/2)) //to avoid 0*2=0 2/0= undifined 
+//                 return true;
+//             unMap[arr[i]] = true;//to not check 2 times 
+//         }
+//     return false;
+//     }
+// };
+
 class Solution {
 public:
     bool checkIfExist(vector<int>& arr) {
-        unordered_map <int, bool> unMap;
+        unordered_set <int>unSet;
         for (int i = 0; i < arr.size(); i++)
         {
-            if (unMap.count(arr[i] * 2))
+            if (unSet.count(arr[i] * 2))
                 return true;
-            if (arr[i]%2 ==0 && unMap.count(arr[i]/2))
+            if (arr[i] % 2 == 0 && unSet.count(arr[i] / 2))
                 return true;
-            unMap[arr[i]] = true;//to not check 2 times 
+            unSet.insert(arr[i]);//to not check 2 times 
         }
-    return false;
+    return false ;
     }
 };
