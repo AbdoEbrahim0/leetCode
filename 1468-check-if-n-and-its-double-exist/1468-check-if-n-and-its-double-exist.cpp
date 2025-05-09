@@ -49,19 +49,38 @@
 //     return false;
 //     }
 // };
+// total Comp: O(N)
+// class Solution {
+// public:
+//     bool checkIfExist(vector<int>& arr) {
+//         unordered_set <int>unSet;
+//         for (int i = 0; i < arr.size(); i++) //o(N)
+//         {
+//             if (unSet.count(arr[i] * 2))//O(1)
+//                 return true;
+//             if (arr[i] % 2 == 0 && unSet.count(arr[i] / 2))
+//                 return true;
+//                 // applay that j is always not equal i
+//             unSet.insert(arr[i]);//to not check 2 times 
+//         }
+//     return false ;
+//     }
+// };
 
+// total Comp: O(N * log n) with caring with differnt complexity for sorting in different languages
 class Solution {
 public:
     bool checkIfExist(vector<int>& arr) {
-        unordered_set <int>unSet;
+        sort(arr.begin(), arr.end());
+
         for (int i = 0; i < arr.size(); i++)
         {
-            if (unSet.count(arr[i] * 2))
+            if (binary_search(arr.begin(), arr.begin() + i, arr[i] * 2))
                 return true;
-            if (arr[i] % 2 == 0 && unSet.count(arr[i] / 2))
+            if (binary_search(arr.begin()+i+1, arr.end(), arr[i] * 2))
                 return true;
-            unSet.insert(arr[i]);//to not check 2 times 
+
         }
-    return false ;
+        return false;
     }
 };
