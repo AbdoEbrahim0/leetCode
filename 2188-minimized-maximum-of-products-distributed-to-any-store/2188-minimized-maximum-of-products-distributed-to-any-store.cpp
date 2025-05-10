@@ -50,7 +50,7 @@ public:
             pr.push({ cur.quantity, cur.stores + 1 });
         }
 
-        auto top = pr.top();
-        return (top.quantity + top.stores - 1) / top.stores; // Ceil division without floating point
+        //auto top = pr.top();
+             return ceil(1.0 * pr.top().quantity / pr.top().stores);
     }
 };
