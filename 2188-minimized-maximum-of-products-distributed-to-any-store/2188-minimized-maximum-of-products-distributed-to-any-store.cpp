@@ -94,13 +94,15 @@ public:
                 {
                     mid = (st + end) / 2;
                     stores = 0;
-                    for (int i = 0; i < sizeQ; i++)
-                    {
-                    if (quantities[i] % mid != 0)
-                        stores = stores + (quantities[i] / mid) + 1;
-                    else
-                        stores = stores + (quantities[i] / mid);
-                    }
+                    // for (int i = 0; i < sizeQ; i++)
+                    // {
+                    // if (quantities[i] % mid != 0)
+                    //     stores = stores + (quantities[i] / mid) + 1;
+                    // else
+                    //     stores = stores + (quantities[i] / mid);
+                    // }
+                    for(auto x: quantities)
+                    {stores+=(x+mid-1 )/mid;}
 
                     if (stores <= n)
                     {
