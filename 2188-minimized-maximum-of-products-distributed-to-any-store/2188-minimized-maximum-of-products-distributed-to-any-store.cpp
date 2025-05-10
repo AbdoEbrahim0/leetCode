@@ -87,7 +87,7 @@ public:
     int minimizedMaximum(int n, vector<int>& quantities) {
         sort(quantities.begin(), quantities.end());
         int sizeQ = quantities.size();
-        int st = 1, end =1e5; //end = quantities[sizeQ - 1]
+        int st = 1, end =100000; //end = quantities[sizeQ - 1]
         int mid, cur;
         int stores = 0;
                 while (st<=end)
