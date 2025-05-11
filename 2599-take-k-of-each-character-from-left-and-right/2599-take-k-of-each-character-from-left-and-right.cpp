@@ -63,10 +63,9 @@ public:
         {
             arrR[s[z] - 'a']++;
             vR.emplace_back(arrR);
-                if (vR[0][0] >= k && vR[0][1] >= k && vR[0][2] >= k)
-                return true;
+                // if (vR[0][0] >= k && vR[0][1] >= k && vR[0][2] >= k)
+                // return true;
         }
-
 
         array <int, 3>arrL = { 0,0,0 };
         vector<array<int, 3>>vL;
@@ -76,11 +75,10 @@ public:
         {
             arrL[s[z] - 'a']++;
             vL.emplace_back(arrL);
-        if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
-                return true;
+        // if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
+        //         return true;
         }
-        //reverse(vL.begin(), vL.end());
-        
+
         for (int i = 0; i <= mid; i++)
         {
         if (vR[i][0] + vL[mid-i][0] >= k && vR[i][1] + vL[mid-i][1] >= k && vR[i][2] 
