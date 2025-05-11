@@ -54,7 +54,7 @@
 
 class Solution {
 public:
-    bool ok(int mid, string s, int k)
+    bool ok(int mid, string &s, int k)
     {
         array <int, 3>arrR = { 0,0,0 };
         for (int z = 0; z < mid; z++)
@@ -83,7 +83,7 @@ public:
         return false;
     }
 
-    int takeCharacters(string s, int k) {
+    int takeCharacters(string &s, int k) {
         int n = s.size();
         int start = 0, end = n, cur = -1;
         int mid ;
