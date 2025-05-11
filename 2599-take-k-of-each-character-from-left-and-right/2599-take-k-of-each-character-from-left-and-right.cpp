@@ -81,11 +81,11 @@ public:
                 return true;
 
         //int window=vL.size()-1;
- int window =mid;
-        for (int i = 0; i <= window; i++)
+ //int window =mid;
+        for (int i = 0; i <= mid; i++)
         {
-        if (vR[i][0] + vL[window-i][0] >= k && vR[i][1] + vL[window-i][1] >= k && vR[i][2] 
-            + vL[window-i][2] >= k)
+        if (vR[i][0] + vL[mid-i][0] >= k && vR[i][1] + vL[mid-i][1] >= k && vR[i][2] 
+            + vL[mid-i][2] >= k)
                 return true;
         }
         return false;
