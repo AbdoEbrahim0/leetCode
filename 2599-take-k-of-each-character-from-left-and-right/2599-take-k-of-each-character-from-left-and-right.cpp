@@ -76,13 +76,16 @@ public:
             arrL[s[z] - 'a']++;
             vL.emplace_back(arrL);
         }
-        reverse(vL.begin(), vL.end());
+        //reverse(vL.begin(), vL.end());
         if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
                 return true;
 
-        for (int i = 0; i < vL.size(); i++)
+        int window=vL.size()-1;
+
+        for (int i = 0; i <= window; i++)
         {
-            if (vR[i][0] + vL[i][0] >= k && vR[i][1] + vL[i][1] >= k && vR[i][2] + vL[i][2] >= k)
+        if (vR[i][0] + vL[window-i][0] >= k && vR[i][1] + vL[window-i][1] >= k && vR[i][2] 
+            + vL[window-i][2] >= k)
                 return true;
         }
         return false;
