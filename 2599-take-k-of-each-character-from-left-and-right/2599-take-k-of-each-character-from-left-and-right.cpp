@@ -57,40 +57,51 @@ public:
     bool ok(int mid, string s, int k)
     {
         array <int, 3>arrR = { 0,0,0 };
-        vector<array<int, 3>>vR;
-        vR.emplace_back(array<int, 3> {0, 0, 0});
+        //vector<array<int, 3>>vR;
+        //vR.emplace_back(array<int, 3> {0, 0, 0});
         for (int z = 0; z < mid; z++)
         {
             arrR[s[z] - 'a']++;
-            vR.emplace_back(arrR);
-                // if (vR[0][0] >= k && vR[0][1] >= k && vR[0][2] >= k)
-                // return true;
         }
 
+        if (arrR[0] >= k && arrR[1] >= k && arrR[2] >= k)
+                return true;
         array <int, 3>arrL = { 0,0,0 };
-        vector<array<int, 3>>vL;
+        //vector<array<int, 3>>vL;
         int sizeString = s.size();
-        vL.emplace_back(array<int, 3> {0, 0, 0}); //when no taking any substring 
-        for (int z = s.size() - 1; z >= sizeString - mid ; z--)
+        //vL.emplace_back(array<int, 3> {0, 0, 0}); //when no taking any substring 
+        for (int z = s.size() - 1; z >= sizeString - mid; z--)
         {
             arrL[s[z] - 'a']++;
-            vL.emplace_back(arrL);
-        // if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
-        //         return true;
         }
-
-        for (int i = 0; i <= mid; i++)
-        {
-        if (vR[i][0] + vL[mid-i][0] >= k && vR[i][1] + vL[mid-i][1] >= k && vR[i][2] 
-            + vL[mid-i][2] >= k)
+        if (arrL[0] >= k && arrL[1] >= k && arrL[2] >= k)
                 return true;
+
+        // for (int i = 0; i <= mid; i++)
+        // {
+        //     if (arrR[0] + arrL[0] >= k && arrR[1] + arrL[1] >= k && arrR[2]
+        //         + arrL[2] >= k)
+        //         return true;
+        // }
+        // Now, check combinations of left + right
+        // Sliding window: take `i` from left and `mid - i` from right
+        array<int, 3> total = arrR;  // Start with all left
+        for (int i = mid - 1; i >= 0; i--) {
+            // Remove s[i] from left, add s[n - (mid - i)] from right
+            total[s[i] - 'a']--;
+            total[s[s.size() - (mid - i)] - 'a']++;
+            
+            if (total[0] >= k && total[1] >= k && total[2] >= k) {
+                return true;
+            }
         }
         return false;
     }
+
     int takeCharacters(string s, int k) {
         int n = s.size();
         int start = 0, end = n, cur = -1;
-        int mid = 3 * k;
+        int mid ;
         //pre check if string is valid reduce run time to 1/2
         array<int, 3> total_counts = {0, 0, 0};
         for (char c : s) {
@@ -115,7 +126,7 @@ public:
     }
 };
 
-
+//[optimized gpt]
 // class Solution {
 // public:
 //     bool ok(int mid, const string &s, int k) {
