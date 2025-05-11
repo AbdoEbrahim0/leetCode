@@ -63,9 +63,9 @@ public:
         {
             arrR[s[z] - 'a']++;
             vR.emplace_back(arrR);
-            if (vR[z][0] >= k && vR[z][1] >= k && vR[z][2] >= k)
-                return true;
         }
+        if (vR[0][0] >= k && vR[0][1] >= k && vR[0][2] >= k)
+                return true;
 
         array <int, 3>arrL = { 0,0,0 };
         vector<array<int, 3>>vL;
@@ -91,6 +91,7 @@ public:
         int n = s.size();
         int start = 0, end = n, cur = -1;
         int mid = 3 * k;
+        //pre check if string is valid reduce run time to 1/2
         array<int, 3> total_counts = {0, 0, 0};
         for (char c : s) {
             total_counts[c - 'a']++;
