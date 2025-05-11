@@ -77,8 +77,8 @@ public:
             vL.emplace_back(arrL);
         }
         reverse(vL.begin(), vL.end());
-        // if (vL[z][0] >= k &&  vL[z][1] >= k && vL[z][2] >= k)
-        //         return true;
+        if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
+                return true;
 
         for (int i = 0; i < vL.size(); i++)
         {
