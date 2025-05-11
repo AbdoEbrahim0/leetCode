@@ -7,6 +7,7 @@
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AbdoEbrahim0/leetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2599-take-k-of-each-character-from-left-and-right](https://github.com/AbdoEbrahim0/leetCode/tree/master/2599-take-k-of-each-character-from-left-and-right) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Stack
 |  |
@@ -106,6 +107,7 @@
 | ------- |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
+| [2599-take-k-of-each-character-from-left-and-right](https://github.com/AbdoEbrahim0/leetCode/tree/master/2599-take-k-of-each-character-from-left-and-right) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 ## Dynamic Programming
 |  |
@@ -126,5 +128,6 @@
 ## Sliding Window
 |  |
 | ------- |
+| [2599-take-k-of-each-character-from-left-and-right](https://github.com/AbdoEbrahim0/leetCode/tree/master/2599-take-k-of-each-character-from-left-and-right) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 <!---LeetCode Topics End-->
