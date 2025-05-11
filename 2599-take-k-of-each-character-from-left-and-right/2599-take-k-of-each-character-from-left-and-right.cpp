@@ -57,32 +57,18 @@ public:
     bool ok(int mid, string s, int k)
     {
         array <int, 3>arrR = { 0,0,0 };
-        //vector<array<int, 3>>vR;
-        //vR.emplace_back(array<int, 3> {0, 0, 0});
         for (int z = 0; z < mid; z++)
-        {
             arrR[s[z] - 'a']++;
-        }
 
         if (arrR[0] >= k && arrR[1] >= k && arrR[2] >= k)
                 return true;
         array <int, 3>arrL = { 0,0,0 };
-        //vector<array<int, 3>>vL;
         int sizeString = s.size();
-        //vL.emplace_back(array<int, 3> {0, 0, 0}); //when no taking any substring 
         for (int z = s.size() - 1; z >= sizeString - mid; z--)
-        {
             arrL[s[z] - 'a']++;
-        }
+
         if (arrL[0] >= k && arrL[1] >= k && arrL[2] >= k)
                 return true;
-
-        // for (int i = 0; i <= mid; i++)
-        // {
-        //     if (arrR[0] + arrL[0] >= k && arrR[1] + arrL[1] >= k && arrR[2]
-        //         + arrL[2] >= k)
-        //         return true;
-        // }
         // Now, check combinations of left + right
         // Sliding window: take `i` from left and `mid - i` from right
         array<int, 3> total = arrR;  // Start with all left
@@ -90,7 +76,6 @@ public:
             // Remove s[i] from left, add s[n - (mid - i)] from right
             total[s[i] - 'a']--;
             total[s[s.size() - (mid - i)] - 'a']++;
-            
             if (total[0] >= k && total[1] >= k && total[2] >= k) {
                 return true;
             }
