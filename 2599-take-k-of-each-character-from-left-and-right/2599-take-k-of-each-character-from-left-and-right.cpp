@@ -91,7 +91,13 @@ public:
         int n = s.size();
         int start = 0, end = n, cur = -1;
         int mid = 3 * k;
-
+        array<int, 3> total_counts = {0, 0, 0};
+        for (char c : s) {
+            total_counts[c - 'a']++;
+        }
+        if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
+            return -1;
+        }
         while (start <= end)
         {
             mid = (start + end) >> 1; // divide on 2
