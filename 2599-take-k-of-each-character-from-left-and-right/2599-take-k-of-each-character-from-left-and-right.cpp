@@ -80,8 +80,8 @@ public:
         if (vL[0][0] >= k &&  vL[0][1] >= k && vL[0][2] >= k)
                 return true;
 
-        int window=vL.size()-1;
-
+        //int window=vL.size()-1;
+ int window =mid;
         for (int i = 0; i <= window; i++)
         {
         if (vR[i][0] + vL[window-i][0] >= k && vR[i][1] + vL[window-i][1] >= k && vR[i][2] 
