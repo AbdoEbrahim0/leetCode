@@ -51,7 +51,7 @@
 //         return cur;
 //     }
 // };
-
+// [optimized][improve DataSturcture] 
 // class Solution {
 // public:
 //     bool ok(int mid, string &s, int k)
@@ -110,6 +110,77 @@
 //         return cur;
 //     }
 // };
+
+class Solution {
+public:
+    int vis[3][100005];// 3 as row=0 > a row=1 >  b row=2 >  c 
+
+    bool ok(int mid,  int k,int n)
+    {
+        for (int i = 0; i <= mid; i++)
+        {
+            //left a +right a >=K 
+            int a = vis[0][i] + (vis[0][n] - vis[0][n - mid + i]);
+            int b = vis[1][i] + (vis[1][n] - vis[1][n - mid + i]);
+            int c = vis[2][i] + (vis[2][n] - vis[2][n - mid + i]);
+
+            if (a >= k && b >= k && c >= k)
+                return true;
+        }
+        
+        return false;
+    }
+    int takeCharacters(string s, int k) {
+        if(k==0) //testCase s="cc" k=0 output =0
+        return 0;
+        for (int i = 0; i < s.size(); i++)
+        {
+            vis[s[i] - 'a'][i+1]++; //plussed 1 as i need 0 as i dont take from left at all
+        }
+        //apply concept prefix sum  
+        for (int i = 0; i < 3; i++)
+        {
+            //we start from j=1 as index cant be negative
+            for (int j = 1; j <= s.size(); j++)
+            {
+                vis[i][j] +=   vis[i][j - 1] ;
+            }
+        }
+
+/*
+//aabaaaacaabc
+a:122345667888
+b:001111111122
+c:000000011112
+*/
+
+        int n = s.size();
+        int start = 0, end = n, cur = -1;
+        int mid ;
+        //pre check if string is valid reduce run time to 1/2
+        // array<int, 3> total_counts = { 0, 0, 0 };
+        // for (char c : s) {
+        //     total_counts[c - 'a']++;
+        // }
+        // if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
+        //     return -1;
+        // }
+
+        while (start <= end)
+        {
+            mid = (start + end) /2; // >>1 divide on 2
+            //mid = 10;
+            if (ok(mid, k,n)) //try to minimize
+            {
+                cur = mid;
+                end = mid - 1;
+            }
+            else
+                start = mid + 1;
+        }
+        return cur;
+    }
+};
 
 //[optimized gpt]
 // class Solution {
@@ -183,36 +254,36 @@
 //     }
 // };
 //[optimized deepseek]
-class Solution {
-public:
-    int takeCharacters(string s, int k) {
-        if (k == 0) return 0;
+// class Solution {
+// public:
+//     int takeCharacters(string s, int k) {
+//         if (k == 0) return 0;
         
-        array<int, 3> total = {0, 0, 0};
-        for (char c : s) {
-            total[c - 'a']++;
-        }
+//         array<int, 3> total = {0, 0, 0};
+//         for (char c : s) {
+//             total[c - 'a']++;
+//         }
         
-        if (total[0] < k || total[1] < k || total[2] < k) {
-            return -1;
-        }
+//         if (total[0] < k || total[1] < k || total[2] < k) {
+//             return -1;
+//         }
         
-        int max_window = 0;
-        array<int, 3> window_counts = {0, 0, 0};
-        int left = 0;
+//         int max_window = 0;
+//         array<int, 3> window_counts = {0, 0, 0};
+//         int left = 0;
         
-        for (int right = 0; right < s.size(); right++) {
-            char c = s[right];
-            window_counts[c - 'a']++;
+//         for (int right = 0; right < s.size(); right++) {
+//             char c = s[right];
+//             window_counts[c - 'a']++;
             
-            while (window_counts[c - 'a'] > total[c - 'a'] - k) {
-                window_counts[s[left] - 'a']--;
-                left++;
-            }
+//             while (window_counts[c - 'a'] > total[c - 'a'] - k) {
+//                 window_counts[s[left] - 'a']--;
+//                 left++;
+//             }
             
-            max_window = max(max_window, right - left + 1);
-        }
+//             max_window = max(max_window, right - left + 1);
+//         }
         
-        return s.size() - max_window;
-    }
-};
+//         return s.size() - max_window;
+//     }
+// };
