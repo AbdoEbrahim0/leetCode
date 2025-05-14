@@ -110,78 +110,108 @@
 //         return cur;
 //     }
 // };
+//forward stratgy 
+// class Solution {
+// public:
+//     int vis[3][100005];// 3 as row=0 > a row=1 >  b row=2 >  c 
 
-class Solution {
-public:
-    int vis[3][100005];// 3 as row=0 > a row=1 >  b row=2 >  c 
+//     bool ok(int mid,  int k,int n)
+//     {
+//         for (int i = 0; i <= mid; i++)
+//         {
+//             //left a +right a >=K 
+//             int a = vis[0][i] + (vis[0][n] - vis[0][n - mid + i]);
+//             int b = vis[1][i] + (vis[1][n] - vis[1][n - mid + i]);
+//             int c = vis[2][i] + (vis[2][n] - vis[2][n - mid + i]);
 
-    bool ok(int mid,  int k,int n)
-    {
-        for (int i = 0; i <= mid; i++)
-        {
-            //left a +right a >=K 
-            int a = vis[0][i] + (vis[0][n] - vis[0][n - mid + i]);
-            int b = vis[1][i] + (vis[1][n] - vis[1][n - mid + i]);
-            int c = vis[2][i] + (vis[2][n] - vis[2][n - mid + i]);
-
-            if (a >= k && b >= k && c >= k)
-                return true;
-        }
+//             if (a >= k && b >= k && c >= k)
+//                 return true;
+//         }
         
-        return false;
-    }
-    int takeCharacters(string s, int k) {
-        if(k==0) //testCase s="cc" k=0 output =0
-        return 0;
-        for (int i = 0; i < s.size(); i++)
-        {
-            vis[s[i] - 'a'][i+1]++; //plussed 1 as i need 0 as i dont take from left at all
-        }
-        //apply concept prefix sum  
-        for (int i = 0; i < 3; i++)
-        {
-            //we start from j=1 as index cant be negative
-            for (int j = 1; j <= s.size(); j++)
+//         return false;
+//     }
+//     int takeCharacters(string s, int k) {
+//         if(k==0) //testCase s="cc" k=0 output =0
+//         return 0;
+//         for (int i = 0; i < s.size(); i++)
+//         {
+//             vis[s[i] - 'a'][i+1]++; //plussed 1 as i need 0 as i dont take from left at all
+//         }
+//         //apply concept prefix sum  
+//         for (int i = 0; i < 3; i++)
+//         {
+//             //we start from j=1 as index cant be negative
+//             for (int j = 1; j <= s.size(); j++)
+//             {
+//                 vis[i][j] +=   vis[i][j - 1] ;
+//             }
+//         }
+
+// /*
+// //aabaaaacaabc
+// a:122345667888
+// b:001111111122
+// c:000000011112
+// */
+
+//         int n = s.size();
+//         int start = 0, end = n, cur = -1;
+//         int mid ;
+//         //pre check if string is valid reduce run time to 1/2
+//         array<int, 3> total_counts = { 0, 0, 0 };
+//         for (char c : s) {
+//             total_counts[c - 'a']++;
+//         }
+//         if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
+//             return -1;
+//         }
+
+//         while (start <= end)
+//         {
+//             mid = (start + end) /2; // >>1 divide on 2
+//             //mid = 10;
+//             if (ok(mid, k,n)) //try to minimize
+//             {
+//                 cur = mid;
+//                 end = mid - 1;
+//             }
+//             else
+//                 start = mid + 1;
+//         }
+//         return cur;
+//     }
+// };
+//backward stratgy
+class Solution {
+    public:
+        int takeCharacters(string s, int k) {
+            vector<int> vis(3);
+            for (char c : s)
+                vis[c - 'a']++;
+            //if num of a or b or c <k string is not valid ret -1
+            if (*min_element(vis.begin(), vis.end()) <k)
+                return -1;
+            
+            int l = 0, r = 0, ans=0;
+            while (true)
             {
-                vis[i][j] +=   vis[i][j - 1] ;
+                vis[s[r] - 'a']--;
+                // because string is valid from begingi as itt ddidnt return -1 at 1st
+                //we will take char by char from right until string became not valid
+                //then while will turn on and take char by char from left
+                //to make string valid again
+                while (*min_element(vis.begin(), vis.end()) < k)
+                {
+                vis[s[l] - 'a']++;
+                l++;
+                }
+                ans = max(ans, r - l + 1);
+                r++;
+                if(r>=s.size()) break;
             }
+            return s.size() - ans;
         }
-
-/*
-//aabaaaacaabc
-a:122345667888
-b:001111111122
-c:000000011112
-*/
-
-        int n = s.size();
-        int start = 0, end = n, cur = -1;
-        int mid ;
-        //pre check if string is valid reduce run time to 1/2
-        array<int, 3> total_counts = { 0, 0, 0 };
-        for (char c : s) {
-            total_counts[c - 'a']++;
-        }
-        if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
-            return -1;
-        }
-
-        while (start <= end)
-        {
-            mid = (start + end) /2; // >>1 divide on 2
-            //mid = 10;
-            if (ok(mid, k,n)) //try to minimize
-            {
-                cur = mid;
-                end = mid - 1;
-            }
-            else
-                start = mid + 1;
-        }
-        return cur;
-    }
-};
-
+    };
 //[optimized gpt]
 // class Solution {
 // public:
