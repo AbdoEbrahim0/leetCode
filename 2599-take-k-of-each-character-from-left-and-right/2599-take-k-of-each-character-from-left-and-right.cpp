@@ -158,13 +158,13 @@ c:000000011112
         int start = 0, end = n, cur = -1;
         int mid ;
         //pre check if string is valid reduce run time to 1/2
-        // array<int, 3> total_counts = { 0, 0, 0 };
-        // for (char c : s) {
-        //     total_counts[c - 'a']++;
-        // }
-        // if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
-        //     return -1;
-        // }
+        array<int, 3> total_counts = { 0, 0, 0 };
+        for (char c : s) {
+            total_counts[c - 'a']++;
+        }
+        if (total_counts[0] < k || total_counts[1] < k || total_counts[2] < k) {
+            return -1;
+        }
 
         while (start <= end)
         {
