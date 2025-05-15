@@ -69,10 +69,12 @@
 ## Tree
 |  |
 | ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -85,6 +87,7 @@
 ## Binary Tree
 |  |
 | ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 ## Monotonic Stack
 |  |
@@ -130,4 +133,16 @@
 | ------- |
 | [2599-take-k-of-each-character-from-left-and-right](https://github.com/AbdoEbrahim0/leetCode/tree/master/2599-take-k-of-each-character-from-left-and-right) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
+## Design
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
