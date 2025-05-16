@@ -1,7 +1,7 @@
 class Solution {
 public:
     long long pickGifts(vector<int>& gifts, int k) {
-        priority_queue<int > pr;
+        priority_queue<int ,vector<int>,less<>> pr;
         for (int i = 0; i < gifts.size(); i++)
         {
             pr.push(gifts[i]);
