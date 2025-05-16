@@ -31,10 +31,7 @@ public:
     long long pickGifts(vector<int>& gifts, int k) {
         make_heap(gifts.begin(), gifts.end());
         while (k-- )
-        {
-            // pop_heap(gifts.begin(),gifts.end());
-            // gifts.back() = sqrt(gifts.back());
-            
+        {    
             pop_heap(gifts.begin(), gifts.end());
             // Take the square root of the largest element
             gifts.back() = sqrt(gifts.back());
