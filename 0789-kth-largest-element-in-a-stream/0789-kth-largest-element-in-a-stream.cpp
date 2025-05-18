@@ -25,37 +25,47 @@
  * int param_1 = obj->add(val);
  */
 
+//without change default multiset
+// class KthLargest {
+// public:
+//     multiset<int , std::greater<>> myMultiSet;
+//     int index;
+//     KthLargest(int k, vector<int>& nums) {
+//         for (int& val : nums)
+//             myMultiSet.insert(val);
+//         int mulSetSize = myMultiSet.size();
+//         index = mulSetSize - k;// index 0 based so minus 1
+        
+//     }
+
+//      int add(int val) {
+//         myMultiSet.insert(val);
+//         index++;
+//         auto it = myMultiSet.begin();
+//         if (index >= 0 && index < myMultiSet.size()) {            
+//             std::advance(it, index);  // Move to the element at index
+//         }   
+//         return *it;
+//     }
+// };
+
 class KthLargest {
 
 public:
     //priority_queue <int, vector<int>, less<int>> pr;
-    //vector<int>result;
-    multiset<int> myMultiSet;
-    int index;
+    multiset<int, std::greater<>> myMultiSet;
+    int k;
     KthLargest(int k, vector<int>& nums) {
         for (int& val : nums)
             myMultiSet.insert(val);
         int mulSetSize = myMultiSet.size();
-        index = mulSetSize - k;// index 0 based so minus 1
-        
+        this->k= k-1;
     }
 
      int add(int val) {
         myMultiSet.insert(val);
-        index++;
-         
         auto it = myMultiSet.begin();
-        if (index >= 0 && index < myMultiSet.size()) {
-            
-            std::advance(it, index);  // Move to the element at index
-                          // Remove that element
-        }
-        
+        std::advance(it, k);  // Move to the element at index
         return *it;
     }
-    /*vector<int> getResult()
-    {
-        return result;
-    }*/
-
 };
