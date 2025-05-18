@@ -53,33 +53,8 @@
  * int param_1 = obj->add(val);
  */
 
-class KthLargest {
-
-public:
-    //priority_queue <int, vector<int>, less<int>> pr;
-    //vector<int>result;
-    multiset<int> myMultiSet;
-    int index;
-    KthLargest(int k, vector<int>& nums) {
-        for (int& val : nums)
-            myMultiSet.insert(val);
-        int mulSetSize = myMultiSet.size();
-        index = mulSetSize - k;// index 0 based so minus 1   
-    }
-     int add(int val) {
-        myMultiSet.insert(val);
-        index++;
-        auto it = myMultiSet.begin();
-        if (index >= 0 && index < myMultiSet.size()) {
-            std::advance(it, index);  // Move to the element at index
-        }
-        
-        return *it;
-    }
-
-};
+//with change deafult multiset to avoid combute index [sorting in Descending  order]
 // class KthLargest {
-
 // public:
 //     //priority_queue <int, vector<int>, less<int>> pr;
 //     multiset<int, std::greater<>> myMultiSet;
@@ -98,3 +73,28 @@ public:
 //         return *it;
 //     }
 // };
+
+class KthLargest {
+    priority_queue <int, vector<int>, greater<int>> pr;
+    int k;
+public:
+    
+    KthLargest(int k, vector<int>& nums) {
+       this->k=k;
+        for (int& val : nums)
+        {
+            pr.push(val);
+            if (pr.size() > k)
+                pr.pop();
+        }
+        
+    }
+
+    int add(int val) {
+        pr.push(val);
+        if (pr.size() > k)
+            pr.pop();
+        return  pr.top();
+    }
+};
+
