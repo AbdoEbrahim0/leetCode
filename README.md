@@ -35,6 +35,7 @@
 | [2179-most-beautiful-item-for-each-query](https://github.com/AbdoEbrahim0/leetCode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/AbdoEbrahim0/leetCode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/AbdoEbrahim0/leetCode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/2699-count-the-number-of-fair-pairs) |
@@ -68,6 +69,7 @@
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AbdoEbrahim0/leetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/AbdoEbrahim0/leetCode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Tree
@@ -148,6 +150,7 @@
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/AbdoEbrahim0/leetCode/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Data Stream
 |  |
