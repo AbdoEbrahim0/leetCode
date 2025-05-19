@@ -64,10 +64,10 @@ public:
             {
                 if(bits[i])
                 ones[i]++;
-                //maxi = max(ones[i], maxi);
+                maxi = max(ones[i], maxi);
             }
         }
-        maxi = *max_element(ones.begin(), ones.end());
+        //maxi = *max_element(ones.begin(), ones.end());
         return maxi;
     }
 };
