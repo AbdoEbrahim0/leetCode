@@ -52,22 +52,38 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int largestCombination(vector<int>& candidates) {
+//         vector<int>ones(24);
+        
+//         for (int& val : candidates)
+//         {
+//             bitset<24> bits (val);
+//             for (short i = 0; i < 24; i++)
+//             {
+//                 if(bits[i])
+//                 ones[i]++;
+//                 //maxi = max(ones[i], maxi);
+//             }
+//         }
+        
+//         return *max_element(ones.begin(), ones.end());
+//     }
+// };
+
 class Solution {
 public:
     int largestCombination(vector<int>& candidates) {
-        vector<int>ones(24);
-        
-        for (int& val : candidates)
-        {
-            bitset<24> bits (val);
-            for (short i = 0; i < 24; i++)
-            {
-                if(bits[i])
-                ones[i]++;
-                //maxi = max(ones[i], maxi);
+        int n = candidates.size();
+        int max_n = 0, cnt = 0;
+        for(int i = 0; i < 24; i++) {
+            cnt = 0;
+            for(int j = 0; j < n; j++) {
+                cnt += ((candidates[j] & (1<<i)) != 0) ? 1 : 0;
             }
+            max_n = max(max_n, cnt);
         }
-        
-        return *max_element(ones.begin(), ones.end());
+        return max_n;
     }
 };
