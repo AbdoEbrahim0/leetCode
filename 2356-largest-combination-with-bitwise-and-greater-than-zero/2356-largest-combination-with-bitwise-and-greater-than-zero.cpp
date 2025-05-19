@@ -31,17 +31,17 @@
 class Solution {
 public:
     int largestCombination(vector<int>& candidates) {
-        vector<bitset<32>> Bin;
+        vector<bitset<24>> Bin;
         for (int& val : candidates)
         {
-            Bin.emplace_back(bitset<32>(val));
+            Bin.emplace_back(bitset<24>(val));
         }
 
-        vector<int>ones(32);
+        vector<int>ones(24);
         int maxi = 0;
-            for (int i = 0; i < 32; i++)
+            for (int i = 0; i < 24; i++)
             {
-                for (bitset<32>& val : Bin)
+                for (bitset<24>& val : Bin)
                 {
                     if(val[i]&1)
                     ones[i]++;
