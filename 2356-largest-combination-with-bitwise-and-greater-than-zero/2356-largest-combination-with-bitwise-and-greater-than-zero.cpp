@@ -55,19 +55,19 @@
 class Solution {
 public:
     int largestCombination(vector<int>& candidates) {
-        vector<int>ones(32);
+        vector<int>ones(24);
         int maxi = 0;
         for (int& val : candidates)
         {
-            bitset<32> bits (val);
-            for (int i = 0; i < 32; i++)
+            bitset<24> bits (val);
+            for (int i = 0; i < 24; i++)
             {
                 if(bits[i])
                 ones[i]++;
-                maxi = max(ones[i], maxi);
+                //maxi = max(ones[i], maxi);
             }
         }
-        //maxi = *max_element(ones.begin(), ones.end());
+        maxi = *max_element(ones.begin(), ones.end());
         return maxi;
     }
 };
