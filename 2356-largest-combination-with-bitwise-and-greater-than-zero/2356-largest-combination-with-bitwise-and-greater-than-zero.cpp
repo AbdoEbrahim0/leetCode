@@ -36,7 +36,7 @@ public:
         {
             Bin.emplace_back(bitset<24>(val));
         }
-
+//change number of bit from 32 to 24 as max number can be 10^7
         vector<int>ones(24);
         int maxi = 0;
             for (int i = 0; i < 24; i++)
