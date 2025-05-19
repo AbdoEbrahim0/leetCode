@@ -60,7 +60,7 @@ public:
         for (int& val : candidates)
         {
             bitset<24> bits (val);
-            for (int i = 0; i < 24; i++)
+            for (short i = 0; i < 24; i++)
             {
                 if(bits[i])
                 ones[i]++;
