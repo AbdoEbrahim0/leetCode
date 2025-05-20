@@ -8,10 +8,10 @@ public:
         }
         bool valid = true;
         int counter = 0;
-        for (string word : words)
+        for (string &word : words)
         {
             valid = 1;
-            for (char ch : word)
+            for (char &ch : word)
             {
                 if (visted[ch - 'a'] == false)
                 {
