@@ -29,7 +29,7 @@ public:
         int maxElement = *max_element(nums.begin(), nums.end());
         int maxLength = 0, currentLength = 0;
         
-        for (int num : nums) {
+        for (int &num : nums) {
             if (num == maxElement) {
                 currentLength++;
                 maxLength = max(maxLength, currentLength);
