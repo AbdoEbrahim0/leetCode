@@ -9,7 +9,7 @@ public:
         int maxElement=*max_element(nums.begin(),nums.end());
         for (int i = 1; i < nums.size(); i++)
         {
-            if ((resOfAnding & nums[i]) >= resOfAnding && (resOfAnding & nums[i])>=maxElement)
+            if ( (resOfAnding & nums[i])>=maxElement)
             {
                 resOfAnding = resOfAnding & nums[i];
                 counter++;
@@ -17,7 +17,6 @@ public:
             }
             else
             {
-               // maxElement = max(nums[i], maxElement);
                 resOfAnding = nums[i];
                 counter = 1;
             }
