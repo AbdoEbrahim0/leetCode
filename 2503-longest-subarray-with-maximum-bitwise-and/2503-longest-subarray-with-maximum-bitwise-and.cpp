@@ -17,7 +17,7 @@ public:
             }
             else
             {
-                maxElement = max(nums[i], maxElement);
+               // maxElement = max(nums[i], maxElement);
                 resOfAnding = nums[i];
                 counter = 1;
             }
