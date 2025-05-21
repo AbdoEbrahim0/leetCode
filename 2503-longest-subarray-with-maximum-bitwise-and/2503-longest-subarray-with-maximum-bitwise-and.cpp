@@ -3,7 +3,7 @@ public:
     int longestSubarray(vector<int>& nums) {      
         int counter = 1;
         int resOfAnding = nums[0];
-        int maxi = 0;
+        int maxi = 1;
         int maxElement=*max_element(nums.begin(),nums.end());
         for (int i = 1; i < nums.size(); i++)
         {
@@ -19,7 +19,7 @@ public:
                 counter = 1;
             }
         }
-        return maxi = max(maxi, counter);
+        return maxi ;
     }
 };
 
