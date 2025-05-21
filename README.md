@@ -37,6 +37,7 @@
 | [2179-most-beautiful-item-for-each-query](https://github.com/AbdoEbrahim0/leetCode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/AbdoEbrahim0/leetCode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/AbdoEbrahim0/leetCode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
@@ -112,6 +113,7 @@
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/AbdoEbrahim0/leetCode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Prefix Sum
 |  |
@@ -168,4 +170,8 @@
 | ------- |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+## Brainteaser
+|  |
+| ------- |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/AbdoEbrahim0/leetCode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 <!---LeetCode Topics End-->
