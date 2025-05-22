@@ -55,13 +55,13 @@ class Solution {
 public:
     int findTheLongestSubstring(string s) {
         bool checkCharVowel[26] = {};
-
         for (char ch : std::string("aeiou"))
         {
                 checkCharVowel[ch - 'a'] = true;   
         }
         int mask = 0;
-        unordered_map<int, int>mp;
+        
+        map<int, int>mp;
         mp[mask] = -1;
         int ans = 0;
         for (int j = 0; j < s.size(); j++)
