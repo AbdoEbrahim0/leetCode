@@ -1,5 +1,36 @@
 // value of vector >> key 
 //  [state]        >> indx
+//oredered map
+// class Solution {
+// public:
+//     int findTheLongestSubstring(string s) {
+//         bool checkCharVowel[26] = {};
+//         for (char ch : std::string("aeiou"))
+//         {
+//             checkCharVowel[ch - 'a'] = true;
+//         }
+//         int ans = 0;
+//         vector<bool> vis(26) ;
+//         map<vector< bool>, int>mp;
+//         mp[vis] = -1;     
+//         for (int j = 0; j < s.size(); j++)
+//         {
+//             if (checkCharVowel[s[j] - 'a'])//flip current digit if vowel
+//             {
+//                 int idx = s[j] - 'a';
+//                 vis[idx] = !vis[idx];
+//             }
+//             if  (mp.find(vis) == mp.end())//if state  not exist store the new state in map
+//                 mp[vis] = j;
+//             else
+//             {
+//                 ans = max(ans, j - mp[vis]); //if state exist get ans where index of current char - index of known state
+//             }
+//         }
+//         return ans;
+//     }
+// };
+
 class Solution {
 public:
     int findTheLongestSubstring(string s) {
@@ -10,7 +41,7 @@ public:
         }
         int ans = 0;
         vector<bool> vis(26) ;
-        map<vector< bool>, int>mp;
+        unordered_map<vector< bool>, int>mp;
         mp[vis] = -1;
         
         
@@ -26,7 +57,7 @@ public:
                 mp[vis] = j;
             else
             {
-                ans = max(ans, j - mp[vis]);
+                ans = max(ans, j - mp[vis]); //if state exist get ans where index of current char - index of known state
             }
         }
         return ans;
