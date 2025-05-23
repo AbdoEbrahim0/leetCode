@@ -1,3 +1,38 @@
+// value of vector >> key 
+//  [state]        >> indx
+class Solution {
+public:
+    int findTheLongestSubstring(string s) {
+        bool checkCharVowel[26] = {};
+        for (char ch : std::string("aeiou"))
+        {
+            checkCharVowel[ch - 'a'] = true;
+        }
+        int ans = 0;
+        vector<bool> vis(26) ;
+        map<vector< bool>, int>mp;
+        mp[vis] = -1;
+        
+        
+        for (int j = 0; j < s.size(); j++)
+        {
+            if (checkCharVowel[s[j] - 'a'])//flip current digit if vowel
+            {
+                int idx = s[j] - 'a';
+                vis[idx] = !vis[idx];
+            }
+            
+            if  (mp.find(vis) == mp.end())//if state  not exist store the new state in map
+                mp[vis] = j;
+            else
+            {
+                ans = max(ans, j - mp[vis]);
+            }
+        }
+        return ans;
+    }
+};
+
 // class Solution {
 // public:
 //     int findTheLongestSubstring(string s) {
@@ -51,33 +86,34 @@
 //     }
 // };
 
-class Solution {
-public:
-    int findTheLongestSubstring(string s) {
-        bool checkCharVowel[26] = {};
-        for (char ch : std::string("aeiou"))
-        {
-                checkCharVowel[ch - 'a'] = true;   
-        }
-        int mask = 0;
+// class Solution {
+// public:
+//     int findTheLongestSubstring(string s) {
+//         bool checkCharVowel[26] = {};
+//         for (char ch : std::string("aeiou"))
+//         {
+//                 checkCharVowel[ch - 'a'] = true;   
+//         }
+//         int mask = 0;
         
-        map<int, int>mp;
-        mp[mask] = -1;
-        int ans = 0;
-        for (int j = 0; j < s.size(); j++)
-        {
-            if (checkCharVowel[s[j] - 'a'])
-            {
-                int idx = s[j] - 'a';
-                mask ^= (1 << idx);
-            }
-            if (mp.find(mask) == mp.end())
-                mp[mask]=j;
-            else
-            {
-                ans = max(ans, j - mp[mask]);
-            }
-        }
-        return ans;
-    }
-};
+//         map<int, int>mp;
+//         mp[mask] = -1;
+//         int ans = 0;
+//         for (int j = 0; j < s.size(); j++)
+//         {
+//             if (checkCharVowel[s[j] - 'a'])
+//             {
+//                 int idx = s[j] - 'a';
+//                 mask ^= (1 << idx);
+//             }
+//             if (mp.find(mask) == mp.end())
+//                 mp[mask]=j;
+//             else
+//             {
+//                 ans = max(ans, j - mp[mask]);
+//             }
+//         }
+//         return ans;
+//     }
+// };
+
