@@ -32,7 +32,7 @@
 
 class Solution {
 public:
-    int solve (int idx,int curOr,vector<int> nums,int sizeOfArray,int maxOr)
+    int solve (int idx,int curOr,vector<int> nums,short sizeOfArray,int maxOr)
     {
         if(idx==sizeOfArray)
         return maxOr==curOr;
@@ -49,7 +49,7 @@ public:
         {
             maxOr |= val;
         }
-        int n=nums.size();
+        short n=nums.size();
         return solve(0,0,nums,n,maxOr); 
     }
 };
