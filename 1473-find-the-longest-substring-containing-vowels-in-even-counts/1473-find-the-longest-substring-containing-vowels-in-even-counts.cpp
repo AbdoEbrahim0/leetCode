@@ -31,6 +31,39 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int findTheLongestSubstring(string s) {
+//         bool checkCharVowel[26] = {};
+//         for (char ch : std::string("aeiou"))
+//         {
+//             checkCharVowel[ch - 'a'] = true;
+//         }
+//         int ans = 0;
+//         vector<bool> vis(26) ;
+//         unordered_map<vector< bool>, int>mp;
+//         mp[vis] = -1;
+        
+        
+//         for (int j = 0; j < s.size(); j++)
+//         {
+//             if (checkCharVowel[s[j] - 'a'])//flip current digit if vowel to modify state
+//             {
+//                 int idx = s[j] - 'a';
+//                 vis[idx] = !vis[idx];
+//             }
+            
+//             if  (mp.find(vis) == mp.end())//if state  not exist store the new state in map
+//                 mp[vis] = j;
+//             else
+//             {
+//                 ans = max(ans, j - mp[vis]); //if state exist get ans where index of current char - index of known state
+//             }
+//         }
+//         return ans;
+//     }
+// };
+//optimized to deal with 5 digits as a state not 26 
 class Solution {
 public:
     int findTheLongestSubstring(string s) {
@@ -40,20 +73,30 @@ public:
             checkCharVowel[ch - 'a'] = true;
         }
         int ans = 0;
-        vector<bool> vis(26) ;
+        vector<bool> vis(5);
         unordered_map<vector< bool>, int>mp;
         mp[vis] = -1;
-        
-        
         for (int j = 0; j < s.size(); j++)
         {
-            if (checkCharVowel[s[j] - 'a'])//flip current digit if vowel
+            if (checkCharVowel[s[j] - 'a'])//flip current digit if vowel to modify state
             {
-                int idx = s[j] - 'a';
+                int idx ;
+                if (s[j] == 'a')
+                idx = 0;
+                else if (s[j] == 'e')//aeiou"
+                    idx = 1;
+                else if (s[j] == 'i')
+                    idx = 2;
+                else if (s[j] == 'o')
+                    idx = 3;
+                else if (s[j] == 'u')
+                    idx = 4;
+                //int idx = s[j] - 'a';
+
                 vis[idx] = !vis[idx];
             }
-            
-            if  (mp.find(vis) == mp.end())//if state  not exist store the new state in map
+
+            if (mp.find(vis) == mp.end())//if state  not exist store the new state in map
                 mp[vis] = j;
             else
             {
