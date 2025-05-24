@@ -32,7 +32,7 @@
 
 class Solution {
 public:
-    int solve (short idx,int curOr,vector<int> nums,short sizeOfArray,int maxOr)
+    int solve (short idx,int curOr,vector<int> &nums,short sizeOfArray,int maxOr)
     {
         if(idx==sizeOfArray)
         return maxOr==curOr;
