@@ -36,11 +36,10 @@ public:
     {
         if(idx==sizeOfArray)
         return maxOr==curOr;
-        int first=solve(idx+1 ,curOr,nums,sizeOfArray,maxOr) ;
-        int second =solve(idx+1 ,curOr | nums[idx],nums,sizeOfArray,maxOr);
-        return first + second;
-        
-
+        // int first=solve(idx+1 ,curOr,nums,sizeOfArray,maxOr) ;
+        // int second =solve(idx+1 ,curOr | nums[idx],nums,sizeOfArray,maxOr);
+        // return first + second;
+        return solve(idx+1 ,curOr,nums,sizeOfArray,maxOr)  + solve(idx+1 ,curOr | nums[idx],nums,sizeOfArray,maxOr);
     }
     int countMaxOrSubsets(vector<int>& nums) {
 
