@@ -64,29 +64,62 @@
 //     }
 // };
 
+// //O(n) +O(n) +o(m=number of segments)
+// class Solution {
+// public:
+//     bool canSortArray(vector<int>& nums) {
+//         unordered_map <int, int>mp;
+//         for (int& val : nums)//o(log2(1e8) ) =O(26.5) *O(n)
+//         {
+//             int x = val;
+//             int ct = 0;
+//             while (x != 0)
+//             {
+//                 if (x & 1) ct++;
+//                 x = x >> 1; //shift right
+//             }
+//             mp[val] = ct;
+//         }
+//         //divide into segments to check if sorted or not by min & max in each segment to compare
+//         int n = nums.size();
+//         int last = 0;
+//         vector<pair<int, int>> min_max;
+//         int mini = nums[0] ,maxi = nums[0];
+//         for (int i = 1; i < n ; i++) //o(n)
+//         {
+//             if (mp[nums[i]] != mp[nums[i - 1]])
+//             {
+                
+//                 min_max.push_back({ mini,maxi });
+//                 mini = nums[i], maxi = nums[i];
+//             }
+//             else
+//                 mini = min(mini, nums[i]), maxi = max(maxi, nums[i]);
+//         }
+//         min_max.push_back({ mini,maxi });
+//         for (int i = 0; i < min_max.size() -1; i++)
+//         {
+//             //2 4 8 | 15 30  >>min =2 max=8  |  min =15 max=30
+//             if (min_max[i].second > min_max[i + 1].first) 
+//                 return false;
+//         }
+//         return true ;
+//     }
+// };
+
+//O(n) +O(n) +o(m=number of segments)
 class Solution {
 public:
     bool canSortArray(vector<int>& nums) {
-        unordered_map <int, int>mp;
-        for (int& val : nums)//o(log2(1e8) ) =O(26.5) *O(n)
-        {
-            int x = val;
-            int ct = 0;
-            while (x != 0)
-            {
-                if (x & 1) ct++;
-                x = x >> 1; //shift right
-            }
-            mp[val] = ct;
-        }
-        //divide into segments to sort O(n log n)
+        
+        //divide into segments to check if sorted or not by min & max in each segment to compare
         int n = nums.size();
         int last = 0;
         vector<pair<int, int>> min_max;
         int mini = nums[0] ,maxi = nums[0];
         for (int i = 1; i < n ; i++) //o(n)
         {
-            if (mp[nums[i]] != mp[nums[i - 1]])
+            if (__builtin_popcount(nums[i])!= __builtin_popcount(nums[i - 1]))
             {
                 
                 min_max.push_back({ mini,maxi });
