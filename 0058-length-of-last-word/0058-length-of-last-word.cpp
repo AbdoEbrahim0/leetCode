@@ -3,7 +3,7 @@ public:
     int lengthOfLastWord(string s) {
         int  x =s.size() - 1;
 
-        while (! ((s[x] >= 'a' && s[x] <= 'z') || (s[x] >= 'A' && s[x] <= 'Z')))
+        while (! (isalpha(s[x])))
         {
             x--;
         }
