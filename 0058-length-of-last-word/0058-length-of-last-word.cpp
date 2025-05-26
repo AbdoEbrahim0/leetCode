@@ -8,17 +8,17 @@ public:
             x--;
         }
         int ct = 0;
-        /*for (int i = x ; i >= 0; i--)
+        for (int i = x ; i >= 0; i--)
         {
-            if ((  (s[x] >= 'a' && s[x] <= 'z') || (s[x] >= 'A' && s[x] <= 'Z')))
+            if ((  (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')))
                 ct++;
             else
                 break;
-        }*/
-        while (x >= 0 && isalpha(s[x])) {
-            ct++;
-            x--;
         }
+        // while (x >= 0 && isalpha(s[x])) {
+        //     ct++;
+        //     x--;
+        // }
         return ct;
     }
 };
