@@ -10,7 +10,7 @@ public:
         int ct = 0;
         for (int i = x ; i >= 0; i--)
         {
-            if ((  (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')))
+            if (( isalpha(s[i]) ))
                 ct++;
             else
                 break;
