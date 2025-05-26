@@ -8,17 +8,17 @@ public:
             x--;
         }
         int ct = 0;
-        for (int i = x ; i >= 0; i--)
-        {
-            if (( isalpha(s[i]) ))
-                ct++;
-            else
-                break;
-        }
-        // while (x >= 0 && isalpha(s[x])) {
-        //     ct++;
-        //     x--;
+        // for (int i = x ; i >= 0; i--)
+        // {
+        //     if (( isalpha(s[i]) ))
+        //         ct++;
+        //     else
+        //         break;
         // }
+        while (x >= 0 && isalpha(s[x])) {
+            ct++;
+            x--;
+        }
         return ct;
     }
 };
