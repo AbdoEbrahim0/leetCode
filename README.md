@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0058-length-of-last-word](https://github.com/AbdoEbrahim0/leetCode/tree/master/0058-length-of-last-word) |
+| [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -23,6 +24,7 @@
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/AbdoEbrahim0/leetCode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Array
@@ -62,6 +64,7 @@
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0009-palindrome-number) |
+| [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Two Pointers
 |  |
@@ -112,6 +115,7 @@
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [0476-number-complement](https://github.com/AbdoEbrahim0/leetCode/tree/master/0476-number-complement) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
