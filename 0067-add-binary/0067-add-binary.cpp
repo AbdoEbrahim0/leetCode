@@ -26,12 +26,12 @@ public:
     string addBinary(string a, string b) {
         
         
-        int carry = 0;
+        short carry = 0;
         if (!(a.size() > b.size()))
             swap(a, b);
         string result = a;
-        int i = a.size() - 1;
-        int j = b.size() - 1;
+        short i = a.size() - 1;
+        short j = b.size() - 1;
         short sum;
         //    "100"              100
         // "110010"           110010
