@@ -20,7 +20,7 @@
 //         return result;
 //     }
 // };
-
+//optimized sol ignore rest of string if it is longer
 class Solution {
 public:
     string addBinary(string a, string b) {
@@ -32,7 +32,7 @@ public:
         string result = a;
         int i = a.size() - 1;
         int j = b.size() - 1;
-        int sum;
+        short sum;
         //    "100"              100
         // "110010"           110010
         //expected "110110"   110110
