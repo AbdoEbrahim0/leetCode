@@ -60,7 +60,7 @@ public:
                 st.push(ch);
             }
 
-            if (ch == ')')
+            else if (ch == ')')
             {
                 if (st.size() && st.top() == '(')
                     st.pop();
