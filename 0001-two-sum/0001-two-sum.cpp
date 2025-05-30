@@ -21,7 +21,7 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         //unordered_set<int>st(nums.begin(), nums.end());
         unordered_map<int,int>mp;
-        vector<int>res(2);
+        //vector<int> res(2);
         for (int i = 0; i < nums.size(); i++)
         {
             mp[nums[i]]= i;
@@ -33,11 +33,13 @@ public:
             auto it = mp.find((target - nums[i]));
             if (it != mp.end()  && i !=(mp[target - nums[i]]))
             {
-                res[0]=(i);
+                /*res[0]=(i);
                 res[1]=(mp[target - nums[i]]);
-                break;
+                
+                break;*/
+                return { i,mp[target - nums[i]] };
             }
         }
-        return res;
+        return {};
     }
 };
