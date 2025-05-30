@@ -30,7 +30,7 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             int complement = target - nums[i];
             if (seen.count(complement)) {
-                return {seen[complement], i};
+                return { i,seen[complement]};
             }
             seen[nums[i]] = i;
         }
