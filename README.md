@@ -4,6 +4,7 @@
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/AbdoEbrahim0/leetCode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/AbdoEbrahim0/leetCode/tree/master/0020-valid-parentheses) |
 | [0058-length-of-last-word](https://github.com/AbdoEbrahim0/leetCode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
@@ -62,6 +63,7 @@
 ## Trie
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/AbdoEbrahim0/leetCode/tree/master/0014-longest-common-prefix) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Math
 |  |
