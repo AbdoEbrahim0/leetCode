@@ -1,3 +1,23 @@
+//most optimized
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if (nums.empty()) return 0;
+
+        int i = 0;  // index of last unique element
+        for (int j = 1; j < nums.size(); ++j) {
+            if (nums[j] != nums[i]) {
+                ++i;
+                nums[i] = nums[j];  // overwrite next unique
+            }
+        }
+        // No need to erase; problem usually only needs the count
+        return i + 1;
+    }
+};
+
+
+//O(log n)
 // class Solution {
 // public:
 //     int removeDuplicates(vector<int>& nums) {
@@ -21,8 +41,8 @@
 //         return nums.size();
 //     }
 // };
-
-// class Solution {
+//O(log n)
+// class Solution { 
 // public:
 //     int removeDuplicates(vector<int>& nums) {
 //         short sizeNums = nums.size();
@@ -44,7 +64,7 @@
 //         return nums.size();
 //     }
 // };
-//less optimized
+//less optimized O(n log n)
 // class Solution {
 // public:
 //     int removeDuplicates(vector<int>& nums) {
@@ -55,25 +75,20 @@
 //             res.emplace_back(*it);
 //         }
 //         nums = res;
-//         res.clear();
-        
+//         res.clear();        
 //         return nums.size();
 //     }
 // };
-//more optimized
-class Solution {
-public:
-    int removeDuplicates(vector<int>& nums) {
-        
-        set<int>nums2(nums.begin(), nums.end());
-        int i = 0;
-        for (int  val : nums2) {
-            nums[i++] = val;  // copy unique values back to nums
-        }
-
-        nums.erase(nums.begin() + i, nums.end());  // erase remaining duplicate tail
-
-        return nums.size();
-        
-    }
-};
+//less optimized O(n log n)
+// class Solution {
+// public:
+//     int removeDuplicates(vector<int>& nums) {       
+//         set<int>nums2(nums.begin(), nums.end());
+//         int i = 0;
+//         for (int  val : nums2) {
+//             nums[i++] = val;  // copy unique values back to nums
+//         }
+//         nums.erase(nums.begin() + i, nums.end());  // erase remaining duplicate tail
+//         return nums.size();
+//     }
+// };
