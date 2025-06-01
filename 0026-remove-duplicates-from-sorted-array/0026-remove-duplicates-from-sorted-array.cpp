@@ -44,18 +44,36 @@
 //         return nums.size();
 //     }
 // };
+//less optimized
+// class Solution {
+// public:
+//     int removeDuplicates(vector<int>& nums) {
+//         vector<int>res;
+//         set<int>nums2(nums.begin(), nums.end());
+//         for (auto it = nums2.begin(); it != nums2.end(); it++)
+//         {
+//             res.emplace_back(*it);
+//         }
+//         nums = res;
+//         res.clear();
+        
+//         return nums.size();
+//     }
+// };
+//more optimized
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        vector<int>res;
-        set<int>nums2(nums.begin(), nums.end());
-        for (auto it = nums2.begin(); it != nums2.end(); it++)
-        {
-            res.emplace_back(*it);
-        }
-        nums = res;
-        res.clear();
         
+        set<int>nums2(nums.begin(), nums.end());
+        int i = 0;
+        for (int val : nums2) {
+            nums[i++] = val;  // copy unique values back to nums
+        }
+
+        nums.erase(nums.begin() + i, nums.end());  // erase remaining duplicate tail
+
         return nums.size();
+        
     }
 };
