@@ -26,7 +26,7 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         short sizeNums = nums.size();
-        int *indcies=new int[sizeNums];
+        short *indcies=new short[sizeNums];
         fill_n(indcies, sizeNums, -1);
         short start = 0;
         for (short i = sizeNums - 1; i > 0; i--)
