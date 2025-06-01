@@ -22,26 +22,40 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int removeDuplicates(vector<int>& nums) {
+//         short sizeNums = nums.size();
+//         int *indcies=new int[sizeNums];
+//         fill_n(indcies, sizeNums, -1);
+//         short start = 0;
+//         for (short i = sizeNums - 1; i > 0; i--)
+//         {
+//             if (nums[i] == nums[i - 1])
+//             {
+//                 indcies[start++] = i;
+//             }
+//         }
+//         for (short z = 0; z <sizeNums ; z++)
+//         {
+//             if (indcies[z] >= 0)
+//                 nums.erase(nums.begin() + indcies[z]);
+//         }
+//         return nums.size();
+//     }
+// };
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        short sizeNums = nums.size();
-        int *indcies=new int[sizeNums];
-        fill_n(indcies, sizeNums, -1);
-        short start = 0;
-        for (short i = sizeNums - 1; i > 0; i--)
+        vector<int>res;
+        set<int>nums2(nums.begin(), nums.end());
+        for (auto it = nums2.begin(); it != nums2.end(); it++)
         {
-            if (nums[i] == nums[i - 1])
-            {
-                indcies[start++] = i;
-            }
-
+            res.emplace_back(*it);
         }
-        for (short z = 0; z <sizeNums ; z++)
-        {
-            if (indcies[z] >= 0)
-                nums.erase(nums.begin() + indcies[z]);
-        }
+        nums = res;
+        res.clear();
+        
         return nums.size();
     }
 };
