@@ -54,8 +54,8 @@ public:
             res.emplace_back(*it);
         }
         nums = res;
-        // res.clear();
+        res.clear();
         
-        return res.size();
+        return nums.size();
     }
 };
