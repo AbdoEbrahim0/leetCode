@@ -6,6 +6,7 @@
 | ------- |
 | [0014-longest-common-prefix](https://github.com/AbdoEbrahim0/leetCode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/AbdoEbrahim0/leetCode/tree/master/0020-valid-parentheses) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0058-length-of-last-word](https://github.com/AbdoEbrahim0/leetCode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -78,6 +79,7 @@
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0027-remove-element) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/AbdoEbrahim0/leetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -206,4 +208,8 @@
 |  |
 | ------- |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/AbdoEbrahim0/leetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## String Matching
+|  |
+| ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 <!---LeetCode Topics End-->
