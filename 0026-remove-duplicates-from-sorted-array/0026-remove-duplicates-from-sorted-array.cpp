@@ -67,7 +67,7 @@ public:
         
         set<int>nums2(nums.begin(), nums.end());
         int i = 0;
-        for (int val : nums2) {
+        for (int  val : nums2) {
             nums[i++] = val;  // copy unique values back to nums
         }
 
