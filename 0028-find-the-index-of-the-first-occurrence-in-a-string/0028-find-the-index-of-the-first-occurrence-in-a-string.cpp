@@ -112,24 +112,78 @@
 //        return -1;
 //     }
 // };
+//It's O(n * m) in worst-case, but fast enough for typical LeetCode constraints.
+// class Solution {
+// public:
+//     int strStr(string haystack, string needle) {
+//         int hSize = haystack.size();
+//         int nSize = needle.size();
+
+//         if (nSize == 0) return 0;
+//         if (hSize < nSize) return -1;
+
+//         for (int i = 0; i <= hSize - nSize; ++i) {
+//             int j = 0;
+//             while (j < nSize && haystack[i + j] == needle[j]) {
+//                 ++j;
+//             }
+//             if (j == nSize) return i; // Full match found
+//         }
+
+//         return -1;
+//     }
+// };
 
 class Solution {
 public:
-    int strStr(string haystack, string needle) {
-        int hSize = haystack.size();
-        int nSize = needle.size();
+    // Build the LPS array for the pattern (needle)
+    void buildLPS(const string& pattern, vector<int>& lps) {
+        int len = 0;  // length of the previous longest prefix suffix
+        lps[0] = 0;
 
-        if (nSize == 0) return 0;
-        if (hSize < nSize) return -1;
-
-        for (int i = 0; i <= hSize - nSize; ++i) {
-            int j = 0;
-            while (j < nSize && haystack[i + j] == needle[j]) {
-                ++j;
+        for (int i = 1; i < pattern.size(); ) {
+            if (pattern[i] == pattern[len]) {
+                len++;
+                lps[i] = len;
+                i++;
+            } else {
+                if (len != 0) {
+                    len = lps[len - 1];  // fallback
+                } else {
+                    lps[i] = 0;
+                    i++;
+                }
             }
-            if (j == nSize) return i; // Full match found
+        }
+    }
+
+    int strStr(string haystack, string needle) {
+        if (needle.empty()) return 0;
+
+        int n = haystack.size();
+        int m = needle.size();
+
+        // Step 1: build LPS array
+        vector<int> lps(m);
+        buildLPS(needle, lps);
+
+        // Step 2: search
+        int i = 0; // index for haystack
+        int j = 0; // index for needle
+
+        while (i < n) {
+            if (haystack[i] == needle[j]) {
+                i++; j++;
+                if (j == m) return i - j;  // match found
+            } else {
+                if (j > 0) {
+                    j = lps[j - 1];  // use the prefix info
+                } else {
+                    i++;
+                }
+            }
         }
 
-        return -1;
+        return -1;  // no match
     }
 };
