@@ -10,7 +10,7 @@ public:
                 nd = -1;
 
         }*/
-       auto x= haystack.find(needle);
+       int x= haystack.find(needle);
        
        return (x == string::npos) ? -1 : x;
            
