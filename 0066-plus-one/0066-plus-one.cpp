@@ -25,9 +25,9 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        int n = digits.size() - 1;
-        int carry = 1;
-        for (int i = n; i >= 0; i--)
+        short n = digits.size() - 1;
+        bool carry = 1;
+        for (short i = n; i >= 0; i--)
         {
             //{ 4, 3, 2, 1 }
             //{9,9,9,9}
@@ -42,7 +42,7 @@ public:
                 break;
             }
         }
-        if (carry == 1)
+        if (carry)
             digits.insert(digits.begin(), 1);
         return digits;
     }
