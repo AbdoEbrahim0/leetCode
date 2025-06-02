@@ -37,6 +37,7 @@
 | [0001-two-sum](https://github.com/AbdoEbrahim0/leetCode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0027-remove-element) |
+| [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -72,6 +73,7 @@
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0009-palindrome-number) |
+| [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Two Pointers
