@@ -16,9 +16,9 @@ public:
         {
             if (myNode->val == myNode->next->val)
             {
-                //ListNode* temp = myNode->next;
+                ListNode* temp = myNode->next;
                 myNode->next = myNode->next->next;
-                //delete temp;
+                delete temp;
             }
             else
                 myNode = myNode->next;
