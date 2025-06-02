@@ -25,8 +25,6 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        int power = 0;
-        
         int n = digits.size() - 1;
         int carry = 1;
         for (int i = n; i >= 0; i--)
@@ -36,7 +34,6 @@ public:
             if (digits[i]+carry > 9)
             {
                 digits[i] = 0;
-                
             }
             else
             {
