@@ -122,7 +122,7 @@ public:
         if (nSize == 0) return 0;
         if (hSize < nSize) return -1;
 
-        for (int i = 0; i <= hSize ; ++i) {
+        for (int i = 0; i <= hSize - nSize; ++i) {
             int j = 0;
             while (j < nSize && haystack[i + j] == needle[j]) {
                 ++j;
