@@ -20,7 +20,6 @@
 //             if (arr[i] == 1)
 //                 return i;
 //         }
-
 //         //ceck negative vals
 //         maxE = *max_element(negative.begin(), negative.end());
 //         vector< int >arr2(maxE + 1);
@@ -38,44 +37,68 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int singleNumber(vector<int>& nums) {
+//         //{ 4, 1, 2, 1, 2 };
+//         int n = nums.size();
+//         vector<int> negative ;
+//         //fill(negative.begin(), negative.end(), false);
+//         //int maxE = *max_element(nums.begin(), nums.end());
+//         //vector< int >arr (maxE + 1);
+//         int arr[3 * 10000] = {};
+//         //fill(negative.begin(), negative.end(), false);
+//         for (int i=0;i< n;i++)
+//         {
+//             if (nums[i] < 0)
+//                 negative.emplace_back(nums[i]*-1);
+//             else
+//                 arr[nums[i]]++;
+//         }
+//         for (int i = 0; i < 3 * 10000; i++)
+//         {
+//             if (arr[i] == 1)
+//                 return i;
+//         }
+
+//         //ceck negative vals
+//         //maxE = *max_element(negative.begin(), negative.end());
+//         //vector< int >arr2(maxE + 1);
+//         int arr2[3 * 10000] = {};
+//         for (int i = 0; i < negative.size(); i++)
+//         {
+//                 arr2[negative[i]]++;
+//         }
+//         for (int i = 0; i < 3 * 10000; i++)
+//         {
+//             if (arr2[i] == 1)
+//                 return i*-1;
+//         }
+        
+//         return 0;
+//     }
+// };
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        //{ 4, 1, 2, 1, 2 };
-        int n = nums.size();
-        vector<int> negative ;
-        //fill(negative.begin(), negative.end(), false);
-        //int maxE = *max_element(nums.begin(), nums.end());
-        //vector< int >arr (maxE + 1);
-        int arr[3 * 10000] = {};
-        //fill(negative.begin(), negative.end(), false);
-        for (int i=0;i< n;i++)
+        short n = nums.size();
+        short PostiveOccuranences[3 * 10000] = {};
+        short negativeOccurnences[3 * 10000] = {};
+        for (int i = 0; i < n; i++)
         {
             if (nums[i] < 0)
-                negative.emplace_back(nums[i]*-1);
+            negativeOccurnences[nums[i] * -1]++;
             else
-                arr[nums[i]]++;
+                PostiveOccuranences[nums[i]]++;
         }
         for (int i = 0; i < 3 * 10000; i++)
         {
-            if (arr[i] == 1)
+            if (PostiveOccuranences[i] == 1)
                 return i;
+            if (negativeOccurnences[i] == 1)
+                return i * -1;
         }
-
-        //ceck negative vals
-        //maxE = *max_element(negative.begin(), negative.end());
-        //vector< int >arr2(maxE + 1);
-        int arr2[3 * 10000] = {};
-        for (int i = 0; i < negative.size(); i++)
-        {
-                arr2[negative[i]]++;
-        }
-        for (int i = 0; i < 3 * 10000; i++)
-        {
-            if (arr2[i] == 1)
-                return i*-1;
-        }
-        
         return 0;
     }
 };
