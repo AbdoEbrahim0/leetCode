@@ -22,29 +22,28 @@
 //     }
 // };
 //Wrong Answer in case
-// class Solution {
-// public:
-//     int majorityElement(vector<int>& nums) {
-//         short n = nums.size();
-//         int limit = n / 2;
-//          unordered_map<int, int>u_mp;
-//          //vector<int> v = { 2,2,1,1,1,2,2 };
-//          for (int i = 0; i < n; i++)
-//          {
-//              if (u_mp.find(nums[i]) != u_mp.end()) //avg case : O(1) 
-//              {
-//                  u_mp[nums[i]] = u_mp[nums[i]] + 1;
-//              }
-//              else
-//                  u_mp.insert({ nums[i], 1});
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        int limit = n / 2;
+         unordered_map<int, int>u_mp;
+         for (int i = 0; i < n; i++)
+         {
+             if (u_mp.find(nums[i]) != u_mp.end()) //avg case : O(1) 
+             {
+                 u_mp[nums[i]] = u_mp[nums[i]] + 1;
+             }
+             else
+                 u_mp.insert({ nums[i], 1});
    
-//              if (u_mp[nums[i]] > limit)
-//                  return nums[i];
-//          }
+             if (u_mp[nums[i]] > limit)
+                 return nums[i];
+         }
 
-//         return 0;
-//     }
-// };
+        return 0;
+    }
+};
 
 // class Solution {
 // public:
@@ -76,23 +75,23 @@
 //     }
 // };
 
-class Solution {
-public:
-    int majorityElement(vector<int>& nums) {
-        int n = nums.size();
-        int limit = n / 2;
-         unordered_map<int, int>u_mp;
-         for (int i = 0; i < n; i++)
-         {
+// class Solution {
+// public:
+//     int majorityElement(vector<int>& nums) {
+//         int n = nums.size();
+//         int limit = n / 2;
+//          unordered_map<int, int>u_mp;
+//          for (int i = 0; i < n; i++)
+//          {
              
-            u_mp[nums[i]] ++;
-             if (u_mp[nums[i]] > limit)
-                 return nums[i];
-         }
+//             u_mp[nums[i]] ++;
+//              if (u_mp[nums[i]] > limit)
+//                  return nums[i];
+//          }
 
-        return 0;
-    }
-};
+//         return 0;
+//     }
+// };
 
 // class Solution {
 // public:
