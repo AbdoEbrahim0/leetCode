@@ -99,6 +99,26 @@
 //         return 0;
 //     }
 // };
+// [optimized ^3] this approach can only work in case of duplicated apperance  " every element appears twice"
+/*
+| A | B | A ^ B |
+| - | - | ----- |
+| 0 | 0 | 0     |
+| 0 | 1 | 1     |
+| 1 | 0 | 1     |
+| 1 | 1 | 0     |
+a ^ a = 0 (any number XOR itself = 0)
+
+a ^ 0 = a (any number XOR 0 = itself)
+
+XOR is commutative and associative:
+→ a ^ b ^ a = b (order doesnt matter)
+res = 0
+res ^= 2 → res = 2
+res ^= 2 → res = 0    // 2 ^ 2 = 0
+res ^= 3 → res = 3    // 0 ^ 3 = 3
+
+*/
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
