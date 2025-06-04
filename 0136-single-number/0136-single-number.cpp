@@ -1,4 +1,5 @@
 //doenst know maximum number of postive and negative
+//O(n)
 // class Solution {
 // public:
 //     int singleNumber(vector<int>& nums) {
@@ -38,41 +39,43 @@
 //     }
 // };
 
-class Solution {
-public:
-    int singleNumber(vector<int>& nums) {
-        //{ 4, 1, 2, 1, 2 };
-        int n = nums.size();
-        vector<int> negative ;
-        int arr[3 * 10000] = {};
-        for (int i=0;i< n;i++)
-        {
-            if (nums[i] < 0)
-                negative.emplace_back(nums[i]*-1);
-            else
-                arr[nums[i]]++;
-        }
-        for (int i = 0; i < 3 * 10000; i++)
-        {
-            if (arr[i] == 1)
-                return i;
-        }
-        //ceck negative vals
-        int arr2[3 * 10000] = {};
-        for (int i = 0; i < negative.size(); i++)
-        {
-                arr2[negative[i]]++;
-        }
-        for (int i = 0; i < 3 * 10000; i++)
-        {
-            if (arr2[i] == 1)
-                return i*-1;
-        }        
-        return 0;
-    }
-};
+// still O(n) but [optimized]
+// class Solution {
+// public:
+//     int singleNumber(vector<int>& nums) {
+//         //{ 4, 1, 2, 1, 2 };
+//         int n = nums.size();
+//         vector<int> negative ;
+//         int arr[3 * 10000] = {};
+//         for (int i=0;i< n;i++)
+//         {
+//             if (nums[i] < 0)
+//                 negative.emplace_back(nums[i]*-1);
+//             else
+//                 arr[nums[i]]++;
+//         }
+//         for (int i = 0; i < 3 * 10000; i++)
+//         {
+//             if (arr[i] == 1)
+//                 return i;
+//         }
+//         //ceck negative vals
+//         int arr2[3 * 10000] = {};
+//         for (int i = 0; i < negative.size(); i++)
+//         {
+//                 arr2[negative[i]]++;
+//         }
+//         for (int i = 0; i < 3 * 10000; i++)
+//         {
+//             if (arr2[i] == 1)
+//                 return i*-1;
+//         }        
+//         return 0;
+//     }
+// };
 
-// // know maximum number of postive and negative in array from constarins
+// still O(n) but [optimized ^2]
+//  know maximum number of postive and negative in array from constarins
 // class Solution {
 // public:
 //     int singleNumber(vector<int>& nums) {
@@ -96,3 +99,13 @@ public:
 //         return 0;
 //     }
 // };
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int res = 0;
+        for (int num : nums)
+            res ^= num;  // XOR cancels duplicates
+        return res;
+    }
+};
+
