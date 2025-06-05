@@ -31,9 +31,9 @@ public:
         {
             vector<int> rowVToADD;
             rowVToADD.emplace_back(1);
-            for (int j = 0; j + 1 < i; j++)
+            for (int j = 1; j < i; j++)
             {
-                rowVToADD.emplace_back(res[i-1][j] + res[i-1][j + 1]);
+                rowVToADD.emplace_back(res[i-1][j-1] + res[i-1][j-1 + 1]);
             }
             rowVToADD.emplace_back(1);
             res.emplace_back(rowVToADD);
