@@ -37,6 +37,7 @@
 | [0001-two-sum](https://github.com/AbdoEbrahim0/leetCode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0027-remove-element) |
+| [0035-search-insert-position](https://github.com/AbdoEbrahim0/leetCode/tree/master/0035-search-insert-position) |
 | [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0136-single-number) |
@@ -109,6 +110,7 @@
 ## Binary Search Tree
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/AbdoEbrahim0/leetCode/tree/master/0035-search-insert-position) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
