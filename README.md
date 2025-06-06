@@ -83,6 +83,7 @@
 | [0013-roman-to-integer](https://github.com/AbdoEbrahim0/leetCode/tree/master/0013-roman-to-integer) |
 | [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
+| [0070-climbing-stairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/0070-climbing-stairs) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Two Pointers
 |  |
@@ -173,6 +174,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/AbdoEbrahim0/leetCode/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
@@ -244,4 +246,8 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
