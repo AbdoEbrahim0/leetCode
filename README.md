@@ -44,6 +44,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -164,6 +165,7 @@
 | [0001-two-sum](https://github.com/AbdoEbrahim0/leetCode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/AbdoEbrahim0/leetCode/tree/master/0013-roman-to-integer) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -196,6 +198,7 @@
 ## Sliding Window
 |  |
 | ------- |
+| [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [2599-take-k-of-each-character-from-left-and-right](https://github.com/AbdoEbrahim0/leetCode/tree/master/2599-take-k-of-each-character-from-left-and-right) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Design
