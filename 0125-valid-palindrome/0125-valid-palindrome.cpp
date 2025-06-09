@@ -13,13 +13,14 @@ public:
         for (int i = n - 1; i>=0 && st < half; )
         {
             
-            if (s.empty())
-                return true;
+            
             if (tolower(s[st]) != tolower(s[i]))
                 return false;
             st++;
             i--;
         }
+        // if (s.empty())
+        //         return true;
         return true;
     }
 };
