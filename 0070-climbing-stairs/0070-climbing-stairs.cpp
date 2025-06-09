@@ -40,21 +40,38 @@ n=4
             // return dp[n];
             // if(dp[n])
             // return dp[n];
-//. Recursion with Memoization (Top-Down DP)
+// comp: O(N). Recursion with Memoization (Top-Down DP) with care to & operator to avoid MLE
+// class Solution {
+// private :
+// int myClimb(int n,vector<int> &dp)
+// {
+//     if (n<=2)   
+//         return n;
+//     if(dp[n]!=-1) 
+//     return dp[n];
+// return dp[n]=myClimb(n-1,dp) +myClimb(n-2,dp);
+// }
+// public:
+// int climbStairs(int n)
+//     {
+//     vector<int>dp(n+1,-1);
+//         return  myClimb(n,dp);
+//     }
+// };
+// comp: O(N) Tabulation (Bottom-Up DP)
 class Solution {
-private :
-int myClimb(int n,vector<int> &dp)
-{
-    if (n<=2)   
-        return n;
-    if(dp[n]!=-1) 
-    return dp[n];
-return dp[n]=myClimb(n-1,dp) +myClimb(n-2,dp);
-}
+
 public:
-int climbStairs(int n)
-    {
-    vector<int>dp(n+1,-1);
-        return  myClimb(n,dp);
+
+int climbStairs(int n) {
+
+    if (n <= 2) return n;
+vector<int> dp(n + 1);    
+    dp[1] = 1;
+    dp[2] = 2;
+    for (int i = 3; i <= n; ++i) {
+        dp[i] = dp[i - 1] + dp[i - 2];
     }
+    return dp[n];
+}
 };
