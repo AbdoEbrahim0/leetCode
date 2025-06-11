@@ -42,6 +42,7 @@
 | [0035-search-insert-position](https://github.com/AbdoEbrahim0/leetCode/tree/master/0035-search-insert-position) |
 | [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [0118-pascals-triangle](https://github.com/AbdoEbrahim0/leetCode/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
@@ -180,6 +181,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/AbdoEbrahim0/leetCode/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Sorting
