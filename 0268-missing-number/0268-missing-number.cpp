@@ -51,17 +51,35 @@
 //     }
 // };
 //bit manipulation   time: O(n) Space Complexity: O(1) 
+// class Solution {
+// public:
+//     int missingNumber(vector<int>& nums) {
+//         int n = nums.size();
+//         int xorAll = 0;
+//         for (int i = 0; i <= n; ++i) {
+//             xorAll ^= i;
+//         }
+//         for (int num : nums) {
+//             xorAll ^= num;
+//         }
+//         return xorAll;
+//     }
+// };
+//binary search  
+//is sorted aleardy will be (log n)and  if not (n log n)
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
-        int n = nums.size();
-        int xorAll = 0;
-        for (int i = 0; i <= n; ++i) {
-            xorAll ^= i;
+        sort(nums.begin(), nums.end()); // Ensure sorted for this method
+        int left = 0, right = nums.size();
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] > mid) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
         }
-        for (int num : nums) {
-            xorAll ^= num;
-        }
-        return xorAll;
+        return left;
     }
 };
