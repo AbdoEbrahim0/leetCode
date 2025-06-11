@@ -27,9 +27,9 @@ public:
             }
             else
             {
-                s = "";
+                
                 if (st < end)
-                    s += to_string(st) + "->" + to_string(end);
+                    s = to_string(st) + "->" + to_string(end);
                 else
                     s = to_string(st);
                 v.push_back(s);
