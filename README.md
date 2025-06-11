@@ -46,6 +46,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/AbdoEbrahim0/leetCode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [0228-summary-ranges](https://github.com/AbdoEbrahim0/leetCode/tree/master/0228-summary-ranges) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
@@ -169,6 +170,7 @@
 | [0001-two-sum](https://github.com/AbdoEbrahim0/leetCode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/AbdoEbrahim0/leetCode/tree/master/0013-roman-to-integer) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/AbdoEbrahim0/leetCode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -189,6 +191,7 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/AbdoEbrahim0/leetCode/tree/master/0217-contains-duplicate) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/AbdoEbrahim0/leetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/AbdoEbrahim0/leetCode/tree/master/2179-most-beautiful-item-for-each-query) |
