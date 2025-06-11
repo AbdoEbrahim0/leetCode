@@ -39,13 +39,29 @@
 //         return 0;
 //     }
 // };
-//time: O(n) Space Complexity: O(1) 
+//MATH  time: O(n) Space Complexity: O(1) 
+
+// class Solution {
+// public:
+//     int missingNumber(vector<int>& nums) {
+//         int n = nums.size();
+//         int expectedSum = n * (n + 1) / 2;
+//         int actualSum = accumulate(nums.begin(), nums.end(), 0);
+//         return expectedSum - actualSum;
+//     }
+// };
+//bit manipulation   time: O(n) Space Complexity: O(1) 
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
         int n = nums.size();
-        int expectedSum = n * (n + 1) / 2;
-        int actualSum = accumulate(nums.begin(), nums.end(), 0);
-        return expectedSum - actualSum;
+        int xorAll = 0;
+        for (int i = 0; i <= n; ++i) {
+            xorAll ^= i;
+        }
+        for (int num : nums) {
+            xorAll ^= num;
+        }
+        return xorAll;
     }
 };
