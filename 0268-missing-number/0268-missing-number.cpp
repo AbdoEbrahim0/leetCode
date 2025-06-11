@@ -1,3 +1,4 @@
+//time: O( n log n) Space Complexity: O(n) 
 // class Solution {
 // public:
 //     int missingNumber(vector<int>& nums) {
@@ -16,25 +17,35 @@
 //         return nums[i - 1] +1;
 //     }
 // };
-
+//time: O(  n) Space Complexity: O(n) 
+// class Solution {
+// public:
+//     int missingNumber(vector<int>& nums) {
+//         //wherre 1 <= n <= 1e4
+//         //bool arr[10001] = {};
+//         int n=nums.size();
+//         vector<bool>arr(n);
+//         //0 1  3
+//         for ( int i = 0; i < n; i++)
+//         {
+//             arr[nums[i]]= 1;      
+//         }
+//         int j;
+//         for (j = 0; j <= nums.size(); j++)
+//         {
+//             if(!arr[j])
+//                 return j;
+//         }
+//         return 0;
+//     }
+// };
+//time: O(n) Space Complexity: O(1) 
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
-        //wherre 1 <= n <= 1e4
-        //bool arr[10001] = {};
-        int n=nums.size();
-        vector<bool>arr(n);
-        //0 1  3
-        for ( int i = 0; i < n; i++)
-        {
-            arr[nums[i]]= 1;      
-        }
-        int j;
-        for (j = 0; j <= nums.size(); j++)
-        {
-            if(!arr[j])
-                return j;
-        }
-        return 0;
+        int n = nums.size();
+        int expectedSum = n * (n + 1) / 2;
+        int actualSum = accumulate(nums.begin(), nums.end(), 0);
+        return expectedSum - actualSum;
     }
 };
