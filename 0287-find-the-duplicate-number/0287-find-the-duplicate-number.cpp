@@ -1,28 +1,25 @@
-// // class Solution {
-// // public:
-// //     int findDuplicate(vector<int>& nums) {
-// //         int n = nums.size()-1;
-// //         int expectedSum = n * (n + 1) / 2;
-// //         int actualSum = accumulate(nums.begin(), nums.end(), 0);
-// //         return actualSum - expectedSum ;
-// //     }
-// // };
 
-// // class Solution {
-// // public:
-// //     int findDuplicate(vector<int>& nums) {
-// //         int n = nums.size()-1;
-// //         int xorAll = 0;
-// //         for (int i = 0; i <= n; ++i) {
-// //             xorAll ^= i;
-// //         }
-// //         for (int num : nums) {
-// //             xorAll ^= num;
-// //         }
-// //         return xorAll;
-// //     }
-// // };
-
+// time : O(n log n) space :O(n)
+// class Solution {
+// public:
+//     int findDuplicate(vector<int>& nums) {
+//         //3,1,3,4,2
+//         int n = nums.size() ;
+//         vector<int>copy(nums.begin(), nums.end()); //O(n)
+//         //1 2 3 3 4
+//         sort(copy.begin(), copy.end());//O(n log n)
+//         int  i;
+//         for ( i = 1; i < n; i++)
+//         {
+//             if (copy[i] == copy[i - 1])
+//             {
+//              break;   
+//             }
+//         }
+// return copy[i-1];
+//     }
+// };
+//[optimized]  time : O(n) space :O(1) 
 // class Solution {
 // public:
 //     int findDuplicate(vector<int>& nums) {
@@ -40,22 +37,22 @@
 //     }
 // };
 
+//can solve also using unordered map OR set time : O(n) space :O(n)
+
+//[optimized]  time : O(n) space :O(1) 
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        //3,1,3,4,2
-        int n = nums.size() ;
-        vector<int>copy(nums.begin(), nums.end());
-        //1 2 3 3 4
-        sort(copy.begin(), copy.end());
-        int  i;
-        for ( i = 1; i < n; i++)
+        int n = nums.size();
+        unordered_set <int >uSet;
+        int i;
+        for ( i = 0; i < n; i++)
         {
-            if (copy[i] == copy[i - 1])
-            {
-             break;   
-            }
+            if (uSet.count(nums[i]) )
+                break;
+            else
+                uSet.insert(nums[i]);
         }
-return copy[i-1];
+        return nums[i];
     }
 };
