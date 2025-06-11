@@ -1,18 +1,42 @@
+// class Solution {
+// public:
+//     int missingNumber(vector<int>& nums) {
+//         sort(nums.begin(), nums.end());
+//         if(nums[0] !=0) return 0;
+//         //0 1  3
+//         int i;
+//         int n= nums.size();
+//         for ( i = 1; i <n; i++)
+//         {
+//             if (nums[i] != nums[i - 1] + 1)
+//                 return nums[i] - 1;
+//         }
+//         if(n==1)
+//         return abs(nums[i-1]-1);
+//         return nums[i - 1] +1;
+//     }
+// };
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        if(nums[0] !=0) return 0;
+        //wherre 1 <= n <= 1e4
+        bool arr[10001] = {};
+
         //0 1  3
-        int i;
-        int n= nums.size();
-        for ( i = 1; i <n; i++)
+        
+        for ( int i = 0; i < nums.size(); i++)
         {
-            if (nums[i] != nums[i - 1] + 1)
-                return nums[i] - 1;
+            arr[nums[i]]= 1;
+                
         }
-        if(n==1)
-        return abs(nums[i-1]-1);
-        return nums[i - 1] +1;
+        int j;
+        for (j = 0; j <= nums.size(); j++)
+        {
+            if(!arr[j])
+                return j;
+
+        }
+        return 0;
     }
 };
