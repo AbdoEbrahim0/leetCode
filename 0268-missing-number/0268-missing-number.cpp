@@ -21,21 +21,19 @@ class Solution {
 public:
     int missingNumber(vector<int>& nums) {
         //wherre 1 <= n <= 1e4
-        bool arr[10001] = {};
-
+        //bool arr[10001] = {};
+        int n=nums.size();
+        vector<bool>arr(n);
         //0 1  3
-        
-        for ( int i = 0; i < nums.size(); i++)
+        for ( int i = 0; i < n; i++)
         {
-            arr[nums[i]]= 1;
-                
+            arr[nums[i]]= 1;      
         }
         int j;
         for (j = 0; j <= nums.size(); j++)
         {
             if(!arr[j])
                 return j;
-
         }
         return 0;
     }
