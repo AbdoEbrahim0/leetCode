@@ -39,20 +39,44 @@
 
 //can solve also using unordered map OR set time : O(n) space :O(n)
 
-//[optimized]  time : O(n) space :O(1) 
+//[optimized]  time : O(n) space :O(n) 
+// class Solution {
+// public:
+//     int findDuplicate(vector<int>& nums) {
+//         int n = nums.size();
+//         unordered_set <int >uSet;
+//         int i;
+//         for ( i = 0; i < n; i++)
+//         {
+//             if (uSet.count(nums[i]) )
+//                 break;
+//             else
+//                 uSet.insert(nums[i]);
+//         }
+//         return nums[i];
+//     }
+// };
+// Alg : Floyd's Cycle Detection   //[optimized]  time : O(n) space :O(1)
+// https://www.youtube.com/watch?v=PvrxZaH_eZ4 
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int n = nums.size();
-        unordered_set <int >uSet;
-        int i;
-        for ( i = 0; i < n; i++)
-        {
-            if (uSet.count(nums[i]) )
-                break;
-            else
-                uSet.insert(nums[i]);
+        int slow = nums[0];
+        int fast = nums[0];
+
+        // Phase 1: detect intersection point
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
+
+        // Phase 2: find entrance to cycle
+        slow = nums[0];
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
         }
-        return nums[i];
+
+        return slow; // or fast
     }
 };
