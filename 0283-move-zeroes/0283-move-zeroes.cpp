@@ -10,17 +10,20 @@
 //         }
 //     }
 // };
-
+// if we dont care about sorting
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
         
         int n = nums.size();
         int lastIndx = 0;
-        for (int j = 0; j < n; j++)
+        short numOfZeros=0;
+        for (int j = 0; j < n && lastIndx<(n-numOfZeros) ; j++)
         {
             if (nums[j] != 0)
                 swap(nums[lastIndx++], nums[j]);
+            else
+                numOfZeros++;   
         }
         
         for (int j = lastIndx; j < n; j++)
