@@ -34,6 +34,8 @@
 // };
 
 //2 pointers best for interview 
+// Time complexity: O(n)
+// Space complexity: O(1)
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
@@ -44,7 +46,6 @@ public:
             if (nums[j] != 0)
             {
                 nums[lastNonZeroIndex++] = nums[j];
-                //  lastNonZeroIndex ++;
             }
         }
         for (; lastNonZeroIndex < n   ; )
