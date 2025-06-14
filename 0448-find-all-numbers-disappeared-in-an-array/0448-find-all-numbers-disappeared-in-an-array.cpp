@@ -68,12 +68,12 @@
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
-        bool arr[100001] = {};
-        //4,3,2,7,8,2,3,1
-        // 1,2,3,4,5,6,7,8
-        // 1,2,3,4,7,8
-        vector<int>res;
+        //bool arr[100001] = {};
         int n = nums.size();
+        vector<bool> arr(n);
+        
+        vector<int>res;
+        
 
         for (int j = 0; j < n; j++)
         {
