@@ -35,8 +35,8 @@ public:
             //g[i] = g[i] - s[indxS];
             // found equal or bigger than needed
             
-            // if (satisfied == gSize)
-            //     return satisfied;
+            if (satisfied == gSize)
+                return satisfied;
         }
         return satisfied;
     }
