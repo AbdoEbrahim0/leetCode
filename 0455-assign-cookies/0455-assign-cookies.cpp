@@ -35,73 +35,21 @@
 //     }
 // };
 
-
-// class Solution {
-// public:
-//     int findContentChildren(vector<int>& g, vector<int>& s) {
-//         sort(g.begin(), g.end());
-//         sort(s.begin(), s.end());
-//         int gSize = g.size();
-//         int sSize = s.size();
-//         int indxS = 0;
-//         int satisfied = 0;
-//         // g = [1, 2, 3], s = [1, 1] out:1
-//         //Input: g = [1,2], s = [1,2,3] out:2
-//         //Input: g = [1,2,3], s = [3] out:1
-        
-//         //vector<int> g = { 10,9,8,7 };
-//         //vector<int> s = { 5,6,7,8 };
-//         //int maxElement = -1;
-        
-//         for (int i = 0; i < gSize && indxS < sSize;)
-//         {   
-//             if (s[indxS] < g[i])
-//                 indxS++;
-//             else if(s[indxS] >= g[i])
-//             {
-//                 satisfied++;
-//                 i++;
-//                 indxS++;
-//             }
-            
-//         }
-//         return satisfied;
-//     }
-// };
+// 2 pointers greedy sol
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
+                
         sort(g.begin(), g.end());
         sort(s.begin(), s.end());
-        int gSize = g.size();
-        int sSize = s.size();
-        int indxS = 0;
-        int satisfied = 0;
-        for (; satisfied < gSize && indxS < sSize;)
-        {   
-             if(s[indxS] >= g[satisfied])
-            {
-                satisfied++;
+        int child = 0, cookie = 0;
+
+        while (child < g.size() && cookie < s.size()) {
+            if (s[cookie] >= g[child]) {
+                child++;  // Child is satisfied
             }
-                indxS++;
-        }
-        return satisfied;
+                cookie++;  // Try next cookie regardless
+                    }
+            return child;  // Number of satisfied children
     }
 };
-// class Solution {
-// public:
-//     int findContentChildren(vector<int>& g, vector<int>& s) {
-                
-//         sort(g.begin(), g.end());
-//         sort(s.begin(), s.end());
-//         int child = 0, cookie = 0;
-
-//         while (child < g.size() && cookie < s.size()) {
-//             if (s[cookie] >= g[child]) {
-//                 child++;  // Child is satisfied
-//             }
-//                 cookie++;  // Try next cookie regardless
-//                     }
-//             return child;  // Number of satisfied children
-//     }
-// };
