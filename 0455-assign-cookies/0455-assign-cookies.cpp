@@ -73,10 +73,10 @@ public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
         sort(g.begin(), g.end());
         sort(s.begin(), s.end());
-        short gSize = g.size();
-        short sSize = s.size();
-        short indxS = 0;
-        short satisfied = 0;
+        int gSize = g.size();
+        int sSize = s.size();
+        int indxS = 0;
+        int satisfied = 0;
         for (; satisfied < gSize && indxS < sSize;)
         {   
              if(s[indxS] >= g[satisfied])
