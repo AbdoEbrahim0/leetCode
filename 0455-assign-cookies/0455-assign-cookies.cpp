@@ -25,18 +25,12 @@ public:
             {
                 break;
             }
-              //s[indxS]>=g[i];
             if (i < gSize && g[i] <= s[indxS])
             {
                 satisfied++;
-                s[indxS] = 0;
+                //s[indxS] = 0;
+                indxS++;
             }
-                
-            //g[i] = g[i] - s[indxS];
-            // found equal or bigger than needed
-            
-            if (satisfied == gSize)
-                return satisfied;
         }
         return satisfied;
     }
