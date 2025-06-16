@@ -77,22 +77,11 @@ public:
         int sSize = s.size();
         int indxS = 0;
         int satisfied = 0;
-        // g = [1, 2, 3], s = [1, 1] out:1
-        //Input: g = [1,2], s = [1,2,3] out:2
-        //Input: g = [1,2,3], s = [3] out:1
-        
-        //vector<int> g = { 10,9,8,7 };
-        //vector<int> s = { 5,6,7,8 };
-        //int maxElement = -1;
-        
-        for (int i = 0; i < gSize && indxS < sSize;)
+        for (; satisfied < gSize && indxS < sSize;)
         {   
-            
-            
-             if(s[indxS] >= g[i])
+             if(s[indxS] >= g[satisfied])
             {
                 satisfied++;
-                i++;
             }
                 indxS++;
         }
