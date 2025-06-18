@@ -26,12 +26,19 @@ public:
         {
             for (int i = 0; r > 1 && i < r; i++)
             {
-                if (grid[i][j] == 1)
+                while(i + 1 < r && grid[i][j] ==0)
+                i++;
+                while (i + 1 < r && grid[i][j] == 1)
                 {
                     //totalStrides += 4;
                     if (i + 1 < r && grid[i+1][j] == 1)
                         totalStrides-=2;
+                i++;
                 }
+                // if ( i+1<r && grid[i][j] == 1)
+                //         totalStrides-=2;
+                //break;
+
             }
         }
         return totalStrides;
