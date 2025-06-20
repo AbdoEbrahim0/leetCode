@@ -34,8 +34,10 @@
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-        int arr[10001] = {};
-        
+        //int arr[10001] = {};
+        short maxE = *max_element(nums2.begin(), nums2.end());
+        vector<int>arr(maxE+1);
+        //fill(arr.begin(), arr.end(), -1);
         // nums1 = [4,1,2], nums2 = [1,3,4,2]
         short n2Size = nums2.size();
         short n1Size =nums1.size();
