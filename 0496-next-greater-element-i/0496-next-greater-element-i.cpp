@@ -67,12 +67,48 @@
 //monotonic stack  [optimized]
 // Time: O(n1)+ O(n2-startIndx)  space: O(maxE) 
 
+// class Solution {
+// public:
+//     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+//         short n1Size = nums1.size();
+//         short n2Size = nums2.size();
+//         vector<int>ans(n1Size);
+//         stack<int> stk;
+//         // nums1 = [4,1,2], nums2 = [1,3,4,2]
+//         short maxE = *max_element(nums2.begin(), nums2.end());
+//         vector<int>arr(maxE + 1);
+//         fill(arr.begin(), arr.end(), -1);
+//         for (int i = n2Size-1; i >=0; i--)
+//         {
+//             while(stk.size() && nums2[i] > stk.top())
+//                 stk.pop();
+        
+//             if (stk.size() && nums2[i] < stk.top())
+//             {
+//                 arr[nums2[i]] = stk.top();
+//                 stk.push(nums2[i]);
+//             }
+//             stk.push(nums2[i]);
+//         }
+//         for (int j = 0; j < n1Size; j++)
+//         {
+//             ans[j] = arr[nums1[j]];
+//         }
+//         return ans;
+
+//     }
+// };
+
+//monotonic stack  [MEM optimized]
+// Time: O(n1)+ O(n2-startIndx)  space: O(maxE) 
+
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
         short n1Size = nums1.size();
         short n2Size = nums2.size();
-        vector<int>ans(n1Size);
+        //vector<int>ans(n1Size);
+        
         stack<int> stk;
         // nums1 = [4,1,2], nums2 = [1,3,4,2]
         short maxE = *max_element(nums2.begin(), nums2.end());
@@ -82,7 +118,7 @@ public:
         {
             while(stk.size() && nums2[i] > stk.top())
                 stk.pop();
-        
+            
             if (stk.size() && nums2[i] < stk.top())
             {
                 arr[nums2[i]] = stk.top();
@@ -92,9 +128,8 @@ public:
         }
         for (int j = 0; j < n1Size; j++)
         {
-            ans[j] = arr[nums1[j]];
+            nums1[j] = arr[nums1[j]];
         }
-        return ans;
-
+        return nums1;
     }
 };
