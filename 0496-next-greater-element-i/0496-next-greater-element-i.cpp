@@ -29,7 +29,7 @@
 //         return ans;
 //     }
 // };
-
+//[optimized] dynamic vector
 //O(n2) + O(n1)*O(n2-startIndx)  space: O(maxE)
 // class Solution {
 // public:
@@ -64,14 +64,15 @@
 
 //     }
 // };
-// Time: O(n1)+ O(n2-startIndx)  space: O(maxE)
+//monotonic stack  [optimized]
+// Time: O(n1)+ O(n2-startIndx)  space: O(maxE) 
+
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
         short n1Size = nums1.size();
         short n2Size = nums2.size();
         vector<int>ans(n1Size);
-        //fill(ans.begin(), ans.end(), -1);
         stack<int> stk;
         // nums1 = [4,1,2], nums2 = [1,3,4,2]
         short maxE = *max_element(nums2.begin(), nums2.end());
@@ -79,17 +80,11 @@ public:
         fill(arr.begin(), arr.end(), -1);
         for (int i = n2Size-1; i >=0; i--)
         {
-            //if (stk.empty())
-            //{
-                
-           // }
-           
-                while(stk.size() && nums2[i] > stk.top())
-                    stk.pop();
-            
+            while(stk.size() && nums2[i] > stk.top())
+                stk.pop();
+        
             if (stk.size() && nums2[i] < stk.top())
             {
-                //ans[i] = stk.top();
                 arr[nums2[i]] = stk.top();
                 stk.push(nums2[i]);
             }
