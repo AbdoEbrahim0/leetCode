@@ -32,6 +32,7 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
+| [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/AbdoEbrahim0/leetCode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Array
@@ -59,6 +60,7 @@
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
 | [0463-island-perimeter](https://github.com/AbdoEbrahim0/leetCode/tree/master/0463-island-perimeter) |
 | [0485-max-consecutive-ones](https://github.com/AbdoEbrahim0/leetCode/tree/master/0485-max-consecutive-ones) |
+| [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
