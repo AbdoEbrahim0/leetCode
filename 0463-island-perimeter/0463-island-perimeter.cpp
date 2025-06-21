@@ -94,6 +94,7 @@ public:
         int totalStrides ;
         totalStrides = 0;
         // row scanning for 1's
+        
         for (int i = 0; i < r; i++)
         {   
             for (int j = 0; j < c; j++)
@@ -104,7 +105,8 @@ public:
                 {
                     totalStrides += 4;
                     if (j + 1 < c && grid[i][j + 1] == 1)
-                        totalStrides-=2;       
+                        totalStrides-=2;   
+                            
                 }
             }
         }
