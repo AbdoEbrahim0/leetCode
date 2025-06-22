@@ -35,6 +35,40 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     // [1,4,3,3,2]
+//     int longestMonotonicSubarray(vector<int>& nums) {
+//         int mx = 1;
+        
+//         stack<int>stkInc;
+//         stack<int>stkDec;
+//         stkInc.push(nums[0]);
+
+//         for (int i = 1; i < nums.size(); i++)
+//         {
+//             while(stkInc.size()&& nums[i] <= nums[i - 1])
+//             {
+//                 stkInc.pop();
+//             }
+//             stkInc.push(nums[i]);
+//             mx = max(mx , (int)stkInc.size());
+//         }
+//         stkDec.push(nums[0]);
+//         for (int i = 1; i < nums.size(); i++)
+//         {
+//             while (stkDec.size() && nums[i] >= nums[i - 1])
+//             {
+//                 stkDec.pop();
+//             }
+//             stkDec.push(nums[i]);
+//             mx = max(mx, (int)stkDec.size());
+//         }
+//         return mx;
+//     }
+// };
+
+
 class Solution {
 public:
     // [1,4,3,3,2]
@@ -42,7 +76,7 @@ public:
         int mx = 1;
         
         stack<int>stkInc;
-        stack<int>stkDec;
+        //stack<int>stkDec;
         stkInc.push(nums[0]);
 
         for (int i = 1; i < nums.size(); i++)
@@ -54,15 +88,19 @@ public:
             stkInc.push(nums[i]);
             mx = max(mx , (int)stkInc.size());
         }
-        stkDec.push(nums[0]);
+        while (stkInc.size())
+        {
+            stkInc.pop();
+        }
+        stkInc.push(nums[0]);
         for (int i = 1; i < nums.size(); i++)
         {
-            while (stkDec.size() && nums[i] >= nums[i - 1])
+            while (stkInc.size() && nums[i] >= nums[i - 1])
             {
-                stkDec.pop();
+                stkInc.pop();
             }
-            stkDec.push(nums[i]);
-            mx = max(mx, (int)stkDec.size());
+            stkInc.push(nums[i]);
+            mx = max(mx, (int)stkInc.size());
         }
         return mx;
     }
