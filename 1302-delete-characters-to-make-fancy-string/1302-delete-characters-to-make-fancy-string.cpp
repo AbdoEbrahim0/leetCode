@@ -6,21 +6,22 @@ public:
         //string s = "leeetcode";
         //           "aab"
         string myS = "";
-        for (int i = 0; i < s.size(); i++)
+        int sSize = s.size();
+        for (int i = 0; i < sSize; i++)
         {
             while (i && s[i] == s[i - 1])
             {
                 cnt++;
                 i++;
             }
-            if (i && i <= s.size() && cnt >= 2)
+            if (i && i <= sSize && cnt >= 2)
             {
                 myS += s[i - 1];
             }
             if (i)
-            myS += s[i - 1];
+                myS += s[i - 1];
 
-            if(i==s.size()-1)
+            if (i == sSize - 1)
                 myS += s[i];
             cnt = 1;
         }
