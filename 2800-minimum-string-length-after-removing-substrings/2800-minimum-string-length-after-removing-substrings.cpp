@@ -92,31 +92,31 @@
 // };
 
 //methode 1 [optimized^3]  O(N)   
-class Solution {
-public:
-    int minLength(string s) {
-        if (s.size() == 0) return 0;
-        int indx=0;
-        //string stk;
-        for (int i=0; i < s.size(); i++)
-        {
-            if (s[i]  == 'B' && indx >0 && s[indx-1] == 'A')
-            {
-                indx--;
-            }
-            else if (s[i] == 'D' && indx > 0 && s[indx-1] == 'C')
-            {
-                indx--;
-            }
-            else
-            {
-                s[indx] = s[i];
-                indx++;
-            }   
-        }
-        return indx;
-    }
-};
+// class Solution {
+// public:
+//     int minLength(string s) {
+//         if (s.size() == 0) return 0;
+//         int indx=0;
+//         //string stk;
+//         for (int i=0; i < s.size(); i++)
+//         {
+//             if (s[i]  == 'B' && indx >0 && s[indx-1] == 'A')
+//             {
+//                 indx--;
+//             }
+//             else if (s[i] == 'D' && indx > 0 && s[indx-1] == 'C')
+//             {
+//                 indx--;
+//             }
+//             else
+//             {
+//                 s[indx] = s[i];
+//                 indx++;
+//             }   
+//         }
+//         return indx;
+//     }
+// };
 
 // class Solution {
 // public:
@@ -139,3 +139,27 @@ public:
 //         return stk.size();
 //     }
 // };
+///////////////////////////// crack interview matb3a
+
+class Solution {
+public:
+    int minLength(string s) {
+        //string s = "ABFCACDB";
+        stack<char>stk;
+        for (int i = 0; i < s.size(); i++)
+        {
+            
+            if (s[i] == 'B' && stk.size() && stk.top() == 'A')
+            {
+                    stk.pop();
+            }
+            
+            else if (s[i] == 'D' && stk.size() && stk.top() == 'C')
+            {
+                    stk.pop();
+            }
+            else stk.push(s[i]);
+        }
+        return stk.size();
+    }
+};
