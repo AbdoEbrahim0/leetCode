@@ -140,26 +140,30 @@
 //     }
 // };
 ///////////////////////////// crack interview matb3a
-
 class Solution {
 public:
     int minLength(string s) {
         //string s = "ABFCACDB";
-        stack<char>stk;
+        //"ACBBD"
+        string myS = "";
         for (int i = 0; i < s.size(); i++)
         {
             
-            if (s[i] == 'B' && stk.size() && stk.top() == 'A')
+            if (myS.size() && s[i] == 'B' && myS.back() == 'A')
             {
-                    stk.pop();
+                //if()
+                myS.pop_back();
+                
             }
             
-            else if (s[i] == 'D' && stk.size() && stk.top() == 'C')
+            else if (myS.size() && s[i] == 'D' && myS.back() == 'C')
             {
-                    stk.pop();
+                //if()
+                myS.pop_back();
+                
             }
-            else stk.push(s[i]);
+            else myS+=s[i];
         }
-        return stk.size();
+        return myS.size();
     }
 };
