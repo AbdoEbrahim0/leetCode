@@ -2,7 +2,7 @@ class Solution {
 public:
     int calPoints(vector<string>& operations) {
         vector<int> out;
-        int indx = -1;
+        short indx = -1;
         for (string& val : operations)
         {
             if (val == "+")
