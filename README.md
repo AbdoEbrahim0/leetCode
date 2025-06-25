@@ -11,6 +11,7 @@
 | [0058-length-of-last-word](https://github.com/AbdoEbrahim0/leetCode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [0125-valid-palindrome](https://github.com/AbdoEbrahim0/leetCode/tree/master/0125-valid-palindrome) |
+| [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -66,6 +67,7 @@
 | [0485-max-consecutive-ones](https://github.com/AbdoEbrahim0/leetCode/tree/master/0485-max-consecutive-ones) |
 | [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
+| [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -210,6 +212,7 @@
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
+| [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
