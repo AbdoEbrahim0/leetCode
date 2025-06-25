@@ -138,7 +138,7 @@
 // };
 
 
-//[optimized ^3] in maintablility and simple
+//[optimized ^3] in maintablility and simple logic
 class Solution {
 public:
     vector<string> findWords(vector<string>& words) {
