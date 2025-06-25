@@ -135,7 +135,7 @@
 //     }
 // };
 
-//more cleaning 
+//more optimized as erase fn tak O(N) so total com :O(n)*O(n)=O(n^2) 
 class Solution {
 public:
     vector<string> findWords(vector<string>& words) {
@@ -156,6 +156,7 @@ public:
             Zarr[Z[i] - 'a'] = 1;
 
         bool flagToDelete;
+        vector<string> res;
         //words = ["Hello","Alaska","Dad","Peace"]
         for (int x=0;x<words.size();x++)
         {
@@ -195,12 +196,11 @@ public:
                     }
                 }
             }
-            if (flagToDelete)
+            if (flagToDelete==false)
             {
-                words.erase(words.begin() + x);
-                x--;
+                res.emplace_back(words[x]);
             }
         }
-        return words;
+        return res;
     }
 };
