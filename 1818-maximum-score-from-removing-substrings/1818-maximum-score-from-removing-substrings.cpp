@@ -71,43 +71,34 @@
 //     }
 // };
 
+//more cleaner and maintainiable without redudnt code 
 class Solution {
-public:
-    int maximumGain(string s, int x, int y) {
-        int gain = 0;
-
-        // Helper to remove pattern and calculate gain
-        auto removePattern = [](string& str, char a, char b, int val) -> pair<string, int> {
-            stack<char> stk;
+    public:
+        int solve(string &s,string remove,int biggerNumFirstThenSmaller)
+        {
             int total = 0;
-            for (char c : str) {
-                if (!stk.empty() && stk.top() == a && c == b) {
-                    stk.pop();
-                    total += val;
-                } else {
-                    stk.push(c);
+            string newS = "";
+            // ab  ,  ba
+            // x>y , y>x
+            for (int i = 0; i < s.size(); i++)
+            {
+                if (newS.size() && newS.back() == remove[0] && s[i] == remove[1])
+                {
+                    total += biggerNumFirstThenSmaller;
+                    newS.pop_back();
                 }
+                else
+                    newS.push_back(s[i]);
             }
-            // rebuild string from stack
-            string remaining;
-            while (!stk.empty()) {
-                remaining += stk.top();
-                stk.pop();
-            }
-            reverse(remaining.begin(), remaining.end());
-            return {remaining, total};
-        };
-
-        if (x > y) {
-            tie(s, gain) = removePattern(s, 'a', 'b', x);
-            auto [_, g2] = removePattern(s, 'b', 'a', y);
-            gain += g2;
-        } else {
-            tie(s, gain) = removePattern(s, 'b', 'a', y);
-            auto [_, g2] = removePattern(s, 'a', 'b', x);
-            gain += g2;
+            s = newS;
+            return total;
         }
+        int maximumGain(string s, int x, int y) {
+            if (x > y)
+            {
+                return solve(s, "ab", x) + solve(s, "ba", y);
 
-        return gain;
-    }
-};
+            }
+            return solve(s, "ba", y) + solve(s, "ab", x);
+        }
+    };
