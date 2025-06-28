@@ -82,36 +82,72 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     int minimizedMaximum(int n, vector<int>& quantities) {
+//         //sort(quantities.begin(), quantities.end());
+//         int sizeQ = quantities.size();
+//         int st = 1;
+//         //int end =100000;
+//         int  end = quantities[sizeQ - 1];
+//         int mid, cur;
+//         int stores = 0;
+//                 while (st<=end)
+//                 {
+//                     mid = (st + end) / 2;
+//                     stores = 0;
+//                     // for (int i = 0; i < sizeQ; i++)
+//                     // {
+//                     // if (quantities[i] % mid != 0)
+//                     //     stores = stores + (quantities[i] / mid) + 1;
+//                     // else
+//                     //     stores = stores + (quantities[i] / mid);
+//                     // }
+//                     for(auto x: quantities)
+//                     {stores+=(x+mid-1 )/mid;}
+
+//                     if (stores <= n)
+//                     {
+//                         cur = mid;
+//                         end = mid - 1;
+//                     }else 
+//                         st = mid + 1;
+
+//                 }
+//                 return cur;
+//     }
+// };
+// ##########################
 class Solution {
+    struct data
+    {
+        int Quantity, store;
+        bool operator < (const data& previous) const //overriding
+        {
+            return 1LL * Quantity * previous.store < 1LL * previous.Quantity * store;// Quantity/store <previous.Quantity/previous.store
+        }
+
+    };
 public:
+
+    
     int minimizedMaximum(int n, vector<int>& quantities) {
-        //sort(quantities.begin(), quantities.end());
-        int sizeQ = quantities.size();
-        int st = 1, end =100000; //end = quantities[sizeQ - 1]
-        int mid, cur;
-        int stores = 0;
-                while (st<=end)
-                {
-                    mid = (st + end) / 2;
-                    stores = 0;
-                    // for (int i = 0; i < sizeQ; i++)
-                    // {
-                    // if (quantities[i] % mid != 0)
-                    //     stores = stores + (quantities[i] / mid) + 1;
-                    // else
-                    //     stores = stores + (quantities[i] / mid);
-                    // }
-                    for(auto x: quantities)
-                    {stores+=(x+mid-1 )/mid;}
+        priority_queue <data>pr;
+        int m = quantities.size();
+        
+        for (int z=0;z<m;z++)
+        {
+            pr.push({ quantities[z], 1 });
+        }
 
-                    if (stores <= n)
-                    {
-                        cur = mid;
-                        end = mid - 1;
-                    }else 
-                        st = mid + 1;
+        data cur;
+        for (int i = 0; i < n - m; i++)
+        {
+            cur = pr.top();
+            pr.pop();
+            pr.push({ cur.Quantity,cur.store+1 });
+        }
+        return ceil(1.0*pr.top().Quantity / pr.top().store);
 
-                }
-                return cur;
     }
 };
