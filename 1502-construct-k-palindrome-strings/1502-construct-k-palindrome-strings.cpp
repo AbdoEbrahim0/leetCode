@@ -100,18 +100,38 @@ expected        false       true        false             true                  
 //      }
 //  };
 //optimized^2
+// class Solution {
+//  public:
+//      bool canConstruct(string s, int k) {
+//          if (k>s.size())
+//          return false;
+//          bool arr[26];
+//          int odd = 0;
+//          for (char c : s)
+//              arr[c - 'a'] =!arr[c - 'a'];
+//          for (int i = 0; i < 26; i++)//count 1's 
+//          {
+//              if (arr[i] & 1)
+//                  odd++;
+//          }
+//          if (odd > k)
+//              return false;
+//          return true;
+//      }
+//  };
+ //optimized^3
 class Solution {
  public:
      bool canConstruct(string s, int k) {
          if (k>s.size())
          return false;
-         bool arr[26];
+         bitset<26>freq;
          int odd = 0;
          for (char c : s)
-             arr[c - 'a'] =!arr[c - 'a'];
+             freq[c - 'a'] =!freq[c - 'a'];
          for (int i = 0; i < 26; i++)//count 1's 
          {
-             if (arr[i] & 1)
+             if (freq[i] & 1)
                  odd++;
          }
          if (odd > k)
