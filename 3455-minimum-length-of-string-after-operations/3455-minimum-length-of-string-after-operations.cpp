@@ -39,8 +39,8 @@ public:
             {
 
                     sSize -= 2;
-                    arr[c - 'a']--;
-                    arr[c - 'a']--;
+                    arr[c - 'a']=arr[c - 'a']-2;
+//                    arr[c - 'a']--;
             }
         }
         
