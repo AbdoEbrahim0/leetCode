@@ -119,7 +119,7 @@ expected        false       true        false             true                  
 //          return true;
 //      }
 //  };
- //optimized^3
+ //optimized^3 instead of  1 byte for ech boolean we use 1 bit for each 
 class Solution {
  public:
      bool canConstruct(string s, int k) {
