@@ -119,6 +119,9 @@
 // };
 // ##########################
 class Solution {
+    
+public:
+
     struct data
     {
         int Quantity, store;
@@ -128,9 +131,6 @@ class Solution {
         }
 
     };
-public:
-
-    
     int minimizedMaximum(int n, vector<int>& quantities) {
         priority_queue <data>pr;
         int m = quantities.size();
