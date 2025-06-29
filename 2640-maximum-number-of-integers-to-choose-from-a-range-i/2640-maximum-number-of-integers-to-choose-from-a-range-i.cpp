@@ -110,8 +110,8 @@ class Solution {
              vis[val] = 1;//to ignore
          }
          int sum = 0;
-         int counter = 0;
-         for (int i = 1; i <= n; i++)
+         short counter = 0;
+         for (short i = 1; i <= n; i++)
          {
              if (vis[i] == 0)
              {
