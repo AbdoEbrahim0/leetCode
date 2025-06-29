@@ -75,26 +75,53 @@
 //     }
 // };
 // total comp: O(m+n) and MEM comp for bitset : O(1)
+// class Solution {
+// public:
+//     int maxCount(vector<int>& banned, int n, int maxSum) {
+//         bitset<10001> vis;
+//         int counter = 0;
+//         for (auto it : banned)
+//         {
+//             vis[it] = 1;
+//         }
+//         for (int j = 1; j <= n; j++) //n
+//         {
+//             if (!vis [j])
+//             {
+//                 if (maxSum - j >= 0)
+//                 {
+//                     counter++;
+//                     maxSum -= j; //maxSum -[2+3 
+//                 }
+//             }
+//         }
+//         return counter;
+//     }
+// };
+
+//creack interview matb3a
 class Solution {
-public:
-    int maxCount(vector<int>& banned, int n, int maxSum) {
-        bitset<10001> vis;
-        int counter = 0;
-        for (auto it : banned)
-        {
-            vis[it] = 1;
-        }
-        for (int j = 1; j <= n; j++) //n
-        {
-            if (!vis [j])
-            {
-                if (maxSum - j >= 0)
-                {
-                    counter++;
-                    maxSum -= j; //maxSum -[2+3 
-                }
-            }
-        }
-        return counter;
-    }
-};
+ public:
+     int maxCount(vector<int>& banned, int n, int maxSum) {
+         vector<bool>vis(10001);
+         for (int & val : banned)
+         {
+             vis[val] = 1;//to ignore
+         }
+         int sum = 0;
+         int counter = 0;
+         for (int i = 1; i <= n; i++)
+         {
+             if (vis[i] == 0)
+             {
+                 sum += i ;
+                 if (sum > maxSum)// by logic all next is greater than currrent so if current plussed to sum and exceed MaxSum then all next values will not be taken also
+                     break;
+                 counter++;
+             }
+         }
+         //if (sum > maxSum)
+         //    return 0;
+         return counter;
+     }
+    };
