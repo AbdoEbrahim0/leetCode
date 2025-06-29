@@ -103,7 +103,8 @@
 class Solution {
  public:
      int maxCount(vector<int>& banned, int n, int maxSum) {
-         vector<bool>vis(10001);
+         //vector<bool>vis(10001); 
+         bitset<10001>vis;
          for (int & val : banned)
          {
              vis[val] = 1;//to ignore
