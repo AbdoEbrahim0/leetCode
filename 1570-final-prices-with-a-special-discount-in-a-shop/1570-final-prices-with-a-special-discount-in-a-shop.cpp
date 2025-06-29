@@ -96,22 +96,48 @@
 //         return res;
 //     }
 // };
+
+// class Solution {
+// public:
+//     vector<int> finalPrices(vector<int>& prices) {
+//         /*stack<int>stk;*/
+//         vector<int> res = prices;
+//         int j;
+//         for (int i = prices.size() - 2; i >= 0; i--)
+//         {
+//             j = i + 1;
+//             while ( j <prices.size() &&!(prices[j] <= prices[i])  )
+//             {
+//                 j++;
+//             }
+//             if(j < prices.size() &&prices[j] <= prices[i])
+//             res[i] = prices[i] - prices[j];
+//         }
+//         return res;
+//     }
+// };
+//crack interview 60 pronblem
 class Solution {
 public:
     vector<int> finalPrices(vector<int>& prices) {
-        /*stack<int>stk;*/
-        vector<int> res = prices;
-        int j;
-        for (int i = prices.size() - 2; i >= 0; i--)
+        // if (is_sorted(prices.begin(), prices.end()))
+        //     return prices;
+        int i = 0;
+        for (int j = i+1; i,j < prices.size();j++ )
         {
             j = i + 1;
-            while ( j <prices.size() &&!(prices[j] <= prices[i])  )
+            while  (j < prices.size() && prices[j] > prices[i])
             {
                 j++;
             }
-            if(j < prices.size() &&prices[j] <= prices[i])
-            res[i] = prices[i] - prices[j];
+            if (j < prices.size() && prices[j] <= prices[i])
+            {
+                prices[i] = prices[i] - prices[j];
+                
+            }
+            i++;
+            j = i ;
         }
-        return res;
+    return prices;
     }
 };
