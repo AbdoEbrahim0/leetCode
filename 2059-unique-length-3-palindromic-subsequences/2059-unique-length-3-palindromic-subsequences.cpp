@@ -27,13 +27,14 @@ public:
         //aabca
         //bbcbaba
         unordered_set<string> mySet;
+        string Uniq = "";
         for (int x=0;x<mapValues.size();x++)
         {   
             for (int i = myMap[mapValues[x]].first +1 ; i < myMap[mapValues[x]].second; i++)//iterate on string
             if (i> myMap[mapValues[x]].first  && i< myMap[mapValues[x]].second)
             {
                 //cnt++;
-                string Uniq = "";
+                Uniq = "";
                 Uniq.push_back(mapValues[x]);
                 Uniq.push_back(s[i]);
                 Uniq.push_back(mapValues[x]);
