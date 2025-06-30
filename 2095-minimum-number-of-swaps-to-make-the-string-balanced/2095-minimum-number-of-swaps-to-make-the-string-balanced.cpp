@@ -22,22 +22,22 @@
 //     }
 // };
 //method 1 [optimized]
-// class Solution {
-// public:
-//     int minSwaps(string s) {  
-// int  open = 0;
-// for (auto & it : s)
-//  {
-//     if (it == '[')
-//         open++;
-//     else 
-//     //if (open) // use this if to pass this test :"][]["
-//         open--;
+class Solution {
+public:
+    int minSwaps(string s) {  
+int  open = 0;
+for (auto & it : s)
+ {
+    if (it == '[')
+        open++;
+    else 
+    if (open) // use this if to pass this test :"][]["
+        open--;
         
-// }
-// return ceil((double)open/2);
-//     }
-// };
+}
+return ceil(open/2.0);
+    }
+};
 
 // class Solution {
 // public:
@@ -61,21 +61,21 @@
 // };
 
 ///////////////
-class Solution {
-public:
-    int minSwaps(string s) {
-        //stack<char>stk;
-        int counter = 0;
-        for (char &c: s)
-        {
-            if (c == '[')
-                counter ++;
-            else if (counter && c == ']')
-                counter --;
-        }
-        return ceil( (counter) /2.0);
-    }
-};
+// class Solution {
+// public:
+//     int minSwaps(string s) {
+//         //stack<char>stk;
+//         int counter = 0;
+//         for (char &c: s)
+//         {
+//             if (c == '[')
+//                 counter ++;
+//             else if (counter && c == ']')
+//                 counter --;
+//         }
+//         return ceil( (counter) /2.0);
+//     }
+// };
 //crack interview 60 problem
 // class Solution {
 // public:
