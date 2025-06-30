@@ -45,7 +45,7 @@
 //         return mySet.size();
 //     }
 // };
-
+//optimized ^2
 class Solution {
 public:
     int countPalindromicSubsequence(string s) {
@@ -85,7 +85,7 @@ public:
                 Uniq[1] = s[i];
                 Uniq[2] = mapValues[x];
 
-                if ((!mySet.count(Uniq)) && i > myMap[mapValues[x]].first && i < myMap[mapValues[x]].second)
+                if ((!mySet.count(Uniq)))
                 {
                     //cnt++;
                     mySet.insert(Uniq);
