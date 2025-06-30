@@ -132,7 +132,7 @@ public:
             {
                 Uniq[0]= x + 'a';
                 Uniq[1] = s[i];
-                Uniq[2] = x + 'a';
+                Uniq[2] = Uniq[0];
 
                 if ((!mySet.count(Uniq)))
                 {
