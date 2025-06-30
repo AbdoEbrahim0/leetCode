@@ -133,11 +133,8 @@ public:
                 Uniq[0]= x + 'a';
                 Uniq[1] = s[i];
                 Uniq[2] = x + 'a';
-
-                if ((!mySet.count(Uniq)))
-                {
                     mySet.insert(Uniq);
-                }
+                
             }
             
         }
