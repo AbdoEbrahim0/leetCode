@@ -34,9 +34,9 @@ public:
             {
                 //cnt++;
                 string Uniq = "";
-                Uniq += mapValues[x];
-                Uniq += s[i];
-                Uniq += mapValues[x];
+                Uniq.push_back(mapValues[x]);
+                Uniq.push_back(s[i]);
+                Uniq.push_back(mapValues[x]);
                 mySet.insert(Uniq);
             }
         }
