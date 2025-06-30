@@ -61,56 +61,52 @@
 // };
 
 ///////////////
-// class Solution {
-// public:
-//     int minSwaps(string s) {
-//         //stack<char>stk;
-//         int counter = 0;
-//         for (char &c: s)
-//         {
-//             if (c == '[')
-//                 counter ++;
-//             else if (counter && c == ']')
-//                 counter --;
-            
-//         }
-//         return ceil( (counter) /2.0);
-//     }
-// };
-//crack interview 60 problem
 class Solution {
 public:
-
-    /*
-    Input: s = "]]][[["
-    Output: 2
-    */
     int minSwaps(string s) {
-        stack<char>stk;
-        int sSize = s.size();
-        int cnt = 0;
-
-        for (int i = 0; i < sSize ; i++)
+        //stack<char>stk;
+        int counter = 0;
+        for (char &c: s)
         {
-            if (s[i] == '[')
-                stk.push(']');//push clossing
-            else if (stk.size() && s[i] == ']' && stk.top() == ']')
-                stk.pop();
+            if (c == '[')
+                counter ++;
+            else if (counter && c == ']')
+                counter --;
         }
-        if (stk.empty())
-            return 0;
-        for (;  stk.size() ;)
-        {
-            
-            if (stk.top() == ']')
-            {
-                cnt++;
-            }
-            stk.pop();
-        }
-        if (cnt % 2 == 0)
-            cnt--;
-        return cnt/2 + 1;
+        return ceil( (counter) /2.0);
     }
-
 };
+//crack interview 60 problem
+// class Solution {
+// public:
+
+//     /*
+//     Input: s = "]]][[["
+//     Output: 2
+//     */
+//     int minSwaps(string s) {
+//         stack<char>stk;
+//         int sSize = s.size();
+//         int cnt = 0;
+
+//         for (int i = 0; i < sSize ; i++)
+//         {
+//             if (s[i] == '[')
+//                 stk.push(']');//push clossing
+//             else if (stk.size() && s[i] == ']' && stk.top() == ']')
+//                 stk.pop();
+//         }
+//         if (stk.empty())
+//             return 0;
+//         while(stk.size())
+//         {
+//             if (stk.top() == ']')
+//                 cnt++;
+
+//             stk.pop();
+//         }
+//         if (cnt % 2 == 0)
+//             cnt--;
+//         return cnt/2 + 1;
+//     }
+// };
