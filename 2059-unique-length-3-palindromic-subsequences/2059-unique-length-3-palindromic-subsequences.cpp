@@ -97,15 +97,13 @@
 //         return mySet.size();
 //     }
 // };
-
+//optimized ^3
 class Solution {
 public:
     int countPalindromicSubsequence(string s) {
-        int arr[2];
         unordered_map<char, pair<int, int>>myMap;
         //aabca
         bool caontainPalindrome = false;
-        vector< char> mapValues;
             char mapValuesArr[26];
         //O(N)
         for (int i=0;i<s.size();i++)
@@ -113,7 +111,6 @@ public:
             if (myMap.find(s[i]) == myMap.end())
             {
                 myMap[s[i]].first = i;
-                mapValues.emplace_back(s[i]);
             }
             else
                 myMap[s[i]].second = i;
