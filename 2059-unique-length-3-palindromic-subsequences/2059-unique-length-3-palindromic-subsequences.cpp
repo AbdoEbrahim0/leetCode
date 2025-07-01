@@ -45,7 +45,7 @@
 //         return mySet.size();
 //     }
 // };
-//optimized ^2
+// optimized ^2
 // class Solution {
 // public:
 //     int countPalindromicSubsequence(string s) {
@@ -109,9 +109,8 @@ public:
         for (int i=0;i<s.size();i++)
         {
             if (myMap.find(s[i]) == myMap.end())
-            {
                 myMap[s[i]].first = i;
-            }
+            
             else
                 myMap[s[i]].second = i;
 
@@ -127,16 +126,15 @@ public:
         string Uniq = "123";// uniqe of lenth 3
         for (int x=0;x<26;x++)
         {   
-
             for (int i = myMap[x+'a'].first + 1; i < myMap[x + 'a'].second; i++)//iterate on string
             {
                 Uniq[0]= x + 'a';
                 Uniq[1] = s[i];
                 Uniq[2] = Uniq[0];
-
                 if ((!mySet.count(Uniq)))
                 {
                     mySet.insert(Uniq);
+                //    break;
                 }
             }
             
