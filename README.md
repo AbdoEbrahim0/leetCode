@@ -44,6 +44,7 @@
 | [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
+| [2411-spiral-matrix-iv](https://github.com/AbdoEbrahim0/leetCode/tree/master/2411-spiral-matrix-iv) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/AbdoEbrahim0/leetCode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Array
@@ -88,6 +89,7 @@
 | [2179-most-beautiful-item-for-each-query](https://github.com/AbdoEbrahim0/leetCode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/AbdoEbrahim0/leetCode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2411-spiral-matrix-iv](https://github.com/AbdoEbrahim0/leetCode/tree/master/2411-spiral-matrix-iv) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/AbdoEbrahim0/leetCode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
@@ -314,6 +316,7 @@
 |  |
 | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/AbdoEbrahim0/leetCode/tree/master/0083-remove-duplicates-from-sorted-list) |
+| [2411-spiral-matrix-iv](https://github.com/AbdoEbrahim0/leetCode/tree/master/2411-spiral-matrix-iv) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -332,6 +335,7 @@
 |  |
 | ------- |
 | [0463-island-perimeter](https://github.com/AbdoEbrahim0/leetCode/tree/master/0463-island-perimeter) |
+| [2411-spiral-matrix-iv](https://github.com/AbdoEbrahim0/leetCode/tree/master/2411-spiral-matrix-iv) |
 ## Merge Sort
 |  |
 | ------- |
