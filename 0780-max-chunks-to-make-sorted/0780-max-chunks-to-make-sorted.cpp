@@ -65,18 +65,21 @@
 //         return chunks;
 //     }
 // };
-
 class Solution {
 public:
     int maxChunksToSorted(vector<int>& arr) {
+        //in :[4, 3, 2, 1, 0] out : 1
+        //in :[1 ,0 ,2 ,3 ,4] out : 4
         //indices 0 1 2 3 4 
         //values  4 3 2 1 0
-        //max     
+        //max     4 4 4 4 4
+        //chunks  0 0 0 0 1
+
         int chunks=0,mx=0;
         for (int i = 0; i < arr.size(); i++)
         {
-            mx = max(mx, arr[i]);
-            if (mx == i)
+            mx = max(mx, arr[i]);  
+            if (mx == i)        
                 chunks++;
         }
         return chunks;
