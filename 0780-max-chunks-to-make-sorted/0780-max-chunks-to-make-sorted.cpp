@@ -50,16 +50,33 @@
 // };
 
 //optimized^3 very smart sol
+// class Solution {
+// public:
+//     int maxChunksToSorted(vector<int>& arr) {
+//         int cntValues = 0;
+//         int chunks=0;
+//         for (int i = 0; i < arr.size(); i++)
+//         {
+//            if(i)
+//             arr[i] += arr[i-1]; //repalcing last element with current and previous in array
+//             if (( i*(i+1)/2 ) == arr[i]) //equasion of incremental series
+//                 chunks++;
+//         }
+//         return chunks;
+//     }
+// };
+
 class Solution {
 public:
     int maxChunksToSorted(vector<int>& arr) {
-        int cntValues = 0;
-        int chunks=0;
+        //indices 0 1 2 3 4 
+        //values  4 3 2 1 0
+        //max     
+        int chunks=0,mx=0;
         for (int i = 0; i < arr.size(); i++)
         {
-           if(i)
-            arr[i] += arr[i-1]; //repalcing last element with current and previous in array
-            if (( i*(i+1)/2 ) == arr[i]) //equasion of incremental series
+            mx = max(mx, arr[i]);
+            if (mx == i)
                 chunks++;
         }
         return chunks;
