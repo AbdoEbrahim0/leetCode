@@ -57,8 +57,9 @@ public:
         int chunks=0;
         for (int i = 0; i < arr.size(); i++)
         {
-            cntValues += arr[i];
-            if (( i*(i+1)/2 ) == cntValues) //equasion of incremental series
+           if(i)
+            arr[i] += arr[i-1]; //repalcing last element with current and previous in array
+            if (( i*(i+1)/2 ) == arr[i]) //equasion of incremental series
                 chunks++;
         }
         return chunks;
