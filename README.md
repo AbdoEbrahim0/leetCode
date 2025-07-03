@@ -31,6 +31,7 @@
 | [0020-valid-parentheses](https://github.com/AbdoEbrahim0/leetCode/tree/master/0020-valid-parentheses) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
+| [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/AbdoEbrahim0/leetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -76,6 +77,7 @@
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
+| [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -144,6 +146,7 @@
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
+| [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1502-construct-k-palindrome-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -186,6 +189,7 @@
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
+| [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/AbdoEbrahim0/leetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Bit Manipulation
@@ -253,6 +257,7 @@
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
+| [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/AbdoEbrahim0/leetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
