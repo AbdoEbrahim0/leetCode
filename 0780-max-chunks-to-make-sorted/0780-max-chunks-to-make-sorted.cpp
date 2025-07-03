@@ -25,7 +25,8 @@ public:
             }
         }
 
-        // Always at least one chunk
-        return chunks + 1;
-    }
+        // adds 1 tto chunks in 2 cases Always at least one chunk so
+        //also  in case as last element in prefix  can't be compared to next element in suffx dut to reach size of suffex
+
+        return chunks+1 ;     }
 };
