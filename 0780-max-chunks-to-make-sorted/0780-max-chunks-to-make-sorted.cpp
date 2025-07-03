@@ -31,18 +31,34 @@
 //         return chunks+1 ;     }
 // };
 //optimized^2 very smart sol
+// class Solution {
+// public:
+//     int maxChunksToSorted(vector<int>& arr) {
+
+//         int cntIndcies = 0;
+//         int cntValues = 0;
+//         int chunks=0;
+//         for (int i = 0; i < arr.size(); i++)
+//         {
+//             cntIndcies += i;
+//             cntValues += arr[i];
+//             if (cntValues == cntIndcies)
+//                 chunks++;
+//         }
+//         return chunks;
+//     }
+// };
+
+//optimized^3 very smart sol
 class Solution {
 public:
     int maxChunksToSorted(vector<int>& arr) {
-
-        int cntIndcies = 0;
         int cntValues = 0;
         int chunks=0;
         for (int i = 0; i < arr.size(); i++)
         {
-            cntIndcies += i;
             cntValues += arr[i];
-            if (cntValues == cntIndcies)
+            if (( i*(i+1)/2 ) == cntValues) //equasion of incremental series
                 chunks++;
         }
         return chunks;
