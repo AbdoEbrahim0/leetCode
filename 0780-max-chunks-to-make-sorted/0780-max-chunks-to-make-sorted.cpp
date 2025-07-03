@@ -20,7 +20,7 @@ public:
         // Count valid chunks
         int chunks = 0;
         for (int i = 0; i < n - 1; ++i) {
-            if (prefix[i] <= suffix[i + 1]) {
+            if (prefix[i] < suffix[i + 1]) {
                 chunks++;
             }
         }
