@@ -248,6 +248,7 @@
 | [0118-pascals-triangle](https://github.com/AbdoEbrahim0/leetCode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [2562-count-ways-to-build-good-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2562-count-ways-to-build-good-strings) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Sorting
 |  |
