@@ -76,6 +76,16 @@
 //optimized ^4 gpt 
 class Solution {
     public:
+    int getNext(int n) {
+    int total=0;
+    while(n>0)
+    {
+    int digit=n%10;
+    total +=(digit*digit);
+    n=n/10;
+    }
+    return total;
+    }
     bool isHappy(int n) {
         unordered_set<int> seen;
 
@@ -83,18 +93,6 @@ class Solution {
             seen.insert(n);
             n = getNext(n);
         }
-
         return n == 1;
-    }
-
-private:
-    int getNext(int n) {
-        int total = 0;
-        while (n > 0) {
-            int digit = n % 10;
-            total += digit * digit;
-            n /= 10;
-        }
-        return total;
     }
 };
