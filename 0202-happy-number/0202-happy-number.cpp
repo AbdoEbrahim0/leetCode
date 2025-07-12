@@ -38,7 +38,7 @@ public:
         {
             s = to_string(n);
             n = 0;
-            for (int i = 0; i < s.size(); i++)
+            for (short i = 0; i < s.size(); i++)
             {
                 n += (s[i] - '0')* (s[i] - '0');
             }
