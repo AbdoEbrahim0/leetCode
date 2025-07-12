@@ -1,20 +1,37 @@
+// class Solution {
+// public:
+//     uint32_t reverseBits(uint32_t n) {
+//         uint32_t result = 0;
+//         //00000010100101000001111010011100 43261596
+//         //00111001011110000010100101000000 964176192
+//         for (int i = 31; i >= 0; i--)
+//         {
+//             if (n  & 1) 
+//                 result += (1<<i);
+//             n = (n >> 1) ;
+//         }
+//         return result;
+//     }
+// };
+
 class Solution {
 public:
     uint32_t reverseBits(uint32_t n) {
         uint32_t result = 0;
         //00000010100101000001111010011100 43261596
         //00111001011110000010100101000000 964176192
-        for (int i = 31; i >= 0; i--)
+        bitset<32>Original(n);
+        
+        for (short x = 0; x < 16; x++)
         {
-            if (n  & 1) 
-                result += (1<<i);
-            n = (n >> 1) ;
+            bool temp = Original[x];
+            Original[x] = Original[31 - x];
+            Original[31 - x] = temp;
         }
-        return result;
+        
+        return (uint32_t)Original.to_ulong();
     }
 };
-
-
 
 
 
