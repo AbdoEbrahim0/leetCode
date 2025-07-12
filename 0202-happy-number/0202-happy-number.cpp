@@ -56,7 +56,7 @@ public:
         // realize that only happy number is when n=1 OR n=10 OR n=100 OR n=1000 etc  
         //2,147,483,648   1 000 000 000
         //important  :: in case 2 4 16 37 58 89 145 42 20  4 16
-        bitset<1000000 + 1> vis;
+        bitset<10000 + 1> vis;
         //unordered_set<int>mySet;
         string s;
         while (n != 1)
