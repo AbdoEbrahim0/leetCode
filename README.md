@@ -13,6 +13,7 @@
 | [0125-valid-palindrome](https://github.com/AbdoEbrahim0/leetCode/tree/master/0125-valid-palindrome) |
 | [0168-excel-sheet-column-title](https://github.com/AbdoEbrahim0/leetCode/tree/master/0168-excel-sheet-column-title) |
 | [0171-excel-sheet-column-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0171-excel-sheet-column-number) |
+| [0205-isomorphic-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0205-isomorphic-strings) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -233,6 +234,7 @@
 | [0013-roman-to-integer](https://github.com/AbdoEbrahim0/leetCode/tree/master/0013-roman-to-integer) |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0202-happy-number) |
+| [0205-isomorphic-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/AbdoEbrahim0/leetCode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
