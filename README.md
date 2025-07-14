@@ -208,6 +208,7 @@
 | [0191-number-of-1-bits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0191-number-of-1-bits) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
+| [0338-counting-bits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0338-counting-bits) |
 | [0476-number-complement](https://github.com/AbdoEbrahim0/leetCode/tree/master/0476-number-complement) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -259,6 +260,7 @@
 | [0118-pascals-triangle](https://github.com/AbdoEbrahim0/leetCode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0338-counting-bits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0338-counting-bits) |
 | [2562-count-ways-to-build-good-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2562-count-ways-to-build-good-strings) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Sorting
