@@ -30,6 +30,10 @@
 //     }
 // };
 // time: O(1) optimized^3 in MEM and time constant Math trick
+/*
+The largest power of 3 that fits in a 32-bit signed int is 3^19 = 1162261467.
+So n is a power of 3 if and only if it divides 1162261467:
+*/
 class Solution {
 public:
     bool isPowerOfThree(int n) {
