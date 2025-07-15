@@ -1,15 +1,15 @@
+//O(N/3) =N
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        if (n <= 0) return 0;
-        bool flag = true;
-        while (n != 1 && flag)
-        {
-            if ((n / 3.0) != ceil(n / 3.0))
-                flag = false;
+        if (n <= 0) return false;
+        while (n > 1) {
+                if (n % 3 != 0) 
+                return false;
+                n /= 3;
+                    }
+return n == 1;
 
-            n = n / 3;
-        }
-        return flag;
     }
 };
+
