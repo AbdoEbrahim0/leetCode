@@ -16,18 +16,26 @@
 // };
 
 //optimized^2 in MEM and time
+// class Solution {
+// public:
+//     bool isPowerOfThree(int n) {
+//         if (n <= 0) return false;
+//         while (n > 1) {
+//                 if (n % 3 != 0) 
+//                 return false;
+//                 n /= 3;
+//                     }
+// return n == 1;
+
+//     }
+// };
+// time: O(1) optimized^3 in MEM and time constant Math trick
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        if (n <= 0) return false;
-        while (n > 1) {
-                if (n % 3 != 0) 
-                return false;
-                n /= 3;
-                    }
-return n == 1;
-
+        return n > 0 && 1162261467 % n == 0;
     }
 };
+
 
 
