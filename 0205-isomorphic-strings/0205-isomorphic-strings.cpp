@@ -1,40 +1,10 @@
-// class Solution {
-// public:
-//     bool isIsomorphic(string s, string t) {
-//         if (s.size() != t.size())
-//             return false;
-//         unordered_map<char,char> m1;
-//         unordered_map<char, bool> appearAgain;
-//         for (int i=0;i< s.size();i++)
-//         {
-//             if (m1.find(s[i]) != m1.end())
-//             {
-//                 if (m1[s[i]] != t[i])
-//                 {
-//                 if(appearAgain[s[i]] ==false)
-//                     return false;
-//                 }
-                
-//             }
-//             else
-//             {
-//                 m1[s[i]] = t[i];
-//                 appearAgain[t[i]] = true;
-//             }
-            
-//         }
-//         return true;
-
-//     }
-// };
-
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         // if (s.size() != t.size())
         //     return false;
         unordered_map<char,char> m1;
-        unordered_map<char, bool> appearAgain;
+        unordered_set<char> appearAgain;
         for (int i=0;i< s.size();i++)
         {
             if (m1.find(s[i]) != m1.end())
@@ -44,17 +14,15 @@ public:
             }
             else
             {
-                if (appearAgain.find(t[i]) != appearAgain.end())
+                if (appearAgain.count(t[i]))
                     return false;
                 m1[s[i]] = t[i];
-                appearAgain[t[i]] = true;
+                appearAgain.insert(t[i]);
             }
         }
         return true;
-
     }
 };
-
 
 
 
