@@ -31,8 +31,8 @@
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        if (s.size() != t.size())
-            return false;
+        // if (s.size() != t.size())
+        //     return false;
         unordered_map<char,char> m1;
         unordered_map<char, bool> appearAgain;
         for (int i=0;i< s.size();i++)
@@ -40,10 +40,7 @@ public:
             if (m1.find(s[i]) != m1.end())
             {
                 if (m1[s[i]] != t[i])
-                {
                     return false;
-                }
-                
             }
             else
             {
@@ -52,7 +49,6 @@ public:
                 m1[s[i]] = t[i];
                 appearAgain[t[i]] = true;
             }
-            
         }
         return true;
 
