@@ -6,10 +6,10 @@ public:
         {
             int cnt = 0;
             int copyOfI = i;
-            for (short x = 0; x < 32; x++)
+            for (short x = 0; i>0 && x < 32 ; x++)
             {
-                int z = (1 << x);
-                if (i &  z)
+                //int z = (1 << x); //MEM care
+                if (i & (1 << x) )
                     cnt++;
                 copyOfI = (copyOfI >> 1);
             }
