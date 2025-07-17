@@ -19,7 +19,7 @@
 //         return res;
 //     }
 // };
-
+// Optimized ^2 in MEM O(N)
 // class Solution {
 // public:
 //     vector<int> countBits(int n) {
@@ -32,10 +32,9 @@
 //         return res;
 //     }
 // };
-
-class Solution {
-public:
+// Optimized ^3 in time & MEM O(N) dynamic programming [Memoization] approach
 /*
+//res[0]=0 //base case
 0    000  
 1    001
 res[1]=res[1>>1 =0] +(1&1) =0 + 1 =1                       
@@ -47,8 +46,10 @@ res[3]=res[3>>1 =2] +(3&1) =1 + (11 & 01 ))  =1 + 1=2
 res[4]=res[4>>1 =2] +(4&1) =1 + (100 & 001)) =1 + 0=1
 5    101 
 res[5]=res[5>>1 =2] +(5&1) =1 + (101 & 001)) =1 + 1=2
-
 */
+class Solution {
+public:
+
     vector<int> countBits(int n) {
         vector<int> res(n + 1);
         res[0] = 0; // base case
