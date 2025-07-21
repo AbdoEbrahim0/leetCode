@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int addDigits(int num) {
+    int addDigits(int & num) {
         //int arr[32] = {};
         //int i = 0;
         int newNum = 0;
