@@ -1,7 +1,8 @@
 class Solution {
 public:
-    int addDigits(int num) {
-        int newNum = 0;
+int solve(int & num)
+{
+int newNum = 0;
         while (num != 0)
         {
             newNum += num % 10;
@@ -9,6 +10,11 @@ public:
         }
         if (newNum / 10 == 0)
             return newNum;
-        return addDigits(newNum);
+
+        return solve(newNum);
+
+}
+    int addDigits(int num) {
+        return solve(num);
     }
 };
