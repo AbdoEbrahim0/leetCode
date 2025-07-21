@@ -47,6 +47,7 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
+| [0258-add-digits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0258-add-digits) |
 | [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
@@ -131,6 +132,7 @@
 | [0171-excel-sheet-column-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0171-excel-sheet-column-number) |
 | [0202-happy-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0202-happy-number) |
 | [0231-power-of-two](https://github.com/AbdoEbrahim0/leetCode/tree/master/0231-power-of-two) |
+| [0258-add-digits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0258-add-digits) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/AbdoEbrahim0/leetCode/tree/master/0326-power-of-three) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
@@ -291,6 +293,7 @@
 ## Number Theory
 |  |
 | ------- |
+| [0258-add-digits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0258-add-digits) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Sliding Window
 |  |
