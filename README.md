@@ -15,6 +15,7 @@
 | [0171-excel-sheet-column-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0171-excel-sheet-column-number) |
 | [0205-isomorphic-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/AbdoEbrahim0/leetCode/tree/master/0242-valid-anagram) |
+| [0290-word-pattern](https://github.com/AbdoEbrahim0/leetCode/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0344-reverse-string) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -249,6 +250,7 @@
 | [0219-contains-duplicate-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/AbdoEbrahim0/leetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
+| [0290-word-pattern](https://github.com/AbdoEbrahim0/leetCode/tree/master/0290-word-pattern) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
