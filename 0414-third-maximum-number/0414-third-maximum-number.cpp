@@ -13,9 +13,10 @@ public:
     int thirdMax(vector<int>& nums) {
         set<int > mySet(nums.begin(), nums.end());
         int mySetSize = mySet.size();
-        auto it=mySet.end();
+        
         if (mySetSize < 3)
         {
+            auto it=mySet.end();
             it--;
             return *it;
         }
