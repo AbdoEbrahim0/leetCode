@@ -38,17 +38,9 @@ public:
         auto it=mySet.end();
         if (mySetSize < 3)
         {
-            auto it=mySet.end();
             it--;
             return *it;
         }
-        int i = 0;
-        // nums.resize(mySet.size());
-        // for (auto it = mySet.begin(); i< mySet.size(); it++)
-        // {
-        //     nums [i++] = *it;
-        // }
-        //return nums[nums.size()- 3];
         it--;
         it--;
         it--;
