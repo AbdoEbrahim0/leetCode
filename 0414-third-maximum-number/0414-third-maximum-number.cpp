@@ -50,14 +50,12 @@
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
-        
         unordered_set<int> mySet;
-
         priority_queue<int, vector<int>, greater<int>> pr;
         for (int val :nums)
         {
             //{ 3,5,8,20 };
-            
+            //{ 1,2,5,3,5,20 }
             if ( mySet.count(val) ==0)
             {
                 pr.push(val);
