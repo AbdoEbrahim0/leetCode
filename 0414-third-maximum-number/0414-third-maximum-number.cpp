@@ -47,26 +47,46 @@
 //         return *(it);
 //     }
 // };
+//priorty queue
+// class Solution {
+// public:
+//     int thirdMax(vector<int>& nums) {
+//         unordered_set<int> mySet;
+//         priority_queue<int, vector<int>, greater<int>> pr;
+//         for (int val :nums)
+//         {
+//             //{ 3,5,8,20 };
+//             //{ 1,2,5,3,5,20 }
+//             if ( mySet.count(val) ==0)
+//             {
+//                 pr.push(val);
+//                 mySet.insert(val);
+//             }
+//             if (pr.size() > 3)
+//                 pr.pop();
+//         }
+
+//         if (mySet.size()<3)
+//             return *max_element(nums.begin(), nums.end());
+//         return pr.top();
+//     }
+// };
+// priorty queue
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
-        unordered_set<int> mySet;
+        unordered_set<int> mySet(nums.begin(), nums.end());
+        if (mySet.size() < 3)
+            return *max_element(nums.begin(), nums.end());
         priority_queue<int, vector<int>, greater<int>> pr;
-        for (int val :nums)
+        for (auto it=mySet.begin();it !=mySet.end();it++)
         {
             //{ 3,5,8,20 };
             //{ 1,2,5,3,5,20 }
-            if ( mySet.count(val) ==0)
-            {
-                pr.push(val);
-                mySet.insert(val);
-            }
+                pr.push(*it);
             if (pr.size() > 3)
                 pr.pop();
         }
-
-        if (mySet.size()<3)
-            return *max_element(nums.begin(), nums.end());
         return pr.top();
     }
 };
