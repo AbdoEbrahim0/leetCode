@@ -64,8 +64,9 @@ public:
             if (pr.size() > 3)
                 pr.pop();
         }
-if (mySet.size()<3)
-return *max_element(nums.begin(), nums.end());
+
+        if (mySet.size()<3)
+            return *max_element(nums.begin(), nums.end());
         return pr.top();
     }
 };
