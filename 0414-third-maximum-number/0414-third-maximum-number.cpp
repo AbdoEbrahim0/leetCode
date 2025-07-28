@@ -91,22 +91,53 @@
 //     }
 // };
 
+//
+//optimized ^4
+// class Solution {
+// public:
+//     int thirdMax(vector<int>& nums) {
+//         unordered_set<int> mySet(nums.begin(), nums.end());
+
+//         if (mySet.size() < 3)
+//             return *max_element(mySet.begin(), mySet.end());
+
+//         priority_queue<int, vector<int>, greater<int>> minHeap;
+
+//         for (int num : mySet) {
+//             minHeap.push(num);
+//             if (minHeap.size() > 3)
+//                 minHeap.pop(); // Remove smallest to keep 3 largest
+//         }
+
+//         return minHeap.top(); // Third maximum
+//     }
+// };
+
+
+//gpt best performance 
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
-        unordered_set<int> mySet(nums.begin(), nums.end());
+        long first = LONG_MIN, second = LONG_MIN, third = LONG_MIN;
 
-        if (mySet.size() < 3)
-            return *max_element(mySet.begin(), mySet.end());
+        for (int num : nums) {
+            if (num == first || num == second || num == third)
+                continue;
 
-        priority_queue<int, vector<int>, greater<int>> minHeap;
-
-        for (int num : mySet) {
-            minHeap.push(num);
-            if (minHeap.size() > 3)
-                minHeap.pop(); // Remove smallest to keep 3 largest
+            if (num > first) {
+                third = second;
+                second = first;
+                first = num;
+            }
+            else if (num > second) {
+                third = second;
+                second = num;
+            }
+            else if (num > third) {
+                third = num;
+            }
         }
 
-        return minHeap.top(); // Third maximum
+        return third == LONG_MIN ? first : third;
     }
 };
