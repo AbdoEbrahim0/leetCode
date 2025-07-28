@@ -72,21 +72,41 @@
 //     }
 // };
 // priorty queue
+// class Solution {
+// public:
+//     int thirdMax(vector<int>& nums) {
+//         unordered_set<int> mySet(nums.begin(), nums.end());
+//         if (mySet.size() < 3)
+//             return *max_element(nums.begin(), nums.end());
+//         priority_queue<int, vector<int>, greater<int>> pr;
+//         for (auto it=mySet.begin();it !=mySet.end();it++)
+//         {
+//             //{ 3,5,8,20 };
+//             //{ 1,2,5,3,5,20 }
+//                 pr.push(*it);
+//             if (pr.size() > 3)
+//                 pr.pop();
+//         }
+//         return pr.top();
+//     }
+// };
+
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
         unordered_set<int> mySet(nums.begin(), nums.end());
+
         if (mySet.size() < 3)
-            return *max_element(nums.begin(), nums.end());
-        priority_queue<int, vector<int>, greater<int>> pr;
-        for (auto it=mySet.begin();it !=mySet.end();it++)
-        {
-            //{ 3,5,8,20 };
-            //{ 1,2,5,3,5,20 }
-                pr.push(*it);
-            if (pr.size() > 3)
-                pr.pop();
+            return *max_element(mySet.begin(), mySet.end());
+
+        priority_queue<int, vector<int>, greater<int>> minHeap;
+
+        for (int num : mySet) {
+            minHeap.push(num);
+            if (minHeap.size() > 3)
+                minHeap.pop(); // Remove smallest to keep 3 largest
         }
-        return pr.top();
+
+        return minHeap.top(); // Third maximum
     }
 };
