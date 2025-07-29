@@ -77,6 +77,7 @@
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
 | [0303-range-sum-query-immutable](https://github.com/AbdoEbrahim0/leetCode/tree/master/0303-range-sum-query-immutable) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0414-third-maximum-number) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
@@ -155,6 +156,7 @@
 | [0344-reverse-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -188,6 +190,7 @@
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -257,6 +260,7 @@
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/AbdoEbrahim0/leetCode/tree/master/0290-word-pattern) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
@@ -288,6 +292,7 @@
 | [0242-valid-anagram](https://github.com/AbdoEbrahim0/leetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0414-third-maximum-number) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
 | [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
