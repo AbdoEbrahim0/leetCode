@@ -5,6 +5,7 @@ public:
         int sSize=s.size();
         for (char &ch : s)
         {
+            if(arr[ch - 'a']<=1)
             arr[ch - 'a']++;
         }
 
