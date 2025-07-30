@@ -2,12 +2,13 @@ class Solution {
 public:
     int firstUniqChar(string s) {
         int arr[26] = {};
-        for (int i = 0; i < s.size(); i++)
+        int sSize=s.size();
+        for (char &ch : s)
         {
-            arr[s[i] - 'a']++;
+            arr[ch - 'a']++;
         }
 
-        for (int i = 0; i <s.size(); i++)
+        for (int i = 0; i <sSize; i++)
         {
             if (arr[s[i]-'a'] == 1)
                 return i;
