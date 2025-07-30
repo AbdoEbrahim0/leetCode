@@ -18,6 +18,7 @@
 | [0290-word-pattern](https://github.com/AbdoEbrahim0/leetCode/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -261,6 +262,7 @@
 | [0290-word-pattern](https://github.com/AbdoEbrahim0/leetCode/tree/master/0290-word-pattern) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
@@ -335,6 +337,7 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/AbdoEbrahim0/leetCode/tree/master/0169-majority-element) |
+| [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [1502-construct-k-palindrome-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -404,4 +407,8 @@
 | [0231-power-of-two](https://github.com/AbdoEbrahim0/leetCode/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/AbdoEbrahim0/leetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AbdoEbrahim0/leetCode/tree/master/0342-power-of-four) |
+## Queue
+|  |
+| ------- |
+| [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 <!---LeetCode Topics End-->
