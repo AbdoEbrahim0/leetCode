@@ -19,6 +19,7 @@
 | [0344-reverse-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -228,6 +229,7 @@
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0338-counting-bits) |
 | [0342-power-of-four](https://github.com/AbdoEbrahim0/leetCode/tree/master/0342-power-of-four) |
+| [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0476-number-complement](https://github.com/AbdoEbrahim0/leetCode/tree/master/0476-number-complement) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -263,6 +265,7 @@
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
@@ -295,6 +298,7 @@
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0414-third-maximum-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0414-third-maximum-number) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
 | [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
