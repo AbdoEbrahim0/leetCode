@@ -3,8 +3,8 @@ public:
     bool isAnagram(string s, string t) {
         if (s.size() !=t.size())
         return false;
-        int vis1[26]={};
-        int vis2[26]={};
+        short vis1[26]={};
+        short vis2[26]={};
         
 
         for(int i=0;i<s.size();i++)
