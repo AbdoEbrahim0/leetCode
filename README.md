@@ -20,6 +20,7 @@
 | [0345-reverse-vowels-of-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
+| [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -159,6 +160,7 @@
 | [0345-reverse-vowels-of-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -287,6 +289,7 @@
 | [0119-pascals-triangle-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AbdoEbrahim0/leetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0338-counting-bits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0338-counting-bits) |
+| [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
 | [2562-count-ways-to-build-good-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/2562-count-ways-to-build-good-strings) |
 | [2586-longest-square-streak-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/2586-longest-square-streak-in-an-array) |
 ## Sorting
