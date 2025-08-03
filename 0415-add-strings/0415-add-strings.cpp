@@ -1,37 +1,75 @@
+//1st sol
+// class Solution {
+// public:
+//     string addStrings(string num1, string num2) {
+//         int maxSize = max(num1.size(), num2.size());
+//         vector<short>arr1(maxSize);
+//         vector<short>arr2(maxSize);
+//         int copyofMaxSize = maxSize-1;
+//         for (int i = num1.size() - 1; i >= 0; i--)
+//         {
+//             arr1[copyofMaxSize--] = num1[i]-'0';
+//         }
+//         copyofMaxSize = maxSize-1;
+//         for (int j = num2.size() - 1; j >= 0; j--)
+//         {
+//             arr2[copyofMaxSize--] = num2[j]-'0';
+//         }
+//         string s = "";
+//         //num1 = "456", num2 = "77"
+//         int reminder = 0;
+//         int mod;
+//         for (int z = maxSize - 1; z >= 0; z--)
+//         {
+//             mod = (arr1[z] + arr2[z]) % 10;
+//             s +=  (mod + reminder)%10 + '0';
+//             if((mod + reminder) <10)
+//             {reminder = (arr1[z] + arr2[z]) / 10;}
+//             else 
+//             {reminder=1;}
+           
+//         }
+//         if (reminder )
+//             s += '1';
+//         reverse(s.begin(), s.end());
+        
+//         return s;
+//     }
+// };
+//2nd sol
 class Solution {
 public:
     string addStrings(string num1, string num2) {
-        int maxSize = max(num1.size(), num2.size());
-        vector<short>arr1(maxSize);
-        vector<short>arr2(maxSize);
-        int copyofMaxSize = maxSize-1;
-        for (int i = num1.size() - 1; i >= 0; i--)
-        {
-            arr1[copyofMaxSize--] = num1[i]-'0';
-        }
-        copyofMaxSize = maxSize-1;
-        for (int j = num2.size() - 1; j >= 0; j--)
-        {
-            arr2[copyofMaxSize--] = num2[j]-'0';
-        }
+        int size1 = num1.size();
+        int size2 = num2.size();
+        int zeros = abs(size1-size2);
+        if (size1 > size2)
+            num2= string (zeros, '0')+num2;
+        else if (size1 < size2)
+            num1 = string(zeros, '0') + num1;
+        size1 = num1.size()-1;
+        size2 = num2.size() - 1;
         string s = "";
-        //num1 = "456", num2 = "77"
         int reminder = 0;
-        int mod;
-        for (int z = maxSize - 1; z >= 0; z--)
+        int x, y;
+
+        while (size1 >=0)
         {
-            mod = (arr1[z] + arr2[z]) % 10;
-            s +=  (mod + reminder)%10 + '0';
-            if((mod + reminder) <10)
-            {reminder = (arr1[z] + arr2[z]) / 10;}
-            else 
-            {reminder=1;}
-           
+            x = num1[size1] - '0';
+            y = num2[size2] - '0';
+            s += ((x + y +reminder)% 10) +'0';
+            reminder =(x + y + reminder) / 10;
+            size1--;
+            size2--;
+
         }
-        if (reminder )
+        
+        //num1 = "456", num2 = "77"
+        
+        
+        if (reminder)
             s += '1';
         reverse(s.begin(), s.end());
-        
         return s;
     }
 };
