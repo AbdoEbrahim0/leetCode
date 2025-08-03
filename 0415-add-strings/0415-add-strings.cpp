@@ -51,22 +51,17 @@ public:
         size2 = num2.size() - 1;
         string s = "";
         int reminder = 0;
-        int x, y;
-
+        //int x, y;
         while (size1 >=0)
         {
-            x = num1[size1] - '0';
-            y = num2[size2] - '0';
-            s += ((x + y +reminder)% 10) +'0';
-            reminder =(x + y + reminder) / 10;
+            //x = num1[size1] - '0';
+            //y = num2[size2] - '0';
+            s += ((num1[size1] - '0' + num2[size2] - '0' + reminder) % 10) +'0';
+            reminder =(num1[size1] - '0' +  num2[size2] - '0' + reminder) / 10;
             size1--;
             size2--;
-
         }
-        
         //num1 = "456", num2 = "77"
-        
-        
         if (reminder)
             s += '1';
         reverse(s.begin(), s.end());
