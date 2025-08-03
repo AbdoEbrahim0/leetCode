@@ -21,6 +21,7 @@
 | [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
+| [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -53,6 +54,7 @@
 | ------- |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
 | [0258-add-digits](https://github.com/AbdoEbrahim0/leetCode/tree/master/0258-add-digits) |
+| [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
 | [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
@@ -144,6 +146,7 @@
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/AbdoEbrahim0/leetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AbdoEbrahim0/leetCode/tree/master/0342-power-of-four) |
+| [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Two Pointers
