@@ -22,6 +22,7 @@
 | [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
 | [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
+| [0434-number-of-segments-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0434-number-of-segments-in-a-string) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
