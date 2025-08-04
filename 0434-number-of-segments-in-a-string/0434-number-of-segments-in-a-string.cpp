@@ -11,14 +11,8 @@ public:
                     {
                         i++;
                     }
-
              }
-            // if (s[i] == ' ')
-            //     if (i -1 >=0 && s[i-1] != ' ')
-            //         c++;
-            // else
         }
-        //return (c) ? c+1:c;
         return (c);
     }
 };
