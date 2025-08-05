@@ -81,7 +81,7 @@ void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
     int arrIndex = 0;
     //int a, b;
     //int push;
-    int i = 0, j = 0;
+    short i = 0, j = 0;
     for ( i = 0; i < m && j < n; )
     {
         for (j = 0; j < n && i < m;)
@@ -110,7 +110,7 @@ void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
     if (i >= m)// nums1  completed to its end so use remaining of nums2
         {
         //last = j; z=last
-        for (int z = j; z < n; z++)
+        for (short z = j; z < n; z++)
             {
             arr[arrIndex] = nums2[z];
             arrIndex++;
@@ -120,13 +120,13 @@ void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
     else if (j >= n) //nums2  completed to its end so use remaining of nums1
     {
         //last = i; z=last
-        for (int z = i; z < m; z++)
+        for (short z = i; z < m; z++)
         {
             arr[arrIndex] = nums1[z];
             arrIndex++;
         }
     }
-    for (int x = 0; x < m + n; x++)
+    for (short x = 0; x < m + n; x++)
     {
         nums1[x] = arr[x];
         //printf("%d\n", nums1[x]);
