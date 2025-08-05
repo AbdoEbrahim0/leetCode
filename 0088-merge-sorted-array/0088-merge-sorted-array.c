@@ -78,7 +78,7 @@ void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
     //[1,2,2,3,5,6]
     //int temp = nums1[0];;
     int* arr = (int*)malloc((m+n) * sizeof(int)); //  Valid in C
-    int arrIndex = 0;
+    short arrIndex = 0;
     //int a, b;
     //int push;
     short i = 0, j = 0;
