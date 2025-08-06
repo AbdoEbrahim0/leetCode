@@ -1,16 +1,16 @@
-int getSize(char* ransomNote)
+short getSize(char* ransomNote)
 {
-    int c=0;
+    short c=0;
     while(ransomNote[c] !='\0')
     c++;
 
     return c; 
 }
 bool canConstruct(char* ransomNote, char* magazine) {
-    int arr1[26] = {};
-    int arr2[26] = {};
-    int ranSize = getSize(ransomNote);
-    int magSize = getSize(magazine);
+    short arr1[26] = {};
+    short arr2[26] = {};
+    short ranSize = getSize(ransomNote);
+    short magSize = getSize(magazine);
     
     for (int x = 0; x < ranSize; x++)
     {
