@@ -3,7 +3,6 @@ short getSize(char* ransomNote)
     short c=0;
     while(ransomNote[c] !='\0')
     c++;
-
     return c; 
 }
 bool canConstruct(char* ransomNote, char* magazine) {
