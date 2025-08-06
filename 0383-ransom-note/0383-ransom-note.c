@@ -12,16 +12,16 @@ bool canConstruct(char* ransomNote, char* magazine) {
     short ranSize = getSize(ransomNote);
     short magSize = getSize(magazine);
     
-    for (int x = 0; x < ranSize; x++)
+    for (short x = 0; x < ranSize; x++)
     {
         arr1[ransomNote[x] - 'a'] ++;
     }
-    for (int x = 0; x < magSize; x++)
+    for (short x = 0; x < magSize; x++)
     {
         arr2[magazine[x] - 'a'] ++;
     }
 
-    for (int i = 0; i < 26; i++)
+    for (short i = 0; i < 26; i++)
     {
         if (arr1[i])
             if (arr2[i] < arr1[i])
