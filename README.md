@@ -97,6 +97,7 @@
 | [0495-teemo-attacking](https://github.com/AbdoEbrahim0/leetCode/tree/master/0495-teemo-attacking) |
 | [0496-next-greater-element-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0496-next-greater-element-i) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
+| [0506-relative-ranks](https://github.com/AbdoEbrahim0/leetCode/tree/master/0506-relative-ranks) |
 | [0682-baseball-game](https://github.com/AbdoEbrahim0/leetCode/tree/master/0682-baseball-game) |
 | [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
@@ -317,6 +318,7 @@
 | [0389-find-the-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/0389-find-the-difference) |
 | [0414-third-maximum-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0414-third-maximum-number) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
+| [0506-relative-ranks](https://github.com/AbdoEbrahim0/leetCode/tree/master/0506-relative-ranks) |
 | [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -345,6 +347,7 @@
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0506-relative-ranks](https://github.com/AbdoEbrahim0/leetCode/tree/master/0506-relative-ranks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/AbdoEbrahim0/leetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
