@@ -9,25 +9,19 @@
 //     else
 //     return fib(n-1) + fib(n-2);
 // }
-
+//loop
 int fib(int n) {
     //(0)=0  (1)=1
-    int prev=0, cur=1,out=0;
+    int prev=0, cur=1;
         if(n==1)
         return 1;
         if(n==0)
         return 0;
     for (int x = 2; x <= n; x++)
     {
-        out = (prev + cur);
-        prev = cur;
-        cur = out;
+        cur = (prev + cur);
+        prev = cur-prev;
+        
     }
-    return out;
+    return cur;
 }
-/*
-n=3
-n=2     ,n=1
-n=1,n=0 ,n=1
-
-*/
