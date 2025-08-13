@@ -1,6 +1,27 @@
+//1st sol
+// bool checkRecord(char* s) {
+// 	int idx = 0;
+// 	int absent = 0, late = 0;
+// 	while (s[idx] != '\0')
+// 	{
+// 		if (s[idx] == 'A')
+// 		{
+// 			absent++;
+// 			if (absent >= 2)
+// 				return false;
+// 		}
+// 		else if( idx>= 2 && s[idx] == 'L' && s[idx-1] == 'L' && s[idx-2] == 'L')
+// 		{
+// 			return false;
+// 		}
+// 		idx++;
+// 	}
+// 	return true;
+// }
+
 bool checkRecord(char* s) {
 	int idx = 0;
-	int absent = 0, late = 0;
+	short  absent = 0,late = 0;
 	while (s[idx] != '\0')
 	{
 		if (s[idx] == 'A')
@@ -8,16 +29,20 @@ bool checkRecord(char* s) {
 			absent++;
 			if (absent >= 2)
 				return false;
+                late = 0;
 		}
-		else if( idx>= 2 && s[idx] == 'L' && s[idx-1] == 'L' && s[idx-2] == 'L')
+		else if( s[idx] == 'L')
 		{
+			late++;
+			if (late>=3)
 			return false;
 		}
+		else
+			late = 0;
 		idx++;
 	}
 	return true;
 }
-
 
 
 
