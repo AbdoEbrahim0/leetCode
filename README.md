@@ -28,6 +28,7 @@
 | [0434-number-of-segments-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0434-number-of-segments-in-a-string) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0520-detect-capital](https://github.com/AbdoEbrahim0/leetCode/tree/master/0520-detect-capital) |
+| [0551-student-attendance-record-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0551-student-attendance-record-i) |
 | [0742-to-lower-case](https://github.com/AbdoEbrahim0/leetCode/tree/master/0742-to-lower-case) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/1302-delete-characters-to-make-fancy-string) |
