@@ -28,6 +28,7 @@
 | [0434-number-of-segments-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0434-number-of-segments-in-a-string) |
 | [0500-keyboard-row](https://github.com/AbdoEbrahim0/leetCode/tree/master/0500-keyboard-row) |
 | [0520-detect-capital](https://github.com/AbdoEbrahim0/leetCode/tree/master/0520-detect-capital) |
+| [0541-reverse-string-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0541-reverse-string-ii) |
 | [0551-student-attendance-record-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/0551-student-attendance-record-i) |
 | [0742-to-lower-case](https://github.com/AbdoEbrahim0/leetCode/tree/master/0742-to-lower-case) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AbdoEbrahim0/leetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -178,6 +179,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0392-is-subsequence](https://github.com/AbdoEbrahim0/leetCode/tree/master/0392-is-subsequence) |
 | [0455-assign-cookies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0455-assign-cookies) |
+| [0541-reverse-string-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0541-reverse-string-ii) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/AbdoEbrahim0/leetCode/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
