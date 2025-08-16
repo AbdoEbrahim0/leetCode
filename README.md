@@ -448,4 +448,8 @@
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/AbdoEbrahim0/leetCode/tree/master/0387-first-unique-character-in-a-string) |
+## Database
+|  |
+| ------- |
+| [0619-biggest-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0619-biggest-single-number) |
 <!---LeetCode Topics End-->
