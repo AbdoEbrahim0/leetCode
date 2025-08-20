@@ -149,6 +149,7 @@
 | [0013-roman-to-integer](https://github.com/AbdoEbrahim0/leetCode/tree/master/0013-roman-to-integer) |
 | [0066-plus-one](https://github.com/AbdoEbrahim0/leetCode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/AbdoEbrahim0/leetCode/tree/master/0067-add-binary) |
+| [0069-sqrtx](https://github.com/AbdoEbrahim0/leetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/AbdoEbrahim0/leetCode/tree/master/0070-climbing-stairs) |
 | [0168-excel-sheet-column-title](https://github.com/AbdoEbrahim0/leetCode/tree/master/0168-excel-sheet-column-title) |
 | [0171-excel-sheet-column-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0171-excel-sheet-column-number) |
@@ -214,6 +215,7 @@
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/AbdoEbrahim0/leetCode/tree/master/0035-search-insert-position) |
+| [0069-sqrtx](https://github.com/AbdoEbrahim0/leetCode/tree/master/0069-sqrtx) |
 | [0268-missing-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
