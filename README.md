@@ -462,5 +462,6 @@
 | [0619-biggest-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0619-biggest-single-number) |
 | [0620-not-boring-movies](https://github.com/AbdoEbrahim0/leetCode/tree/master/0620-not-boring-movies) |
 | [1258-article-views-i](https://github.com/AbdoEbrahim0/leetCode/tree/master/1258-article-views-i) |
+| [1827-invalid-tweets](https://github.com/AbdoEbrahim0/leetCode/tree/master/1827-invalid-tweets) |
 | [1908-recyclable-and-low-fat-products](https://github.com/AbdoEbrahim0/leetCode/tree/master/1908-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
