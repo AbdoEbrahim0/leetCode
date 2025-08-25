@@ -457,6 +457,7 @@
 ## Database
 |  |
 | ------- |
+| [0197-rising-temperature](https://github.com/AbdoEbrahim0/leetCode/tree/master/0197-rising-temperature) |
 | [0584-find-customer-referee](https://github.com/AbdoEbrahim0/leetCode/tree/master/0584-find-customer-referee) |
 | [0595-big-countries](https://github.com/AbdoEbrahim0/leetCode/tree/master/0595-big-countries) |
 | [0619-biggest-single-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0619-biggest-single-number) |
