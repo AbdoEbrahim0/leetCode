@@ -7,4 +7,3 @@ select id from Weather as w1 where  w1.temperature > (select w2.temperature from
 --   ON w1.recordDate = DATEADD(DAY, 1, w2.recordDate)
 -- WHERE w1.temperature > w2.temperature;
 
---   (select w2.temperature from Weather ); 
