@@ -1,18 +1,7 @@
-# Write your MySQL query statement below
--- SELECT MAX(num) AS num
--- FROM MyNumbers
--- WHERE num NOT IN (
---     SELECT num
---     FROM MyNumbers
---     GROUP BY num
---     HAVING COUNT(*) > 1
--- );
-
-SELECT MAX(num) AS num
-FROM MyNumbers
-WHERE num IN (
-    SELECT num
-    FROM MyNumbers
-    GROUP BY num
-    HAVING COUNT(num) = 1
-);
+/* Write your T-SQL query statement below */
+select isnull(
+(
+select top 1 num from MyNumbers 
+group by num having count(num)=1 order by num  desc 
+)
+,null)as num;
