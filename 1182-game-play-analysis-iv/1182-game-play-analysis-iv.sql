@@ -36,5 +36,6 @@ JOIN (
     FROM Activity
     GROUP BY player_id
 ) f
-  ON a.player_id = f.player_id
- AND a.event_date = DATEADD(day, 1, f.first_day);
+  ON a.event_date = DATEADD(day, 1, f.first_day) and
+  a.player_id = f.player_id
+ ;
