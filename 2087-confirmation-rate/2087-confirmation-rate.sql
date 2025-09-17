@@ -11,18 +11,34 @@
 -- on s.user_id=c.user_id
 -- group by s.user_id;
  
+--need to be more clean 
 
-select user_id, (select case when   round 
-                    (1.0* sum (case when c.action ='confirmed'  then  1 else 0 end)
-                    / sum (case when c.action  in ('confirmed', 'timeout')   then  1 else 0 end)
-                    ,2) is null then 0 else 
-                    round 
-                    (1.0* sum (case when c.action ='confirmed'  then  1 else 0 end)
-                    / sum (case when c.action  in ('confirmed', 'timeout')   then  1 else 0 end)
-                    ,2) end
-                    from Confirmations as c
-                    where c.user_id=s.user_id
+-- select user_id, (select case when   round 
+--                     (1.0* sum (case when c.action ='confirmed'  then  1 else 0 end)
+--                     / sum (case when c.action  in ('confirmed', 'timeout')   then  1 else 0 end)
+--                     ,2) is null then 0 else 
+--                     round 
+--                     (1.0* sum (case when c.action ='confirmed'  then  1 else 0 end)
+--                     / sum (case when c.action  in ('confirmed', 'timeout')   then  1 else 0 end)
+--                     ,2) end
+--                     from Confirmations as c
+--                     where c.user_id=s.user_id
                      
-                )
-as confirmation_rate
-from Signups as s;
+--                 )
+-- as confirmation_rate
+-- from Signups as s;
+
+
+            select user_id,isnull( (select  
+                                    round 
+                                    (1.0* sum (case when c.action ='confirmed'  then  1 else 0 end)
+                                    / sum (case when c.action  in ('confirmed', 'timeout')   then  1 else 0 end)
+                                    ,2) 
+                                    from Confirmations as c
+                                    where c.user_id=s.user_id
+                                    
+                                ) ,0.00)
+                as confirmation_rate
+                from Signups as s;
+
+    
