@@ -13,29 +13,31 @@
 --                 join Logs as l3 on l3.id-l1.id =2 and (l1.num=l3.num);
  
  -- [faild] 
--- select l1.num
--- from Logs as l1
--- where sum (
---     case when 
---     l1.id =  (select l1.id from Logs as l2 where (l1.num=l2.num) and  l2.id-l1.id=1  )
---     or 
---     l1.id  = (select l1.id from Logs as l3 where (l1.num=l3.num) and l3.id-l1.id=2)
---     then 1
---     else 0
---     end
---     ) >2
-
- --[using LeadFn to check consecutively]
-
 SELECT DISTINCT num AS ConsecutiveNums
 FROM (
   SELECT 
     num,
-    LEAD(num, 1) OVER (ORDER BY id) AS next1,
-    LEAD(num, 2) OVER (ORDER BY id) AS next2
+    CASE 
+      WHEN num = LEAD(num, 1) OVER (ORDER BY id)
+       AND num = LEAD(num, 2) OVER (ORDER BY id)
+      THEN 1 ELSE 0
+    END AS is_consecutive
   FROM Logs
 ) AS sub
-WHERE num = next1 AND num = next2;
+WHERE is_consecutive = 1;
+
+
+ --[using LeadFn to check consecutively]
+
+-- SELECT DISTINCT num AS ConsecutiveNums
+-- FROM (
+--   SELECT 
+--     num,
+--     LEAD(num, 1) OVER (ORDER BY id) AS next1,
+--     LEAD(num, 2) OVER (ORDER BY id) AS next2
+--   FROM Logs
+-- ) AS sub
+-- WHERE num = next1 AND num = next2;
 
 --showing output of subquery
 -- | num | next1 | next2 |
