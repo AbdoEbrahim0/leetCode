@@ -25,7 +25,8 @@
 --     end
 --     ) >2
 
- 
+ --[using LeadFn to check consecutively]
+
 SELECT DISTINCT num AS ConsecutiveNums
 FROM (
   SELECT 
@@ -36,3 +37,13 @@ FROM (
 ) AS sub
 WHERE num = next1 AND num = next2;
 
+--showing output of subquery
+-- | num | next1 | next2 |
+-- | --- | ----- | ----- |
+-- | 1   | 1     | 1     |
+-- | 1   | 1     | 2     |
+-- | 1   | 2     | 1     |
+-- | 2   | 1     | 2     |
+-- | 1   | 2     | 2     |
+-- | 2   | 2     | null  |
+-- | 2   | null  | null  |
