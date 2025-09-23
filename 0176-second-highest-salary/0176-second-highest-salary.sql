@@ -1,11 +1,13 @@
 /* Write your T-SQL query statement below */
 
 --[maxFn]
+--###########
 -- select distinct max(salary) as  SecondHighestSalary 
 -- from Employee
 -- where salary < (select max(salary) from Employee); 
 
 -- [subQuery]
+--###########
 -- processes queries in this order:
 -- FROM
 -- WHERE
@@ -19,7 +21,10 @@
 -- from Employee 
 -- ) AS ranked --note it will not work if As ranked not used
 -- where rn =2 ;
+
+
 --[dense rank]
+--###########
 --note row_number() will fail as it count duplicated
 -- | salary | rn |
 -- | ------ | -- |
@@ -37,7 +42,8 @@
 --     as  SecondHighestSalary 
 -- from RankedSalaries
 -- ;
-
+--[group by]
+--###########
 select
 case 
 when count(*)=0 then null 
@@ -49,6 +55,5 @@ from
 select salary ,row_number() over (order by salary desc) as rn
 from Employee
 group by salary
-) as ranked
-
+) as ranked  --must add as ranked just renaming it to work
 where rn=2
