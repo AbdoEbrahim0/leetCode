@@ -2,11 +2,9 @@
 -- declare @sum int
 with ModifiedbyTurnOrder as
 (
-select  *,sum(weight) over (order by turn) as acc 
+select  person_name,turn,sum(weight) over (order by turn) as acc 
 from Queue
 )
--- select @sum=weight+@sum
--- from Modified;
 select top 1 person_name
 from ModifiedbyTurnOrder    
 where acc<=1000 
