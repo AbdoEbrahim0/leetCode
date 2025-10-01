@@ -1,4 +1,6 @@
 /* Write your T-SQL query statement below */
+
+--[Wrong syntax only make me fail]
 -- select user_id,count(*)  as cnt 
 -- from MovieRating
 -- group by user_id
