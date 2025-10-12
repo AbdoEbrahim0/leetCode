@@ -168,6 +168,7 @@
 | [0342-power-of-four](https://github.com/AbdoEbrahim0/leetCode/tree/master/0342-power-of-four) |
 | [0412-fizz-buzz](https://github.com/AbdoEbrahim0/leetCode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
+| [0441-arranging-coins](https://github.com/AbdoEbrahim0/leetCode/tree/master/0441-arranging-coins) |
 | [1013-fibonacci-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/1013-fibonacci-number) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
@@ -226,6 +227,7 @@
 | [0287-find-the-duplicate-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/AbdoEbrahim0/leetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/AbdoEbrahim0/leetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0441-arranging-coins](https://github.com/AbdoEbrahim0/leetCode/tree/master/0441-arranging-coins) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/AbdoEbrahim0/leetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
