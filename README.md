@@ -173,6 +173,7 @@
 | [0415-add-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/0415-add-strings) |
 | [0441-arranging-coins](https://github.com/AbdoEbrahim0/leetCode/tree/master/0441-arranging-coins) |
 | [1013-fibonacci-number](https://github.com/AbdoEbrahim0/leetCode/tree/master/1013-fibonacci-number) |
+| [1610-xor-operation-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/1610-xor-operation-in-an-array) |
 | [1642-water-bottles](https://github.com/AbdoEbrahim0/leetCode/tree/master/1642-water-bottles) |
 | [2716-prime-subtraction-operation](https://github.com/AbdoEbrahim0/leetCode/tree/master/2716-prime-subtraction-operation) |
 ## Two Pointers
@@ -272,6 +273,7 @@
 | [0476-number-complement](https://github.com/AbdoEbrahim0/leetCode/tree/master/0476-number-complement) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1610-xor-operation-in-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/1610-xor-operation-in-an-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/AbdoEbrahim0/leetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/AbdoEbrahim0/leetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
