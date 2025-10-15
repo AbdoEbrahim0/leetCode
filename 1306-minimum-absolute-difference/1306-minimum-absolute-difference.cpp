@@ -7,17 +7,12 @@ public:
         if(arr[i] - arr[i-1] <min)
             min= arr[i] - arr[i - 1];
 
-        cout << min;
         vector<vector<int>> res;
         for (int z = 1; z < arr.size(); z++)
         {
             if (arr[z] - arr[z - 1] == min)
             {
-                vector<int> temp;
-                temp.push_back(arr[z-1]);
-                temp.push_back(arr[z]);
-                
-                res.push_back(temp);
+                res.push_back({arr[z-1] ,arr[z]});
             }
         }
         return res;
