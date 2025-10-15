@@ -111,6 +111,7 @@
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
 | [1002-maximum-width-ramp](https://github.com/AbdoEbrahim0/leetCode/tree/master/1002-maximum-width-ramp) |
 | [1241-decompress-run-length-encoded-list](https://github.com/AbdoEbrahim0/leetCode/tree/master/1241-decompress-run-length-encoded-list) |
+| [1306-minimum-absolute-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/1306-minimum-absolute-difference) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/AbdoEbrahim0/leetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/AbdoEbrahim0/leetCode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1435-xor-queries-of-a-subarray](https://github.com/AbdoEbrahim0/leetCode/tree/master/1435-xor-queries-of-a-subarray) |
@@ -356,6 +357,7 @@
 | [0561-array-partition](https://github.com/AbdoEbrahim0/leetCode/tree/master/0561-array-partition) |
 | [0780-max-chunks-to-make-sorted](https://github.com/AbdoEbrahim0/leetCode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/0948-sort-an-array) |
+| [1306-minimum-absolute-difference](https://github.com/AbdoEbrahim0/leetCode/tree/master/1306-minimum-absolute-difference) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/AbdoEbrahim0/leetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/AbdoEbrahim0/leetCode/tree/master/2179-most-beautiful-item-for-each-query) |
