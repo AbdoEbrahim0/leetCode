@@ -1,0 +1,25 @@
+class Solution {
+public:
+    vector<vector<int>> minimumAbsDifference(vector<int>& arr) {
+        sort(arr.begin(), arr.end());
+        int min = 100001;
+        for(int i=1;i<arr.size();i++)
+        if(arr[i] - arr[i-1] <min)
+            min= arr[i] - arr[i - 1];
+
+        cout << min;
+        vector<vector<int>> res;
+        for (int z = 1; z < arr.size(); z++)
+        {
+            if (arr[z] - arr[z - 1] == min)
+            {
+                vector<int> temp;
+                temp.push_back(arr[z]);
+                temp.push_back(arr[z-1]);
+                sort(temp.begin(), temp.end());
+                res.push_back(temp);
+            }
+        }
+        return res;
+    }
+};
