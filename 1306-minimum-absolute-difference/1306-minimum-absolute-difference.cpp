@@ -12,7 +12,9 @@ public:
         {
             if (arr[z] - arr[z - 1] == min)
             {
-                res.push_back({arr[z-1] ,arr[z]});
+                res.push_back({arr[z-1] ,arr[z]});// 
+                //push_back can take variable vector or directly numbers [values]
+                //emplace_back expects constructor arguments,
             }
         }
         return res;
