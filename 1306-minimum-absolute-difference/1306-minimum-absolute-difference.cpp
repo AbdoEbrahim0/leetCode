@@ -14,9 +14,9 @@ public:
             if (arr[z] - arr[z - 1] == min)
             {
                 vector<int> temp;
-                temp.push_back(arr[z]);
                 temp.push_back(arr[z-1]);
-                sort(temp.begin(), temp.end());
+                temp.push_back(arr[z]);
+                
                 res.push_back(temp);
             }
         }
