@@ -16,7 +16,7 @@
 -- group by c.id, c.name
 -- having count(o.id) =0
 
--- 
+--[not in] 
 
 select name as Customers 
 from Customers 
