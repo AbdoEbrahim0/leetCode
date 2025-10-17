@@ -8,6 +8,14 @@
 -- group by Email
 -- having count(*)>1
 
-select distinct p1.email as Email
-from Person p1 join Person p2 --fk chiled  pk parent
-on  p2.id !=p1.id  and p1.email=p2.email
+-- select distinct p1.email as Email
+-- from Person p1 join Person p2 --fk chiled  pk parent
+-- on  p2.id !=p1.id  and p1.email=p2.email
+
+SELECT email AS Email
+FROM Person
+EXCEPT
+SELECT email AS Email
+FROM Person
+GROUP BY email
+HAVING COUNT(*) = 1;
