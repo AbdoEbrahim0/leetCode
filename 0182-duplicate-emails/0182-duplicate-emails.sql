@@ -30,7 +30,7 @@
 -- );
 
 with cte as (
-select email, row_number()   over(partition by email order by email ) as rn
+select email, row_number()   over(partition by email order by id ) as rn
  from Person
 
 )
