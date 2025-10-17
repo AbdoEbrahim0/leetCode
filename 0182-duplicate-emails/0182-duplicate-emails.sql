@@ -20,11 +20,20 @@
 -- GROUP BY email
 -- HAVING COUNT(*) = 1;
 
-SELECT DISTINCT email AS Email
-FROM Person
-WHERE email IN (
-    SELECT email
-    FROM Person
-    GROUP BY email
-    HAVING COUNT(*) > 1
-);
+-- SELECT DISTINCT email AS Email
+-- FROM Person
+-- WHERE email IN (
+--     SELECT email
+--     FROM Person
+--     GROUP BY email
+--     HAVING COUNT(*) > 1
+-- );
+
+with cte as (
+select email, row_number()   over(partition by email order by email ) as rn
+ from Person
+
+)
+select distinct email as Email
+from CTE
+where rn>1
