@@ -10,15 +10,15 @@
 -- from Employee as e
 -- where e.managerId is not null  and e.Salary >(select m.Salary from Employee as m where  m.id=e.managerId  )
 
--- select e.name Employee
--- from Employee e join Employee m
--- on e.id=m.managerId 
+select m.name Employee
+from Employee e join Employee m
+on e.id=m.managerId and m.salary>e.salary
 /*
 | Employee |
 | -------- |
 | Sam      |
 | Max      |
 */
-select e.name Employee
-from Employee e join Employee m
-on m.id=e.managerId and e.salary>m.salary
+-- select e.name Employee
+-- from Employee e join Employee m
+-- on m.id=e.managerId and e.salary>m.salary
