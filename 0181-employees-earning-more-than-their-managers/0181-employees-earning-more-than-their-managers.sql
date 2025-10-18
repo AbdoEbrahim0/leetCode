@@ -5,4 +5,4 @@
 
 select e.name as Employee
 from Employee as e
-where e.Salary >(select m.Salary from Employee as m where m.id=e.managerId  )
+where e.Salary >(select m.Salary from Employee as m where e.managerId is not null and m.id=e.managerId  )
