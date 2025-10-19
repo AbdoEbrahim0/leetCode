@@ -27,5 +27,5 @@ from  Employee as e
  join Department as d
 on e.departmentId=d.id
  join cte 
- on e.salary =cte.MaximumSal and cte.departmentId= e.departmentId
+ on   e.departmentId=cte.departmentId and e.salary =cte.MaximumSal 
 
