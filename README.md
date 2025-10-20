@@ -123,6 +123,7 @@
 | [1580-shuffle-the-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/1580-shuffle-the-array) |
 | [1603-running-sum-of-1d-array](https://github.com/AbdoEbrahim0/leetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/AbdoEbrahim0/leetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1775-design-an-ordered-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/1775-design-an-ordered-stream) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1791-richest-customer-wealth](https://github.com/AbdoEbrahim0/leetCode/tree/master/1791-richest-customer-wealth) |
 | [1833-find-the-highest-altitude](https://github.com/AbdoEbrahim0/leetCode/tree/master/1833-find-the-highest-altitude) |
@@ -321,6 +322,7 @@
 | [1468-check-if-n-and-its-double-exist](https://github.com/AbdoEbrahim0/leetCode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/AbdoEbrahim0/leetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1502-construct-k-palindrome-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1502-construct-k-palindrome-strings) |
+| [1775-design-an-ordered-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/1775-design-an-ordered-stream) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/AbdoEbrahim0/leetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/AbdoEbrahim0/leetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/AbdoEbrahim0/leetCode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -381,6 +383,7 @@
 | ------- |
 | [0303-range-sum-query-immutable](https://github.com/AbdoEbrahim0/leetCode/tree/master/0303-range-sum-query-immutable) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1775-design-an-ordered-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/1775-design-an-ordered-stream) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -393,6 +396,7 @@
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1775-design-an-ordered-stream](https://github.com/AbdoEbrahim0/leetCode/tree/master/1775-design-an-ordered-stream) |
 ## Counting
 |  |
 | ------- |
