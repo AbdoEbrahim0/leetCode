@@ -9,7 +9,7 @@ public:
             matrix.push_back (v);
         }
 
-        for (vector<int> rowCol : indices)
+        for (vector<int> &rowCol : indices)
         {
             for (int j = 0; j < n; j++)
                 matrix [rowCol[0]] [j]++; //increment row 
