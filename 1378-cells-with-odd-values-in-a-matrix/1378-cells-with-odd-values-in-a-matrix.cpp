@@ -1,3 +1,4 @@
+//O(m × n + k × (m + n)) time and O(m × n) space
 // class Solution {
 // public:
 //     int oddCells(int m, int n, vector<vector<int>>& indices) {
@@ -25,7 +26,7 @@
 //     }
 // };
 
-
+// chat gpt Optimized Approach (O(m + n) space, O(m × n) time)
 class Solution {
 public:
     int oddCells(int m, int n, vector<vector<int>>& indices) {
