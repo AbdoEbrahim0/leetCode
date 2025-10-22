@@ -4,8 +4,8 @@ public:
         int EvenNumbersOfDigits=0;
         for(int &val :nums)
         {
-            int x=log10(val);
-            if((x+1) %2==0)
+            
+            if(int(log10(val) +1) %2==0)
             EvenNumbersOfDigits++;
             //cout<< log10(val)+1<< "|" <<val << "#\n";
         }
