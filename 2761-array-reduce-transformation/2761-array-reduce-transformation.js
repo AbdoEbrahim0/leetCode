@@ -7,9 +7,7 @@
 var reduce = function(nums, fn, init) {
     for(const i in nums)
     {
-init=(fn(init,nums[i] ));
-
+        init=(fn(init,nums[i] ));
     }
 return init;
-
 };
